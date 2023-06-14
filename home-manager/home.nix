@@ -46,7 +46,7 @@
 
   gtk.iconTheme = {
 	package = pkgs.nordzy-icon-theme;
-	name = "Nordzy-pink";
+	name = "Nordzy";
   };
 
   # Enable home-manager
