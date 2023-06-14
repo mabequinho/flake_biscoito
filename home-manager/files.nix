@@ -9,9 +9,9 @@
 
     ".face" = {
       source = pkgs.fetchurl {
-        url = "https://openclipart.org/image/400px/265577";
+        url = "https://openclipart.org/image/400px/322498";
         sha256 =
-          "1x2bw9s3rw3ymlg95ccwprqm7ixa5srsg10yjz0fqim1m6q1wdri";
+          "167ylcpnixy1ki1gqf1723ih6xhwnb9h9dbvkf3zdn6nq0cnjxsg";
       };
     };
 
