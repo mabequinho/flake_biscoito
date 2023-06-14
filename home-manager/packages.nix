@@ -7,6 +7,7 @@
     thunderbird
 
     #net
+    firefox-bin
     aria
     yt-dlp
     mangal
