@@ -3,9 +3,9 @@
 {
   home.file = {
 
-    ".detoxrc".source = ./config/detoxrc;
+    ".detoxrc".source = ./files/detoxrc;
 
-    ".bashrc".source = ./config/bashrc;
+    ".bashrc".source = ./files/bashrc;
 
     ".face" = {
       source = pkgs.fetchurl {
