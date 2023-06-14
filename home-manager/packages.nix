@@ -34,6 +34,6 @@
 
   web = menss ++ net;
   graphical = gnome ++ gutils ++ viewer;
-  extra = utils ++ langs ++ misc;
+  extra = misc;
   home.packages = with pkgs; web ++ graphical ++ extra;
 }
