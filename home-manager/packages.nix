@@ -19,7 +19,6 @@
 
     #gutils
 
-    albert
 
     #utils
     distrobox
@@ -34,6 +33,8 @@
     zip
     rar
     p7zip
+    rbw
+    playerctl
 
     #langs
     nil

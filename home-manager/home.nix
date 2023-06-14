@@ -10,6 +10,7 @@
     ./files.nix
     ./fish.nix
     ./packages.nix
+    ./dconf.nix
   ];
 
   nixpkgs = {
