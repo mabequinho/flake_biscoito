@@ -45,7 +45,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/bf60595e-f9f5-4bee-aa76-18c109f1caaa" = {
-      apps = [ "org.gnome.Boxes.desktop" "nvim.desktop" ];
+      apps = [ "org.gnome.Boxes.desktop" "nvim.desktop" "org.octave.Octave.desktop" ];
       name = "Dev";
       translate = false;
     };
@@ -68,6 +68,8 @@ with lib.hm.gvariant;
       enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
+      icon-theme = "Nordzy-cyan";
+      toolkit-accessibility = false;
     };
 
     "org/gnome/desktop/notifications" = {
@@ -136,7 +138,13 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/nautilus/preferences" = {
+      default-folder-viewer = "icon-view";
       migrated-gtk-settings = true;
+      search-filter-time-type = "last_modified";
+    };
+
+    "org/gnome/nautilus/window-state" = {
+      initial-size = mkTuple [ 890 550 ];
     };
 
     "org/gnome/pomodoro/state" = {
