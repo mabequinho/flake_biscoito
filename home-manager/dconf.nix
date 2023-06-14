@@ -6,7 +6,7 @@ with lib.hm.gvariant;
 {
   dconf.settings = {
     "org/gnome/control-center" = {
-      last-panel = "multitasking";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -204,7 +204,7 @@ with lib.hm.gvariant;
         {"0":"MIDDLE"}
       '';
       panel-element-positions = ''
-        {"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}
+        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}
       '';
       panel-lengths = ''
         {"0":50}
@@ -233,7 +233,7 @@ with lib.hm.gvariant;
       switch-to-application-7 = [];
       switch-to-application-8 = [];
       switch-to-application-9 = [];
-      toggle-application-view = [];
+      toggle-application-view = [ "<Super>a" ];
       toggle-message-tray = [];
     };
 
@@ -247,4 +247,3 @@ with lib.hm.gvariant;
 
   };
 }
-
