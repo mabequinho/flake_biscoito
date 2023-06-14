@@ -49,7 +49,7 @@ rec {
 
   misc = [ tomb pinentry-gnome nerdfonts disfetch steam-run ];
 
-  gnome = (with pkgs.gnome;
+  gnome = with pkgs.gnome;
     [
       gnome-terminal
       gnome-boxes
@@ -60,8 +60,9 @@ rec {
       nautilus
       eog
       pomodoro
-    ]) ++ [ dconf2nix ]
-    ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
+    ] ;
+    #++ [ dconf2nix ]
+    #++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 
   web = chat ++ internet;
   graphical = gnome ++ gutils ++ viewer;
