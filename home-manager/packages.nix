@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: with pkgs; {
+{ config, pkgs, ... }: with pkgs; rec{
 
   menss = [ 
     profanity 
