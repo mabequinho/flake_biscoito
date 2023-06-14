@@ -15,9 +15,9 @@
       };
     };
 
-    ".local/share/applications/fish.desktop".source = ./config/hide.desktop;
+    ".local/share/applications/fish.desktop".source = ./files/hide.desktop;
 
-    ".local/share/applications/cups.desktop".source = ./config/hide.desktop;
+    ".local/share/applications/cups.desktop".source = ./files/hide.desktop;
 
     #".local/share/VeroptBR3215AOC.oxt".source = pkgs.fetchurl {
     #  url =
