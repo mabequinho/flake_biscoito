@@ -55,7 +55,6 @@
     pinentry-gnome
     nerdfonts
     disfetch
-    steam-run
 
   ];
 }
