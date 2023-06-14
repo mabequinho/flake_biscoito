@@ -29,5 +29,5 @@
     seahorse
     nautilus
     pomodoro
-  ]) ++ [ pkgs.dconf2nix ] ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
+  ]) ++ (with pkgs; [ dconf2nix ddcutil ] ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 }
