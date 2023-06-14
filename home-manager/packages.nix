@@ -66,6 +66,6 @@ rec {
 
   #web = menss ++ net;
   graphical = gnome ++ gutils ++ viewer;
-  extra = utils ++ langs ++ misc;
+  #extra = utils ++ langs ++ misc;
 
 }
