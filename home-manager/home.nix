@@ -48,7 +48,7 @@ in  {
     };
   };
 
-  home.packages = with groups; [ web ++ graphical ++ extra ]; 
+  home.packages = with groups; [ web graphical extra ]; 
 
   # Enable home-manager
   programs.home-manager.enable = true;
