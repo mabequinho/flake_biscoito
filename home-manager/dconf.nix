@@ -6,7 +6,7 @@ with lib.hm.gvariant;
 {
   dconf.settings = {
     "org/gnome/control-center" = {
-      last-panel = "keyboard";
+      last-panel = "user-accounts";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -40,7 +40,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/aac2832b-c83a-490c-97f7-9071a4548ce3" = {
-      apps = [ "org.gnome.Nautilus.desktop" "org.gnome.FileRoller.desktop" ];
+      apps = [ "org.gnome.Nautilus.desktop" "org.gnome.FileRoller.desktop" "org.gnome.Pomodoro.desktop" ];
       name = "Accessories";
     };
 
@@ -173,7 +173,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'albert.desktop': <{'position': <0>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <1>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <2>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <5>}>, 'org.gnome.Pomodoro.desktop': <{'position': <6>}>}]";
+      app-picker-layout = "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <3>}>, 'Utilities': <{'position': <4>}>}]";
       disabled-extensions = [ "blur-my-shell@aunetx" ];
       enabled-extensions = [ "pomodoro@arun.codito.in" "dash-to-panel@jderose9.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" ];
       favorite-apps = [ "org.gnome.Terminal.desktop" ];
@@ -201,16 +201,16 @@ with lib.hm.gvariant;
       intellihide = true;
       leftbox-padding = -1;
       panel-anchors = ''
-        {"0":"MIDDLE"}
+        {"0":"MIDDLE"}\n
       '';
       panel-element-positions = ''
-        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}
+        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}\n
       '';
       panel-lengths = ''
-        {"0":50}
+        {"0":50}\n
       '';
       panel-sizes = ''
-        {"0":48}
+        {"0":48}\n
       '';
       primary-monitor = 0;
       status-icon-padding = -1;
