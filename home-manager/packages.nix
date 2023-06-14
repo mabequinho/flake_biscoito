@@ -60,12 +60,12 @@ rec {
       nautilus
       eog
       pomodoro
-    ] ;
+    ];
     #++ [ dconf2nix ]
     #++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 
-  #web = menss ++ net;
+  web = menss ++ net;
   graphical = gnome ++ gutils ++ viewer;
-  #extra = utils ++ langs ++ misc;
+  extra = utils ++ langs ++ misc;
 
 }
