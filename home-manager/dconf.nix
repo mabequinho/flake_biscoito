@@ -188,36 +188,6 @@ with lib.hm.gvariant;
       application-list = [ "org.gnome.Pomodoro.desktop:4" "thunderbird.desktop:4" ];
     };
 
-    "org/gnome/shell/extensions/dash-to-panel" = {
-      animate-appicon-hover-animation-extent = "{'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}";
-      appicon-margin = 8;
-      appicon-padding = 4;
-      available-monitors = [ 0 ];
-      dot-position = "BOTTOM";
-      dot-style-focused = "DOTS";
-      dot-style-unfocused = "DOTS";
-      hide-overview-on-startup = true;
-      hotkeys-overlay-combo = "TEMPORARILY";
-      intellihide = true;
-      leftbox-padding = -1;
-      panel-anchors = ''
-        {"0":"MIDDLE"}\n
-      '';
-      panel-element-positions = ''
-        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}\n
-      '';
-      panel-lengths = ''
-        {"0":50}\n
-      '';
-      panel-sizes = ''
-        {"0":48}\n
-      '';
-      primary-monitor = 0;
-      status-icon-padding = -1;
-      tray-padding = -1;
-      window-preview-title-position = "TOP";
-    };
-
     "org/gnome/shell/extensions/espresso" = {
       has-battery = false;
       user-enabled = false;
