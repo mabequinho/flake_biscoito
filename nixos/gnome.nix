@@ -20,5 +20,15 @@
   # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
-
+  environment.systemPackages = (with pkgs.gnome; [
+    gnome-terminal
+    gnome-boxes
+    gnome-tweaks
+    gnome-shell-extensions
+    file-roller
+    seahorse
+    nautilus
+    eog
+    pomodoro
+  ]) ++ [ dconf2nix ] ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 }

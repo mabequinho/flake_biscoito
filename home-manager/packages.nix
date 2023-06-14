@@ -1,19 +1,25 @@
-{ config, pkgs, ... }: 
-let
-  menss = [ 
-    profanity 
-    tiny 
-    mumble 
-    thunderbird 
-    ];
+{ config, pkgs, ... }: {
+  home.packages = with pkgs; [
+    #menss
+    profanity
+    tiny
+    mumble
+    thunderbird
 
-  net = [ aria yt-dlp mangal ];
+    #net
+    aria
+    yt-dlp
+    mangal
 
-  viewer = [ mupdf vlc ];
+    #viewer
+    mupdf
+    vlc
 
-  gutils = [ albert ];
+    #gutils
 
-  utils = [
+    albert
+
+    #utils
     distrobox
     zbar
     wl-clipboard
@@ -26,9 +32,8 @@ let
     zip
     rar
     p7zip
-  ];
 
-  langs = [
+    #langs
     nil
     nixfmt
     nodePackages.bash-language-server
@@ -44,25 +49,13 @@ let
         ipykernel
         pip
       ]))
+
+    #misc
+    tomb
+    pinentry-gnome
+    nerdfonts
+    disfetch
+    steam-run
+
   ];
-
-  misc = [ tomb pinentry-gnome nerdfonts disfetch steam-run ];
-
-  gnome = with gnome;
-    [
-      gnome-terminal
-      gnome-boxes
-      gnome-tweaks
-      gnome-shell-extensions
-      file-roller
-      seahorse
-      nautilus
-      eog
-      pomodoro
-    ];
-    #++ [ dconf2nix ]
-    #++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
-in 
-{
-  home.packages = with pkgs; gnome;
 }
