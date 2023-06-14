@@ -3,7 +3,7 @@ with pkgs;
 
 rec {
 
-  comm = [ profanity tiny mumble thunderbird ];
+  chat = [ profanity tiny mumble thunderbird ];
 
   internet = [ aria yt-dlp mangal ];
 
@@ -60,7 +60,7 @@ rec {
     ] ++ [ dconf2nix ]
     ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 
-  web = comm ++ internet;
+  web = chat ++ internet;
   graphical = gnome ++ gutils ++ viewer;
   extra = utils ++ langs ++ misc;
 
