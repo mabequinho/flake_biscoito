@@ -7,6 +7,5 @@
       userName = "Lucio";
     };
     neovim = { enable = true; };
-    foot = { enable = true; };
   };
 }

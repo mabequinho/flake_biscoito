@@ -1,7 +1,9 @@
-# This is your home-manager configuration file
-# Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
+{ inputs, lib, config, pkgs, ... }: 
 
-{ inputs, lib, config, pkgs, ... }: {
+let pkg_groups = import ./packages.nix { inherit pkgs; };
+in
+
+{
   # You can import other home-manager modules here
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
@@ -10,6 +12,9 @@
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
     ./programs.nix
+    ./files.nix
+    ./fish.nix
+    ./packages.nix
   ];
 
   nixpkgs = {
@@ -45,7 +50,7 @@
   };
 
   home.packages = with pkg_groups; base ++ connect ++ looks;
-  
+
   # Enable home-manager
   programs.home-manager.enable = true;
   # Nicely reload system units when changing configs

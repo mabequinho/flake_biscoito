@@ -26,7 +26,7 @@ rec {
     p7zip
   ];
 
-  languages = [
+  langs = [
     nil
     nixfmt
     nodePackages.bash-language-server
@@ -44,42 +44,24 @@ rec {
       ]))
   ];
 
-  bury = [ tomb pinentry-gnome ];
-
-  misc = [ nerdfonts disfetch steam-run ];
+  misc = [ tomb pinentry-gnome nerdfonts disfetch steam-run ];
 
   gnome = with pkgs.gnome;
     [
       gnome-terminal
       gnome-boxes
       gnome-tweaks
+      gnome-shell-extensions
       file-roller
       seahorse
       nautilus
       eog
       pomodoro
-    ] ++ [ dconf2nix ] ++ (with pkgs.gnomeExtensions; [
+    ] ++ [ dconf2nix ]
+    ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 
-
-
-    ]);
-
-  g_extensions = with pkgs.gnomeExtensions; [
-    espresso
-    no-activities-button
-    gnome-bedtime
-    disable-unredirect-fullscreen-windows
-    xremap
-    no-overview
-  ];
-
-
-  base = utils ++ gutils ++ viewers ++ editor ++ organization ++ bury
-    ++ documents;
-  # manipulation = mediaed;
-  connect = web
-    # ++ social
-  ;
-  looks = theming;
+  web = comm ++ internet;
+  graphical = gnome ++ gutils ++ viewer;
+  extra = utils ++ langs ++ misc;
 
 }
