@@ -8,7 +8,7 @@
     # ./nvim.nix
     ./programs.nix
     ./files.nix
-    ./fish.nix
+    ./terminal/fish.nix
     ./packages.nix
     ./dconf.nix
   ];
