@@ -2,7 +2,7 @@
 
   services = {
     #add calibre-web
-    ddcontrol.enable = true;
+    ddccontrol.enable = true;
     fstrim = {
       enable = true;
       interval = "weekly";
