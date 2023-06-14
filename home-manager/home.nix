@@ -50,7 +50,7 @@ in  {
     };
   };
 
-  home.packages = with groups; graphical ; 
+  home.packages = (with groups;[ graphical ]); 
 
   # Enable home-manager
   programs.home-manager.enable = true;
