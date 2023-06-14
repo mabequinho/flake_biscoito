@@ -2,7 +2,6 @@
 
   services = {
     #add calibre-web
-    ddccontrol.enable = true;
     fstrim = {
       enable = true;
       interval = "weekly";
@@ -23,7 +22,5 @@
       };
     };
   };
-
-  #check if needed
-  #hardware.i2c.enable = true;
+  hardware.i2c.enable = true;
 }

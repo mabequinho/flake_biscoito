@@ -65,7 +65,7 @@
       # Be sure to change it (using passwd) after rebooting!
       initialPassword = "mabequinho";
       isNormalUser = true;
-      extraGroups = [ "wheel" "networkmanager" ];
+      extraGroups = [ "wheel" "networkmanager" "i2c" ];
       #maybe need i2c group
     };
   };
