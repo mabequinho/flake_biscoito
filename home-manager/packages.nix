@@ -1,7 +1,12 @@
 {pkgs, ...}: with pkgs;
 rec {
 
-  chat = [ profanity tiny mumble thunderbird ];
+  chat = [ 
+    profanity 
+    tiny 
+    mumble 
+    thunderbird 
+    ];
 
   internet = [ aria yt-dlp mangal ];
 
