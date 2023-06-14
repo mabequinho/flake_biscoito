@@ -1,6 +1,8 @@
 { inputs, lib, config, pkgs, ... }: 
 
-let groups = import ./packages.nix { inherit pkgs; };
+let
+
+groups = import ./packages.nix { inherit pkgs; };
 
 in  {
   # You can import other home-manager modules here
@@ -48,7 +50,7 @@ in  {
     };
   };
 
-  home.packages = with groups; [ web graphical extra ]; 
+  home.packages = with groups; web ++ graphical ++ extra; 
 
   # Enable home-manager
   programs.home-manager.enable = true;
