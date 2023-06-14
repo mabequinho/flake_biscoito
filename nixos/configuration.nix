@@ -68,7 +68,7 @@
       LC_NUMERIC = "pt_BR.UTF-8";
       LC_PAPER = "pt_BR.UTF-8";
       LC_TELEPHONE = "pt_BR.UTF-8";
-      LC_TIME = "en_GB.UTF-8";
+      LC_TIME = "pt_BR.UTF-8";
     };
   };
   security.sudo.wheelNeedsPassword = false;
