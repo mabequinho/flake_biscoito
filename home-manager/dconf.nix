@@ -174,8 +174,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout = "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <3>}>, 'Utilities': <{'position': <4>}>}]";
-      disabled-extensions = [ "blur-my-shell@aunetx" ];
-      enabled-extensions = [ "pomodoro@arun.codito.in" "dash-to-panel@jderose9.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" ];
+      enabled-extensions = [ "pomodoro@arun.codito.in" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" ];
       favorite-apps = [ "org.gnome.Terminal.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
     };
