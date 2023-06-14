@@ -1,0 +1,7 @@
+sequence default {
+  uncgi;
+  utf_8;
+  safe;
+  wipeup; 
+  lower;
+};

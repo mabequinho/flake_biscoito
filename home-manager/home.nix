@@ -38,10 +38,14 @@
   home = {
     username = "mabeco";
     homeDirectory = "/home/mabeco";
+      sessionVariables = {
+      EDITOR = "nvim";
+      VISUAL = "nvim";
+    };
   };
 
-  # home.packages = with pkgs; [ steam ];
-
+  home.packages = with pkg_groups; base ++ connect ++ looks;
+  
   # Enable home-manager
   programs.home-manager.enable = true;
   # Nicely reload system units when changing configs
