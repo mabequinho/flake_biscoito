@@ -55,7 +55,7 @@
       auto-optimise-store = true;
     };
   };
-
+  environment.systemPackages = [ pkgs.git ]
   time.timeZone = "America/Fortaleza";
   security.sudo.wheelNeedsPassword = false;
   users.users = {
