@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-with pkgs;
-
+{pkgs, ...}: with pkgs;
 rec {
 
   chat = [ profanity tiny mumble thunderbird ];
@@ -46,7 +44,7 @@ rec {
 
   misc = [ tomb pinentry-gnome nerdfonts disfetch steam-run ];
 
-  gnome = with pkgs.gnome;
+  gnome = (with pkgs.gnome;
     [
       gnome-terminal
       gnome-boxes
@@ -57,7 +55,7 @@ rec {
       nautilus
       eog
       pomodoro
-    ] ++ [ dconf2nix ]
+    ]) ++ [ dconf2nix ]
     ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 
   web = chat ++ internet;
