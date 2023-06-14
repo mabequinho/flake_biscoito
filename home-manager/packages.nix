@@ -1,14 +1,14 @@
 {pkgs, ...}: with pkgs;
 rec {
 
-  chat = [ 
+  menss = [ 
     profanity 
     tiny 
     mumble 
     thunderbird 
     ];
 
-  internet = [ aria yt-dlp mangal ];
+  net = [ aria yt-dlp mangal ];
 
   viewer = [ mupdf vlc ];
 
@@ -64,7 +64,7 @@ rec {
     #++ [ dconf2nix ]
     #++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 
-  web = chat ++ internet;
+  #web = menss ++ net;
   graphical = gnome ++ gutils ++ viewer;
   extra = utils ++ langs ++ misc;
 
