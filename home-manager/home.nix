@@ -44,6 +44,11 @@
     };
   };
 
+  gtk.iconTheme = {
+	package = pkgs.nordzy-icon-theme;
+	name = "Nordzy-pink";
+  };
+
   # Enable home-manager
   programs.home-manager.enable = true;
   # Nicely reload system units when changing configs
