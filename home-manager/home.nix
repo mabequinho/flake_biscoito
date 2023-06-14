@@ -49,7 +49,7 @@ in
     };
   };
 
-  home.packages = with pkg_groups; base ++ connect ++ looks;
+  home.packages = with pkg_groups; web ++ graphical ++ extra;
 
   # Enable home-manager
   programs.home-manager.enable = true;
