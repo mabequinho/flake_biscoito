@@ -1,5 +1,5 @@
-{ config, pkgs, ... }: with pkgs; rec{
-
+{ config, pkgs, ... }: 
+let
   menss = [ 
     profanity 
     tiny 
@@ -13,11 +13,42 @@
 
   gutils = [ albert ];
 
+  utils = [
+    distrobox
+    zbar
+    wl-clipboard
+    detox
+    bottom
+    radeontop
+    ffmpeg_5-full
+    any-nix-shell
+    playerctl
+    zip
+    rar
+    p7zip
+  ];
 
+  langs = [
+    nil
+    nixfmt
+    nodePackages.bash-language-server
+    texlab
+    (python312.withPackages (ps:
+      with ps; [
+        python-lsp-server
+        yapf
+        rope
+        pycodestyle
+        pyflakes
+        mccabe
+        ipykernel
+        pip
+      ]))
+  ];
 
   misc = [ tomb pinentry-gnome nerdfonts disfetch steam-run ];
 
-  gnome = with pkgs.gnome;
+  gnome = with gnome;
     [
       gnome-terminal
       gnome-boxes
@@ -31,9 +62,7 @@
     ];
     #++ [ dconf2nix ]
     #++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
-
-  web = menss ++ net;
-  graphical = gnome ++ gutils ++ viewer;
-  extra = misc;
-  home.packages = with pkgs; web ++ graphical ++ extra;
+in 
+{
+  home.packages = with pkgs; gnome;
 }
