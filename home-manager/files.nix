@@ -9,9 +9,9 @@
 
     ".face" = {
       source = pkgs.fetchurl {
-        url = "https://nitter.net/pic/media%2FFN_lMoOVUAAnVUd.jpg";
+        url = "https://openclipart.org/image/400px/265577";
         sha256 =
-          "a476548d48768690f44fd8c67f0a566224112bc1003a3a9fa6b3edc18d8bc14e";
+          "1x2bw9s3rw3ymlg95ccwprqm7ixa5srsg10yjz0fqim1m6q1wdri";
       };
     };
 
