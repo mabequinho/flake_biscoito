@@ -1,10 +1,4 @@
-{ inputs, lib, config, pkgs, ... }: 
-
-let
-
-groups = import ./packages.nix { inherit pkgs; };
-
-in  {
+{ inputs, lib, config, pkgs, ... }: {
   # You can import other home-manager modules here
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
@@ -49,8 +43,6 @@ in  {
       VISUAL = "nvim";
     };
   };
-
-  home.packages = with groups; gnome;
 
   # Enable home-manager
   programs.home-manager.enable = true;

@@ -1,5 +1,4 @@
-{pkgs, ...}: with pkgs;
-rec {
+{ config, pkgs, ... }: {
 
   menss = [ 
     profanity 
@@ -64,8 +63,8 @@ rec {
     #++ [ dconf2nix ]
     #++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 
-  #web = menss ++ net;
-  #graphical = gnome ++ gutils ++ viewer;
-  #extra = utils ++ langs ++ misc;
-
+  web = menss ++ net;
+  graphical = gnome ++ gutils ++ viewer;
+  extra = utils ++ langs ++ misc;
+  home.packages = with pkgs; web ++ graphical ++ extra;
 }
