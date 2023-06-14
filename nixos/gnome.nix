@@ -30,5 +30,5 @@
     nautilus
     eog
     pomodoro
-  ]) ++ [ dconf2nix ] ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
+  ]) ++ [ pkgs.dconf2nix ] ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 }
