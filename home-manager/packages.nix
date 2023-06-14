@@ -13,6 +13,7 @@
     mangal
 
     #viewer
+    imv
     mupdf
     vlc
 

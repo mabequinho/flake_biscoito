@@ -28,7 +28,6 @@
     file-roller
     seahorse
     nautilus
-    eog
     pomodoro
   ]) ++ [ pkgs.dconf2nix ] ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso blur-my-shell ]);
 }
