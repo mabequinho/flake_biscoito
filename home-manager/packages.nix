@@ -13,38 +13,7 @@
 
   gutils = [ albert ];
 
-  utils = [
-    distrobox
-    zbar
-    wl-clipboard
-    detox
-    bottom
-    radeontop
-    ffmpeg_5-full
-    any-nix-shell
-    playerctl
-    zip
-    rar
-    p7zip
-  ];
 
-  langs = [
-    nil
-    nixfmt
-    nodePackages.bash-language-server
-    texlab
-    (python312.withPackages (ps:
-      with ps; [
-        python-lsp-server
-        yapf
-        rope
-        pycodestyle
-        pyflakes
-        mccabe
-        ipykernel
-        pip
-      ]))
-  ];
 
   misc = [ tomb pinentry-gnome nerdfonts disfetch steam-run ];
 
