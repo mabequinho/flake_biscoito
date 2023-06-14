@@ -37,6 +37,7 @@
     playerctl
 
     #langs
+    octaveFull
     nil
     nixfmt
     nodePackages.bash-language-server
