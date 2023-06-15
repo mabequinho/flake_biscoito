@@ -55,7 +55,7 @@
       auto-optimise-store = true;
     };
   };
-  environment.systemPackages = [ pkgs.git ];
+  environment.systemPackages = with pkgs; [ git ddcutil ];
   time.timeZone = "America/Fortaleza";
   i18n = {
     defaultLocale = "en_US.UTF-8";
@@ -74,13 +74,9 @@
   security.sudo.wheelNeedsPassword = false;
   users.users = {
     mabeco = {
-      # TODO: You can set an initial password for your user.
-      # If you do, you can skip setting a root password by passing '--no-root-passwd' to nixos-install.
-      # Be sure to change it (using passwd) after rebooting!
       initialPassword = "mabequinho";
       isNormalUser = true;
       extraGroups = [ "wheel" "networkmanager" "i2c" ];
-      #maybe need i2c group
     };
   };
 
