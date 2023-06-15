@@ -74,14 +74,14 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       clock-show-weekday = true;
-      document-font-name = "FiraMono Nerd Font 11";
+      document-font-name = "Liberation Sans 11";
       enable-animations = true;
       enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
-      font-name = "FiraMono Nerd Font 11";
+      font-name = "Liberation Sans 11";
       icon-theme = "Colloid-light";
-      monospace-font-name = "FiraCode Nerd Font Mono Light 10";
+      monospace-font-name = "SauceCodePro Nerd Font Medium 10";
       toolkit-accessibility = false;
     };
 
@@ -93,6 +93,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/firefox" = {
       application-id = "firefox.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/gnome-power-panel" = {
+      application-id = "gnome-power-panel.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-pomodoro" = {
@@ -294,6 +298,30 @@ with lib.hm.gvariant;
       switch-to-application-9 = [];
       toggle-application-view = [ "<Super>a" ];
       toggle-message-tray = [];
+    };
+
+    "org/gnome/terminal/legacy/profiles:" = {
+      list = [ "b1dcc9dd-5262-4d8d-a863-c897e6d979b9" "5d738f04-f702-46a2-9575-03876f8ab496" "0f05d245-3b64-4555-b9f2-4f5aa43cd4e7" ];
+    };
+
+    "org/gnome/terminal/legacy/profiles:/:0f05d245-3b64-4555-b9f2-4f5aa43cd4e7" = {
+      allow-bold = true;
+      background-color = "#D5D5D6D6DBDB";
+      bold-color = "#56565A5A6E6E";
+      bold-color-same-as-fg = true;
+      cursor-background-color = "#56565A5A6E6E";
+      cursor-colors-set = true;
+      cursor-foreground-color = "#D5D5D6D6DBDB";
+      foreground-color = "#56565A5A6E6E";
+      palette = [ "#0F0F0F0F1414" "#8C8C43435151" "#48485E5E3030" "#8F8F5E5E1515" "#343454548A8A" "#5A5A4A4A7878" "#0F0F4B4B6E6E" "#34343B3B5858" "#96969999A3A3" "#8C8C43435151" "#48485E5E3030" "#8F8F5E5E1515" "#343454548A8A" "#5A5A4A4A7878" "#0F0F4B4B6E6E" "#34343B3B5858" ];
+      use-theme-background = false;
+      use-theme-colors = false;
+      use-theme-transparency = false;
+      visible-name = "Tokyo Night Light";
+    };
+
+    "org/gnome/terminal/legacy/profiles:/:5d738f04-f702-46a2-9575-03876f8ab496" = {
+      visible-name = "Default";
     };
 
     "org/gnome/tweaks" = {

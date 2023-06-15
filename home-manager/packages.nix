@@ -35,6 +35,8 @@
     p7zip
     rbw
     playerctl
+    wget
+    wgetpaste
 
     #langs
     octaveFull
