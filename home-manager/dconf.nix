@@ -10,7 +10,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "wifi";
+      last-panel = "sound";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -73,14 +73,19 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/interface" = {
+      clock-show-weekday = true;
+      document-font-name = "MesloLGL Nerd Font 11";
       enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
+      font-name = "MesloLGL Nerd Font 11";
       icon-theme = "Colloid-light";
+      monospace-font-name = "FiraCode Nerd Font Mono Light 10";
       toolkit-accessibility = false;
     };
 
     "org/gnome/desktop/notifications" = {
+      show-banners = false;
       show-in-lock-screen = false;
     };
 
@@ -159,14 +164,36 @@ with lib.hm.gvariant;
       initial-size = mkTuple [ 890 550 ];
     };
 
+    "org/gnome/pomodoro/plugins/actions" = {
+      actions-list = [ "/org/gnome/pomodoro/plugins/actions/action0/" ];
+    };
+
+    "org/gnome/pomodoro/plugins/actions/action0" = {
+      command = "playerctl pause";
+      name = "pause media";
+      states = [ "short-break" "long-break" ];
+      triggers = [ "start" ];
+    };
+
+    "org/gnome/pomodoro/plugins/gnome" = {
+      hide-system-notifications = true;
+    };
+
+    "org/gnome/pomodoro/preferences" = {
+      enabled-plugins = [ "notifications" "actions" ];
+      long-break-duration = 1200.0;
+      pomodoro-duration = 2400.0;
+      short-break-duration = 600.0;
+    };
+
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-15T10:06:26+0000";
+      timer-date = "2023-06-15T11:08:30+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
-      timer-state = "null";
-      timer-state-date = "2023-06-15T10:06:26+0000";
-      timer-state-duration = 0.0;
+      timer-state = "pomodoro";
+      timer-state-date = "2023-06-15T11:08:30+0000";
+      timer-state-duration = 2400.0;
     };
 
     "org/gnome/settings-daemon/plugins/color" = {
@@ -200,7 +227,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       binding = "<Super>Return";
-      command = "gnome-termianl";
+      command = "gnome-terminal";
       name = "terminal";
     };
 
