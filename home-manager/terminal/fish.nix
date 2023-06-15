@@ -2,6 +2,24 @@
   programs = {
     fish = {
       enable = true;
+      shellInit = ''
+        any-nix-shell fish --info-right | source
+      '';
+      shellAliases = {
+        ls = "ls -A --color=auto -cltp --si --group-directories-first";
+        rebh =
+          "home-manager switch -j 8 --flake $HOME/git/flake_biscoito#mabeco@biscoito";
+        rebr = "nixos-rebuild switch -j 8 --flake $HOME/git/flake_biscoito";
+        lports = "sudo netstat -tulpn | grep LISTEN";
+        wp = "wgetpaste";
+        slam = "tomb slam --force all";
+        g = "git";
+        gc = "git commit -a";
+        ga = "git add -A";
+        gp = "git push";
+        py = "python3";
+        yt = "yt-dlp";
+      };
       plugins = [{
         name = "hydro";
         src = pkgs.fetchFromGitHub {
@@ -17,7 +35,6 @@
       enableFishIntegration = true;
       keyScheme = "vim";
       enableLightTheme = true;
-
     };
     zoxide = {
       enable = true;

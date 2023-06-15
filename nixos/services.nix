@@ -1,7 +1,17 @@
 { config, pkgs, ... }: {
 
   services = {
-    #add calibre-web
+    calibre-web = {
+      enable = true;
+      user = "mabeco";
+      group = "users";
+      openFirewall = true;
+      options = {
+        calibreLibrary = "/home/mabeco/Documents/calibre-library/";
+        enableBookUploading = true;
+        enableBookConversion = true;
+      };
+    };
     fstrim = {
       enable = true;
       interval = "weekly";
