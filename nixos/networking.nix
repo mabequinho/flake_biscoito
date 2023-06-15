@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:{
+{ config, pkgs, ... }: {
 
   networking = {
     hostName = "biscoito";
@@ -13,7 +13,7 @@
       allowedUDPPorts = [ ];
     };
   };
-  
+
   services = {
     printing = {
       enable = true;

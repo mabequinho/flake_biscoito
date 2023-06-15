@@ -10,8 +10,7 @@
     ".face" = {
       source = pkgs.fetchurl {
         url = "https://openclipart.org/image/400px/322498";
-        sha256 =
-          "167ylcpnixy1ki1gqf1723ih6xhwnb9h9dbvkf3zdn6nq0cnjxsg";
+        sha256 = "167ylcpnixy1ki1gqf1723ih6xhwnb9h9dbvkf3zdn6nq0cnjxsg";
       };
     };
 
@@ -26,7 +25,7 @@
     #};
   };
 
-    systemd.user.tmpfiles.rules = [
+  systemd.user.tmpfiles.rules = [
 
     "D /tmp/mabeco-cache 0700 mabeco wheel 1w"
     "L+ %h/.cache - - - - /tmp/mabeco-cache"

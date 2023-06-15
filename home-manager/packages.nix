@@ -19,7 +19,6 @@
 
     #gutils
 
-
     #utils
     distrobox
     zbar

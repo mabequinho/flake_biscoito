@@ -14,18 +14,24 @@
         efiSupport = true;
         enableCryptodisk = true;
       };
-	timeout = 2;
+      timeout = 2;
     };
     kernelPackages = pkgs.linuxKernel.packages.linux_zen;
-    kernelParams = [ "amd_iommu=on" "iommu=pt" "video=HDMI-A-1:2560x1080@75" "quiet" "udev.log_level=3" ];
+    kernelParams = [
+      "amd_iommu=on"
+      "iommu=pt"
+      "video=HDMI-A-1:2560x1080@75"
+      "quiet"
+      "udev.log_level=3"
+    ];
     consoleLogLevel = 0;
     plymouth = {
-    	enable = true;
-	theme = "text";
-	logo = pkgs.fetchurl {
-		url = "https://openclipart.org/image/400px/322498";
-		sha256 = "167ylcpnixy1ki1gqf1723ih6xhwnb9h9dbvkf3zdn6nq0cnjxsg";
-		};
-	};
+      enable = true;
+      theme = "text";
+      logo = pkgs.fetchurl {
+        url = "https://openclipart.org/image/400px/322498";
+        sha256 = "167ylcpnixy1ki1gqf1723ih6xhwnb9h9dbvkf3zdn6nq0cnjxsg";
+      };
+    };
   };
 }
