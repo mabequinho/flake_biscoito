@@ -39,21 +39,6 @@
 
     #langs
     octaveFull
-    nil
-    nixfmt
-    nodePackages.bash-language-server
-    texlab
-    (python311.withPackages (ps:
-      with ps; [
-        python-lsp-server
-        yapf
-        rope
-        pycodestyle
-        pyflakes
-        mccabe
-        ipykernel
-        pip
-      ]))
 
     #misc
     tomb
