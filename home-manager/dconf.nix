@@ -10,7 +10,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "power";
+      last-panel = "display";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -220,7 +220,7 @@ with lib.hm.gvariant;
       night-light-schedule-automatic = false;
       night-light-schedule-from = 3.983333;
       night-light-schedule-to = 3.966667;
-      night-light-temperature = mkUint32 1700;
+      night-light-temperature = mkUint32 2700;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
@@ -301,6 +301,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/terminal/legacy/profiles:" = {
+      default = "0f05d245-3b64-4555-b9f2-4f5aa43cd4e7";
       list = [ "b1dcc9dd-5262-4d8d-a863-c897e6d979b9" "5d738f04-f702-46a2-9575-03876f8ab496" "0f05d245-3b64-4555-b9f2-4f5aa43cd4e7" ];
     };
 
