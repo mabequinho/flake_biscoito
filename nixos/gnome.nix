@@ -28,5 +28,5 @@
     seahorse
     nautilus
     pomodoro
-  ]) ++ (with pkgs; [ dconf2nix ]) ++ (with pkgs.gnomeExtensions; [ dash-to-panel espresso ]);
+  ]) ++ (with pkgs; [ dconf2nix ]) ++ (with pkgs.gnomeExtensions; [ hide-top-bar espresso ]);
 }

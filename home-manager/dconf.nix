@@ -10,7 +10,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "keyboard";
+      last-panel = "power";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -74,19 +74,33 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       clock-show-weekday = true;
-      document-font-name = "MesloLGL Nerd Font 11";
+      document-font-name = "FiraMono Nerd Font 11";
+      enable-animations = true;
       enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
-      font-name = "MesloLGL Nerd Font 11";
+      font-name = "FiraMono Nerd Font 11";
       icon-theme = "Colloid-light";
       monospace-font-name = "FiraCode Nerd Font Mono Light 10";
       toolkit-accessibility = false;
     };
 
     "org/gnome/desktop/notifications" = {
+      application-children = [ "thunderbird" "firefox" "org-gnome-pomodoro" ];
       show-banners = false;
       show-in-lock-screen = false;
+    };
+
+    "org/gnome/desktop/notifications/application/firefox" = {
+      application-id = "firefox.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-pomodoro" = {
+      application-id = "org.gnome.Pomodoro.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/thunderbird" = {
+      application-id = "thunderbird.desktop";
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
@@ -188,7 +202,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-15T11:08:30+0000";
+      timer-date = "2023-06-15T12:20:03+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
@@ -245,7 +259,7 @@ with lib.hm.gvariant;
     "org/gnome/shell" = {
       app-picker-layout = "[{'cups.desktop': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'Utilities': <{'position': <2>}>}]";
       command-history = [ "gnome-terminal" ];
-      enabled-extensions = [ "pomodoro@arun.codito.in" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" "dash-to-panel@jderose9.github.com" ];
+      enabled-extensions = [ "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" "hidetopbar@mathieu.bidon.ca" "pomodoro@arun.codito.in" ];
       favorite-apps = [ "org.gnome.Terminal.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
     };
@@ -258,41 +272,14 @@ with lib.hm.gvariant;
       application-list = [ "org.gnome.Pomodoro.desktop:4" "thunderbird.desktop:4" ];
     };
 
-    "org/gnome/shell/extensions/dash-to-panel" = {
-      animate-appicon-hover-animation-extent = "{'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}";
-      appicon-margin = 8;
-      appicon-padding = 4;
-      available-monitors = [ 0 ];
-      dot-position = "BOTTOM";
-      dot-style-focused = "DOTS";
-      dot-style-unfocused = "DOTS";
-      hide-overview-on-startup = true;
-      hotkeys-overlay-combo = "TEMPORARILY";
-      intellihide = true;
-      leftbox-padding = -1;
-      panel-anchors = ''
-        {"0":"MIDDLE"}\n
-      '';
-      panel-element-positions = ''
-        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":false,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}\n
-      '';
-      panel-lengths = ''
-        {"0":40}\n
-      '';
-      panel-sizes = ''
-        {"0":48}\n
-      '';
-      primary-monitor = 0;
-      status-icon-padding = -1;
-      trans-use-custom-opacity = true;
-      trans-use-dynamic-opacity = true;
-      tray-padding = -1;
-      window-preview-title-position = "TOP";
-    };
-
     "org/gnome/shell/extensions/espresso" = {
       has-battery = false;
-      user-enabled = false;
+    };
+
+    "org/gnome/shell/extensions/hidetopbar" = {
+      enable-active-window = false;
+      enable-intellihide = false;
+      mouse-sensitive = true;
     };
 
     "org/gnome/shell/keybindings" = {
