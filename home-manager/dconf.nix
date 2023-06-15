@@ -287,7 +287,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/espresso" = {
       has-battery = false;
-      user-enabled = true;
+      user-enabled = false;
     };
 
     "org/gnome/shell/extensions/hidetopbar" = {
