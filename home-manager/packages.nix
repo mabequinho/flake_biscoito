@@ -18,6 +18,7 @@
     vlc
 
     #gutils
+    pika-backup
 
     #utils
     zbar
