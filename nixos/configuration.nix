@@ -55,7 +55,7 @@
       auto-optimise-store = true;
     };
   };
-  environment.systemPackages = with pkgs; [ git ddcutil ];
+  environment.systemPackages = with pkgs; [ git ddcutil libva-utils ];
   time.timeZone = "America/Fortaleza";
   i18n = {
     defaultLocale = "en_US.UTF-8";

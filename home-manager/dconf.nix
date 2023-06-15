@@ -10,7 +10,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "sound";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -127,6 +127,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/wm/keybindings" = {
+      close = [ "<Super>q" ];
       lower = [ "<Super>j" ];
       maximize = [ "<Super>k" ];
       minimize = [];
