@@ -91,7 +91,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "thunderbird" "firefox" "org-gnome-pomodoro" ];
+      application-children = [ "thunderbird" "firefox" "org-gnome-pomodoro" "org-gnome-world-pikabackup" ];
       show-banners = true;
       show-in-lock-screen = false;
     };
@@ -106,6 +106,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/org-gnome-pomodoro" = {
       application-id = "org.gnome.Pomodoro.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-world-pikabackup" = {
+      application-id = "org.gnome.World.PikaBackup.desktop";
     };
 
     "org/gnome/desktop/notifications/application/thunderbird" = {
@@ -283,7 +287,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/espresso" = {
       has-battery = false;
-      user-enabled = false;
+      user-enabled = true;
     };
 
     "org/gnome/shell/extensions/hidetopbar" = {
