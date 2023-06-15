@@ -5,9 +5,17 @@ with lib.hm.gvariant;
 
 {
   dconf.settings = {
+    "apps/seahorse/listing" = {
+      keyrings-selected = [ "openssh:///home/mabeco/.ssh" ];
+    };
+
     "org/gnome/control-center" = {
-      last-panel = "user-accounts";
+      last-panel = "default-apps";
       window-state = mkTuple [ 980 640 ];
+    };
+
+    "org/gnome/desktop/a11y/magnifier" = {
+      mag-factor = 5.0;
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -80,6 +88,10 @@ with lib.hm.gvariant;
       two-finger-scrolling-enabled = true;
     };
 
+    "org/gnome/desktop/peripherals/trackball" = {
+      scroll-wheel-emulation-button = 8;
+    };
+
     "org/gnome/desktop/privacy" = {
       old-files-age = mkUint32 30;
       recent-files-max-age = 30;
@@ -148,20 +160,22 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-14T20:31:04+0000";
+      timer-date = "2023-06-15T10:06:26+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-14T20:31:04+0000";
+      timer-state-date = "2023-06-15T10:06:26+0000";
       timer-state-duration = 0.0;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" ];
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" ];
       email = [ "<Super>m" ];
       home = [ "<Super>f" ];
       logout = [ "<Super>x" ];
+      magnifier-zoom-in = [];
+      magnifier-zoom-out = [];
       mic-mute = [ "<Alt><Super>BackSpace" ];
       screensaver = [];
       volume-down = [ "<Super>minus" ];
@@ -170,10 +184,22 @@ with lib.hm.gvariant;
       www = [ "<Super>b" ];
     };
 
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      binding = "<Alt><Super>minus";
+      command = "ddcutil setvcp 10 - 20";
+      name = "backlight down";
+    };
+
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       binding = "<Super>Return";
       command = "gnome-termianl";
       name = "terminal";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+      binding = "<Alt><Super>equal";
+      command = "ddcutil setvcp 10 + 20";
+      name = "backlight up";
     };
 
     "org/gnome/settings-daemon/plugins/power" = {
@@ -181,7 +207,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <3>}>, 'Utilities': <{'position': <4>}>}]";
+      app-picker-layout = "[{'cups.desktop': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'Utilities': <{'position': <2>}>}]";
+      command-history = [ "gnome-terminal" ];
       enabled-extensions = [ "pomodoro@arun.codito.in" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" ];
       favorite-apps = [ "org.gnome.Terminal.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
