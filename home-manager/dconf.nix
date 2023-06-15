@@ -10,7 +10,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "keyboard";
+      last-panel = "wifi";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -76,7 +76,7 @@ with lib.hm.gvariant;
       enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
-      icon-theme = "Nordzy-cyan";
+      icon-theme = "Colloid-light";
       toolkit-accessibility = false;
     };
 
@@ -172,8 +172,8 @@ with lib.hm.gvariant;
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
       night-light-schedule-automatic = false;
-      night-light-schedule-from = 3.9833333333333334;
-      night-light-schedule-to = 3.966666666666667;
+      night-light-schedule-from = 3.983333;
+      night-light-schedule-to = 3.966667;
       night-light-temperature = mkUint32 1700;
     };
 
@@ -243,16 +243,16 @@ with lib.hm.gvariant;
       intellihide = true;
       leftbox-padding = -1;
       panel-anchors = ''
-        {"0":"MIDDLE"}
+        {"0":"MIDDLE"}\n
       '';
       panel-element-positions = ''
-        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":false,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}
+        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":false,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}\n
       '';
       panel-lengths = ''
-        {"0":40}
+        {"0":40}\n
       '';
       panel-sizes = ''
-        {"0":48}
+        {"0":48}\n
       '';
       primary-monitor = 0;
       status-icon-padding = -1;

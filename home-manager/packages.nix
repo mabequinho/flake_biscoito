@@ -58,7 +58,7 @@
     tomb
     pinentry-gnome
     nerdfonts
-    nordzy-icon-theme
+    colloid-icon-theme
     disfetch
 
   ];
