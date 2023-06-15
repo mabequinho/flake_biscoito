@@ -10,7 +10,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "default-apps";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -68,7 +68,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/input-sources" = {
-      sources = [ (mkTuple [ "xkb" "us" ]) ];
+      sources = [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "xkb" "us+alt-intl" ]) ];
       xkb-options = [ "terminate:ctrl_alt_bksp" ];
     };
 
@@ -169,6 +169,14 @@ with lib.hm.gvariant;
       timer-state-duration = 0.0;
     };
 
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = true;
+      night-light-schedule-automatic = false;
+      night-light-schedule-from = 3.9833333333333334;
+      night-light-schedule-to = 3.966666666666667;
+      night-light-temperature = mkUint32 1700;
+    };
+
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" ];
       email = [ "<Super>m" ];
@@ -209,7 +217,7 @@ with lib.hm.gvariant;
     "org/gnome/shell" = {
       app-picker-layout = "[{'cups.desktop': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'Utilities': <{'position': <2>}>}]";
       command-history = [ "gnome-terminal" ];
-      enabled-extensions = [ "pomodoro@arun.codito.in" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" ];
+      enabled-extensions = [ "pomodoro@arun.codito.in" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "espresso@coadmunkee.github.com" "dash-to-panel@jderose9.github.com" ];
       favorite-apps = [ "org.gnome.Terminal.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
     };
@@ -220,6 +228,38 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [ "org.gnome.Pomodoro.desktop:4" "thunderbird.desktop:4" ];
+    };
+
+    "org/gnome/shell/extensions/dash-to-panel" = {
+      animate-appicon-hover-animation-extent = "{'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}";
+      appicon-margin = 8;
+      appicon-padding = 4;
+      available-monitors = [ 0 ];
+      dot-position = "BOTTOM";
+      dot-style-focused = "DOTS";
+      dot-style-unfocused = "DOTS";
+      hide-overview-on-startup = true;
+      hotkeys-overlay-combo = "TEMPORARILY";
+      intellihide = true;
+      leftbox-padding = -1;
+      panel-anchors = ''
+        {"0":"MIDDLE"}
+      '';
+      panel-element-positions = ''
+        {"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":false,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}
+      '';
+      panel-lengths = ''
+        {"0":40}
+      '';
+      panel-sizes = ''
+        {"0":48}
+      '';
+      primary-monitor = 0;
+      status-icon-padding = -1;
+      trans-use-custom-opacity = true;
+      trans-use-dynamic-opacity = true;
+      tray-padding = -1;
+      window-preview-title-position = "TOP";
     };
 
     "org/gnome/shell/extensions/espresso" = {

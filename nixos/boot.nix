@@ -20,8 +20,7 @@
     kernelParams = [ "amd_iommu=on" "iommu=pt" "video=HDMI-A-1:2560x1080@75" "quiet" "udev.log_level=3" ];
     plymouth = {
     	enable = true;
-	themePackages = [ pkgs.catppuccin-plymouth ];
-#	theme = "catppuccin-latte";
+	theme = "text";
 	logo = pkgs.fetchurl {
 		url = "https://openclipart.org/image/400px/322498";
 		sha256 = "167ylcpnixy1ki1gqf1723ih6xhwnb9h9dbvkf3zdn6nq0cnjxsg";
