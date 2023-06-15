@@ -22,7 +22,6 @@
   systemd.services."autovt@tty1".enable = false;
   environment.systemPackages = (with pkgs.gnome; [
     gnome-terminal
-    gnome-boxes
     gnome-tweaks
     gnome-shell-extensions
     file-roller
