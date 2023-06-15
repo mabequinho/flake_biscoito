@@ -20,9 +20,6 @@
     #gutils
 
     #utils
-    distrobox
-    podman
-    podman-compose
     zbar
     wl-clipboard
     detox
