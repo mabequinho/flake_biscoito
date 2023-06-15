@@ -43,7 +43,7 @@
       VISUAL = "nvim";
       MOZ_ENABLE_WAYLAND = "1";
       #fix for Gogh terminal colorscheme https://github.com/Gogh-Co/Gogh
-      TERMINAL = gnome-terminal;
+      TERMINAL = "gnome-terminal";
     };
   };
 
