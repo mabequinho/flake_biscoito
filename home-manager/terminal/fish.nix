@@ -9,7 +9,8 @@
         ls = "ls -A --color=auto -cltp --si --group-directories-first";
         rebh =
           "home-manager switch -j 8 --flake $HOME/git/flake_biscoito#mabeco@biscoito";
-        rebr = "nixos-rebuild switch -j 8 --flake $HOME/git/flake_biscoito";
+        rebr =
+          "sudo nixos-rebuild switch -j 8 --flake $HOME/git/flake_biscoito";
         lports = "sudo netstat -tulpn | grep LISTEN";
         wp = "wgetpaste";
         slam = "tomb slam --force all";
