@@ -15,7 +15,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "keyboard";
+      last-panel = "display";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -223,6 +223,7 @@ with lib.hm.gvariant;
       default-folder-viewer = "list-view";
       migrated-gtk-settings = true;
       search-filter-time-type = "last_modified";
+      search-view = "list-view";
     };
 
     "org/gnome/nautilus/window-state" = { initial-size = mkTuple [ 890 550 ]; };
@@ -262,7 +263,7 @@ with lib.hm.gvariant;
       night-light-schedule-automatic = false;
       night-light-schedule-from = 3.983333;
       night-light-schedule-to = 3.966667;
-      night-light-temperature = mkUint32 2700;
+      night-light-temperature = mkUint32 3700;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {

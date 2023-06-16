@@ -39,7 +39,7 @@
         "editor.renderLineHighlight" = "none";
         "workbench.iconTheme" = "null";
         "workbench.tree.indent" = 12;
-        "workbench.colorTheme" = "Adwaita Light";
+        "workbench.colorTheme" = "Adwaita Dark";
         "nix.enableLanguageServer" = "true";
         "nix.serverPath" = "nil";
         "nix.serverSettings" = {
