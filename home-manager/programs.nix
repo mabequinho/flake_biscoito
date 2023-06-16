@@ -6,13 +6,16 @@
       userEmail = "lucio_a.khfzo@aleeas.com";
       userName = "Lucio";
     };
-    neovim = {
+    vscode = {
       enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimdiffAlias = true;
-      plugins = with pkgs.vimPlugins; [ 
-      	nvim-treesitter.withAllGrammars
+      enableExtensionUpdateCheck = false;
+      enableUpdateCheck = false;
+      package = pkgs.vscodium;
+      extensions = with pkgs.vscode-extensions; [
+        asvetliakov.vscode-neovim
+        ms-python.python
+        ms-toolsai.jupyter
+        jnoortheen.nix-ide
       ];
     };
   };

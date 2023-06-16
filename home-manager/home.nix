@@ -39,7 +39,8 @@
     username = "mabeco";
     homeDirectory = "/home/mabeco";
     sessionVariables = {
-      VISUAL = "nvim";
+      EDITOR = "vi";
+      VISUAL = "vi";
       MOZ_ENABLE_WAYLAND = "1";
       #fix for Gogh terminal colorscheme https://github.com/Gogh-Co/Gogh
       TERMINAL = "gnome-terminal";

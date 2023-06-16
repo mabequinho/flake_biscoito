@@ -37,9 +37,12 @@
     wget
     wgetpaste
     tree
+    nvi
 
     #langs
     octaveFull
+    nixfmt
+    nil
 
     #misc
     tomb
