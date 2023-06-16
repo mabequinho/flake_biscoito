@@ -333,8 +333,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/terminal/legacy/profiles:" = {
-      default = "0f05d245-3b64-4555-b9f2-4f5aa43cd4e7";
-      list = [ "b1dcc9dd-5262-4d8d-a863-c897e6d979b9" "5d738f04-f702-46a2-9575-03876f8ab496" "0f05d245-3b64-4555-b9f2-4f5aa43cd4e7" ];
+      default = "10b5cdcc-d126-4d69-85da-21023f400f3a";
+      list = [ "b1dcc9dd-5262-4d8d-a863-c897e6d979b9" "5d738f04-f702-46a2-9575-03876f8ab496" "0f05d245-3b64-4555-b9f2-4f5aa43cd4e7" "10b5cdcc-d126-4d69-85da-21023f400f3a" ];
     };
 
     "org/gnome/terminal/legacy/profiles:/:0f05d245-3b64-4555-b9f2-4f5aa43cd4e7" = {
@@ -353,6 +353,22 @@ with lib.hm.gvariant;
       visible-name = "Tokyo Night Light";
     };
 
+    "org/gnome/terminal/legacy/profiles:/:10b5cdcc-d126-4d69-85da-21023f400f3a" = {
+      allow-bold = true;
+      background-color = "#F9F9F9F9F9F9";
+      bold-color = "#020202020202";
+      bold-color-same-as-fg = true;
+      cursor-background-color = "#020202020202";
+      cursor-colors-set = true;
+      cursor-foreground-color = "#F9F9F9F9F9F9";
+      foreground-color = "#020202020202";
+      palette = [ "#020202020202" "#CDCD32323232" "#0000BCBC0000" "#A5A5A9A90000" "#07075252A8A8" "#BCBC0505BCBC" "#05059898BCBC" "#343434343434" "#5E5E5E5E5E5E" "#CDCD33333333" "#1B1BCECE1A1A" "#ADADBBBB5B5B" "#07075252A8A8" "#C4C45151CECE" "#5252A8A8C7C7" "#A6A6A3A3A6A6" ];
+      use-theme-background = false;
+      use-theme-colors = false;
+      use-theme-transparency = false;
+      visible-name = "Vs Code Light+";
+    };
+
     "org/gnome/terminal/legacy/profiles:/:5d738f04-f702-46a2-9575-03876f8ab496" = {
       visible-name = "Default";
     };
@@ -364,7 +380,7 @@ with lib.hm.gvariant;
     "org/gtk/gtk4/settings/file-chooser" = {
       date-format = "regular";
       location-mode = "path-bar";
-      show-hidden = false;
+      show-hidden = true;
       show-size-column = true;
       show-type-column = true;
       sidebar-width = 140;
