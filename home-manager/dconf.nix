@@ -379,6 +379,8 @@ with lib.hm.gvariant;
       toggle-message-tray = [ ];
     };
 
+    "org/gnome/terminal/legacy" = { theme-variant = "dark"; };
+
     "org/gnome/terminal/legacy/profiles:" = {
       default = "45dcbd72-c045-49a5-b4c7-7238369607c9";
       list = [
