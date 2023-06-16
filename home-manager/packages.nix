@@ -36,6 +36,7 @@
     playerctl
     wget
     wgetpaste
+    tree
 
     #langs
     octaveFull

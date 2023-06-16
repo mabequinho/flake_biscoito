@@ -20,6 +20,7 @@
         gp = "git push";
         py = "python3";
         yt = "yt-dlp";
+	tree = "tree --dirsfirst";
       };
       plugins = [{
         name = "hydro";
