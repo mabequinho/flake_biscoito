@@ -33,6 +33,7 @@
         "editor.fontFamily" = "Mononoki Nerd Font Mono";
         "editor.lineHeight" = 24;
         "workbench.colorTheme" = "GitHub Dark Colorblind (Beta)";
+        "window.menuBarVisibility" = "toggle";
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nil";
         "nix.serverSettings" = {
