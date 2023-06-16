@@ -51,5 +51,8 @@
     colloid-icon-theme
     disfetch
 
+    #games
+    minetest
+
   ];
 }
