@@ -10,7 +10,7 @@
     firefox-bin
     aria
     yt-dlp
-    mangal
+    hakuneko 
 
     #viewer
     imv

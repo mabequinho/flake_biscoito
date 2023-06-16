@@ -34,7 +34,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/502da463-a171-48bf-a485-b27e6ef744e1" = {
-      apps = [ "firefox.desktop" "thunderbird.desktop" "info.mumble.Mumble.desktop" ];
+      apps = [ "firefox.desktop" "thunderbird.desktop" "info.mumble.Mumble.desktop" "hakuneko-desktop.desktop" ];
       name = "Internet";
     };
 
@@ -219,12 +219,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-16T00:22:28+0000";
+      timer-date = "2023-06-16T12:14:22+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-16T00:22:28+0000";
+      timer-state-date = "2023-06-16T12:14:22+0000";
       timer-state-duration = 0.0;
     };
 
