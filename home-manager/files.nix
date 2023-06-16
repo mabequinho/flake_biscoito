@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+
   home.file = {
 
     ".detoxrc".source = ./files/detoxrc;
@@ -36,5 +37,14 @@
     "D /tmp/mabeco-scsh 0700 mabeco wheel 1w"
     "L+ %h/Pictures/Screenshots - - - - /tmp/mabeco-scsh"
   ];
+
+  xdg = {
+    mimeApps = {
+      enable = true;
+      defaultApplications = {
+        "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
+      };
+    };
+  };
 
 }
