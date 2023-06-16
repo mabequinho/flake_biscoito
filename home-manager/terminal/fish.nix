@@ -23,6 +23,7 @@
         yt = "yt-dlp";
 	tree = "tree --dirsfirst";
 	git-hell = "git add -A ; git commit -a ; git push";
+	gogh = "bash -c  \"$(wget -qO- https://git.io/vQgMr)\"";
       };
       plugins = [{
         name = "hydro";
