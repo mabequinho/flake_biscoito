@@ -11,6 +11,7 @@
     ./terminal/fish.nix
     ./packages.nix
     ./dconf.nix
+    ./systemd.nix
   ];
 
   nixpkgs = {

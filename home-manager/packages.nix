@@ -19,6 +19,7 @@
 
     #gutils
     pika-backup
+    ulauncher
 
     #utils
     zbar
