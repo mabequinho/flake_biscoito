@@ -11,6 +11,7 @@
           "home-manager switch -j 8 --flake $HOME/git/flake_biscoito#mabeco@biscoito";
         rebr =
           "sudo nixos-rebuild switch -j 8 --flake $HOME/git/flake_biscoito";
+	nix-hell = "home-manager switch -j 8 --flake $HOME/git/flake_biscoito#mabeco@biscoito ; sudo nixos-rebuild switch -j 8 --flake $HOME/git/flake_biscoito";
         lports = "sudo netstat -tulpn | grep LISTEN";
         wp = "wgetpaste";
         slam = "tomb slam --force all";
@@ -21,6 +22,7 @@
         py = "python3";
         yt = "yt-dlp";
 	tree = "tree --dirsfirst";
+	git-hell = "git add -A ; git commit -a ; git push";
       };
       plugins = [{
         name = "hydro";
