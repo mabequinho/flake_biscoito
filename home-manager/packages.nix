@@ -37,7 +37,6 @@
     wget
     wgetpaste
     tree
-    nvi
 
     #langs
     octaveFull
