@@ -187,7 +187,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/nautilus/preferences" = {
-      default-folder-viewer = "icon-view";
+      default-folder-viewer = "list-view";
       migrated-gtk-settings = true;
       search-filter-time-type = "last_modified";
     };
@@ -369,7 +369,7 @@ with lib.hm.gvariant;
       show-type-column = true;
       sidebar-width = 140;
       sort-column = "name";
-      sort-directories-first = false;
+      sort-directories-first = true;
       sort-order = "ascending";
       type-format = "category";
       view-type = "list";
