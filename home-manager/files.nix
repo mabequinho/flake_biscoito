@@ -15,8 +15,8 @@
     };
 
     ".local/share/applications/fish.desktop".source = ./files/hide.desktop;
-
     ".local/share/applications/cups.desktop".source = ./files/hide.desktop;
+    ".local/share/applications/nvim.desktop".source = ./files/hide.desktop;
 
     #".local/share/VeroptBR3215AOC.oxt".source = pkgs.fetchurl {
     #  url =

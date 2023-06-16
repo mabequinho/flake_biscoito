@@ -15,7 +15,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "display";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -125,6 +125,10 @@ with lib.hm.gvariant;
       ];
       show-banners = true;
       show-in-lock-screen = false;
+    };
+
+    "org/gnome/desktop/notifications/application/codium" = {
+      application-id = "codium.desktop";
     };
 
     "org/gnome/desktop/notifications/application/firefox" = {
@@ -265,6 +269,7 @@ with lib.hm.gvariant;
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
       ];
       email = [ "<Super>m" ];
       home = [ "<Super>f" ];
@@ -298,6 +303,13 @@ with lib.hm.gvariant;
         binding = "<Alt><Super>equal";
         command = "ddcutil setvcp 10 + 20";
         name = "backlight up";
+      };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" =
+      {
+        binding = "<Super>c";
+        command = "codium";
+        name = "code";
       };
 
     "org/gnome/settings-daemon/plugins/power" = {
