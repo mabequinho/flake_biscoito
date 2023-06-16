@@ -27,20 +27,13 @@
         ms-python.python
         ms-toolsai.jupyter
         jnoortheen.nix-ide
-        piousdeer.adwaita-theme
+        github.github-vscode-theme
       ];
       userSettings = {
-        "window.titleBarStyle" = "custom";
-        "window.commandCenter" = "true";
-        "window.autoDetectColorScheme" = "true";
-        "workbench.preferredDarkColorTheme" = "Adwaita Dark";
-        "workbench.preferredLightColorTheme" = "Adwaita Light";
-        "workbench.productIconTheme" = "adwaita";
-        "editor.renderLineHighlight" = "none";
-        "workbench.iconTheme" = "null";
-        "workbench.tree.indent" = 12;
-        "workbench.colorTheme" = "Adwaita Dark";
-        "nix.enableLanguageServer" = "true";
+        "editor.fontFamily" = "Mononoki Nerd Font Mono";
+        "editor.lineHeight" = 24;
+        "workbench.colorTheme" = "GitHub Dark Colorblind (Beta)";
+        "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nil";
         "nix.serverSettings" = {
           nil = {

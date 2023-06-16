@@ -113,7 +113,7 @@ with lib.hm.gvariant;
       font-hinting = "slight";
       font-name = "Liberation Sans 11";
       icon-theme = "Colloid-light";
-      monospace-font-name = "SauceCodePro Nerd Font Medium 10";
+      monospace-font-name = "Mononoki Nerd Font Mono 10";
       toolkit-accessibility = false;
     };
 
