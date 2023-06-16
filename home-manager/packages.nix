@@ -37,6 +37,7 @@
     wget
     wgetpaste
     tree
+    tcpdump
 
     #langs
     octaveFull
