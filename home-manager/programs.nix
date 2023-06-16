@@ -13,6 +13,7 @@
       vimAlias = true;
       vimdiffAlias = true;
     };
+    taskwarrior = { enable = true; };
     vscode = {
       enable = true;
       enableExtensionUpdateCheck = false;
