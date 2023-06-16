@@ -35,7 +35,7 @@
         "editor.renderLineHighlight" = "none";
         "workbench.iconTheme" = "null";
         "workbench.tree.indent" = 12;
-	"workbench.colorTheme": "Adwaita Light"
+	"workbench.colorTheme" = "Adwaita Light";
       };
     };
   };

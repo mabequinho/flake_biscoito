@@ -42,6 +42,7 @@
     octaveFull
     nixfmt
     nil
+    (python311.withPackages(ps: with ps; [ pandas ]))
 
     #misc
     tomb
