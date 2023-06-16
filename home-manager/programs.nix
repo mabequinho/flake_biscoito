@@ -13,7 +13,10 @@
       vimAlias = true;
       vimdiffAlias = true;
     };
-    taskwarrior = { enable = true; };
+    taskwarrior = { 
+    	enable = true; 
+	colorTheme = "light-256";
+	};
     vscode = {
       enable = true;
       enableExtensionUpdateCheck = false;
