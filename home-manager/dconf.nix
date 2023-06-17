@@ -125,7 +125,7 @@ with lib.hm.gvariant;
         "org-gnome-pomodoro"
         "org-gnome-world-pikabackup"
       ];
-      show-banners = false;
+      show-banners = true;
       show-in-lock-screen = false;
     };
 
@@ -139,6 +139,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/gnome-power-panel" = {
       application-id = "gnome-power-panel.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-nautilus" = {
+      application-id = "org.gnome.Nautilus.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-pomodoro" = {
@@ -250,13 +254,13 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-16T18:38:03+0000";
+      timer-date = "2023-06-17T11:10:36+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
-      timer-state = "pomodoro";
-      timer-state-date = "2023-06-16T18:38:03+0000";
-      timer-state-duration = 2400.0;
+      timer-state = "null";
+      timer-state-date = "2023-06-17T11:10:36+0000";
+      timer-state-duration = 0.0;
     };
 
     "org/gnome/settings-daemon/plugins/color" = {
@@ -335,11 +339,13 @@ with lib.hm.gvariant;
       app-picker-layout =
         "[{'Utilities': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <2>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <3>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <4>}>}]";
       command-history = [ "gnome-terminal" ];
+      disabled-extensions = [ "space-bar@luchrioh" ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "espresso@coadmunkee.github.com"
         "hidetopbar@mathieu.bidon.ca"
         "pomodoro@arun.codito.in"
+        "Hide_Activities@shay.shayel.org"
       ];
       favorite-apps = [ "org.gnome.Terminal.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
@@ -363,6 +369,10 @@ with lib.hm.gvariant;
       enable-intellihide = false;
       mouse-sensitive = true;
       pressure-threshold = 200;
+    };
+
+    "org/gnome/shell/extensions/space-bar/behavior" = {
+      smart-workspace-names = false;
     };
 
     "org/gnome/shell/keybindings" = {

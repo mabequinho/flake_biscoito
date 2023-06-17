@@ -4,7 +4,10 @@
     excludePackages = [ pkgs.xterm ];
     desktopManager.gnome.enable = true;
     displayManager = {
-      gdm.enable = true;
+      gdm = {
+        enable = true;
+        wayland = true;
+      };
       autoLogin = {
         enable = true;
         user = "mabeco";
@@ -28,6 +31,10 @@
     seahorse
     nautilus
     pomodoro
-  ]) ++ (with pkgs; [ dconf2nix ])
-    ++ (with pkgs.gnomeExtensions; [ hide-top-bar espresso ]);
+  ]) ++ (with pkgs; [ dconf2nix ]) ++ (with pkgs.gnomeExtensions; [
+    hide-top-bar
+    hide-activities-button
+    pop-shell
+    espresso
+  ]);
 }
