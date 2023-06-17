@@ -34,7 +34,6 @@
   ]) ++ (with pkgs; [ dconf2nix ]) ++ (with pkgs.gnomeExtensions; [
     hide-top-bar
     hide-activities-button
-    pop-shell
     espresso
   ]);
 }
