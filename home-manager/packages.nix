@@ -10,7 +10,6 @@
     aria
     yt-dlp
     hakuneko
-    stremio
 
     #viewer
     imv

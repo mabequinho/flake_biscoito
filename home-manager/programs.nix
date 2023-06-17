@@ -49,12 +49,12 @@
       package = pkgs.firefox-bin;
       profiles = {
         "vzd30f0u.default" = {
-          userChrome = ''
-
+         userChrome = ''
                       	  	  #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
-            				            width: 0px !important;
+           				            width: 0px !important;
             				            padding: 0px !important;
             			            }
+ 
                                     :root {
                                         /* delay before expanding tabs, set to '0' for no delay */
                                         --delay: 0.5s;
