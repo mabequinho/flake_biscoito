@@ -20,7 +20,6 @@
     #gutils
     pika-backup
     ulauncher
-    gnome.gnome-boxes
     bottles
 
     #utils
