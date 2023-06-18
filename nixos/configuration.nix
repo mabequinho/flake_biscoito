@@ -16,7 +16,7 @@
     ./boot.nix
     ./services.nix
     ./gnome.nix
-    ./networking.nix 
+    ./networking.nix
     ./virt.nix
   ];
 
