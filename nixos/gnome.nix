@@ -27,6 +27,7 @@
     gnome-terminal
     gnome-tweaks
     gnome-shell-extensions
+    gnome-boxes
     file-roller
     seahorse
     nautilus

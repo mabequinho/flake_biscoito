@@ -82,7 +82,7 @@
     mabeco = {
       initialPassword = "mabequinho";
       isNormalUser = true;
-      extraGroups = [ "wheel" "networkmanager" "i2c" ];
+      extraGroups = [ "wheel" "networkmanager" "i2c" "libvirtd" ];
     };
   };
 
