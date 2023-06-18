@@ -19,7 +19,8 @@
     #gutils
     pika-backup
     ulauncher
-    gnome-boxes
+    gnome.gnome-boxes
+    bottles
 
     #utils
     zbar
