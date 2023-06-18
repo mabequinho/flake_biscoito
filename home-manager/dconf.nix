@@ -23,7 +23,7 @@ with lib.hm.gvariant;
       show-headerbar = true;
       show-menu-button = false;
       style-preference = mkUint32 0;
-      theme-light = "Dracula Light";
+      theme-light = "Pencil Light";
       window-height = mkUint32 559;
       window-show-borders = true;
       window-width = mkUint32 716;
