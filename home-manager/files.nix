@@ -10,15 +10,15 @@
 
     ".face" = {
       source = pkgs.fetchurl {
-        url = "https://openclipart.org/image/400px/322498";
-        sha256 = "167ylcpnixy1ki1gqf1723ih6xhwnb9h9dbvkf3zdn6nq0cnjxsg";
+        url = "https://64.media.tumblr.com/586eabe1b301d5699908b46e0c52f87d/d96f7112505bc469-b3/s1280x1920/dd70b815538e199b493bf83457134083526b34f8.jpg";
+        sha256 = "1ghz5cg8ydkgw1rai6y24v29mvf84vxza30ffkyakl56n2krx4qa";
       };
     };
 
     ".wall" = {
       source = pkgs.fetchurl {
-        url = "https://w.wallhaven.cc/full/5d/wallhaven-5dvez1.png";
-        sha256 = "01g1ynw8xhjjz024bv75x5q5spq91rl7lqcbnbc5zxpqm53w7vbx";
+        url = "https://w.wallhaven.cc/full/1j/wallhaven-1jlwv3.jpg";
+        sha256 = "1qls8yfriiwiaxcsma2jf04a12in1sz382wklpw9val7k32wkfgn";
       };
     };
 

@@ -29,6 +29,15 @@ with lib.hm.gvariant;
       window-width = mkUint32 716;
     };
 
+    "com/usebottles/bottles" = {
+      epic-games = false;
+      startup-view = "page_list";
+      steam-programs = false;
+      ubisoft-connect = false;
+      window-height = 640;
+      window-width = 880;
+    };
+
     "org/freedesktop/ibus/engine/typing-booster" = {
       autocapitalize = true;
       autocommitcharacters = ".,;:?!/[]{}=+-_)(";
@@ -40,7 +49,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "display";
+      last-panel = "background";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -116,9 +125,9 @@ with lib.hm.gvariant;
       color-shading-type = "solid";
       picture-options = "zoom";
       picture-uri =
-        "file:///home/mabeco/.local/share/backgrounds/2023-06-17-23-01-46-.wall";
+        "file:///home/mabeco/.wall";
       picture-uri-dark =
-        "file:///home/mabeco/.local/share/backgrounds/2023-06-17-23-01-46-.wall";
+        "file:///home/mabeco/.wall";
       primary-color = "#000000000000";
       secondary-color = "#000000000000";
     };
@@ -209,7 +218,7 @@ with lib.hm.gvariant;
       lock-delay = mkUint32 300;
       picture-options = "zoom";
       picture-uri =
-        "file:///home/mabeco/.local/share/backgrounds/2023-06-17-23-01-46-.wall";
+        "file:///home/mabeco/.wall";
       primary-color = "#000000000000";
       secondary-color = "#000000000000";
     };
