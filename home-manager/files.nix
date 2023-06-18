@@ -15,6 +15,13 @@
       };
     };
 
+    ".wall" = {
+      source = pkgs.fetchurl {
+        url = "https://w.wallhaven.cc/full/5d/wallhaven-5dvez1.png";
+        sha256 = "01g1ynw8xhjjz024bv75x5q5spq91rl7lqcbnbc5zxpqm53w7vbx";
+      };
+    };
+
     ".local/share/applications/fish.desktop".source = ./files/hide.desktop;
     ".local/share/applications/cups.desktop".source = ./files/hide.desktop;
     ".local/share/applications/nvim.desktop".source = ./files/hide.desktop;

@@ -1,6 +1,5 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
-  keyd
     #menss
     profanity
     tiny
