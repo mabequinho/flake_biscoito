@@ -28,7 +28,15 @@
         main = {
           capslock = "overload(meta, esc)";
           esc = "`";
-	  meta = "M-space";
+          meta = "M-space";
+          up = "/";
+          down = "compose";
+          left = "rightalt";
+          right = "rightcontrol";
+          "/" = "up";
+          compose = "down";
+          rightalt = "left";
+          rightcontrol = "right";
         };
       };
     };
