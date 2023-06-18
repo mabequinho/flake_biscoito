@@ -16,11 +16,12 @@ with lib.hm.gvariant;
 
     "com/raggesilver/BlackBox" = {
       command-as-login-shell = false;
+      fill-tabs = true;
       font = "Source Code Pro 10";
       headerbar-draw-line-single-tab = false;
       remember-window-size = true;
-      show-headerbar = false;
-      show-menu-button = true;
+      show-headerbar = true;
+      show-menu-button = false;
       style-preference = mkUint32 0;
       theme-light = "Dracula Light";
       window-show-borders = true;
