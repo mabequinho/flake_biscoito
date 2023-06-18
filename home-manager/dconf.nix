@@ -24,7 +24,9 @@ with lib.hm.gvariant;
       show-menu-button = false;
       style-preference = mkUint32 0;
       theme-light = "Dracula Light";
+      window-height = mkUint32 559;
       window-show-borders = true;
+      window-width = mkUint32 716;
     };
 
     "org/freedesktop/ibus/engine/typing-booster" = {
@@ -277,19 +279,20 @@ with lib.hm.gvariant;
     "org/gnome/pomodoro/plugins/gnome" = { hide-system-notifications = true; };
 
     "org/gnome/pomodoro/preferences" = {
-      enabled-plugins = [ "notifications" "actions" "dark-theme" ];
+      enabled-plugins = [ "notifications" "actions" ];
       long-break-duration = 1200.0;
       pomodoro-duration = 2400.0;
       short-break-duration = 600.0;
+      show-screen-notifications = true;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-18T18:36:55+0000";
+      timer-date = "2023-06-18T19:42:27+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-18T18:36:55+0000";
+      timer-state-date = "2023-06-18T19:42:27+0000";
       timer-state-duration = 0.0;
     };
 
@@ -376,6 +379,8 @@ with lib.hm.gvariant;
         "hidetopbar@mathieu.bidon.ca"
         "pomodoro@arun.codito.in"
         "Hide_Activities@shay.shayel.org"
+        "gnomebedtime@ionutbortis.gmail.com"
+        "unredirect@vaina.lt"
       ];
       favorite-apps = [ "com.raggesilver.BlackBox.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
@@ -386,6 +391,11 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list =
         [ "org.gnome.Pomodoro.desktop:4" "thunderbird.desktop:4" ];
+    };
+
+    "org/gnome/shell/extensions/bedtime-mode" = {
+      bedtime-mode-active = true;
+      color-tone-preset = "grayscale";
     };
 
     "org/gnome/shell/extensions/espresso" = {
@@ -429,7 +439,7 @@ with lib.hm.gvariant;
     "org/gtk/gtk4/settings/file-chooser" = {
       date-format = "regular";
       location-mode = "path-bar";
-      show-hidden = true;
+      show-hidden = false;
       show-size-column = true;
       show-type-column = true;
       sidebar-width = 140;

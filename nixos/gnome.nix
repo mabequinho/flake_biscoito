@@ -33,8 +33,9 @@
   ]) ++ (with pkgs; [ dconf2nix ]) ++ (with pkgs.gnomeExtensions; [
     hide-top-bar
     hide-activities-button
+    gnome-bedtime
+    disable-unredirect-fullscreen-windows
     espresso
-    pop-shell
   ]) ++ (with pkgs; [ hunspell virt-manager blackbox-terminal ])
     ++ (with pkgs.hunspellDicts; [ en-us-large pt-br ]);
 }
