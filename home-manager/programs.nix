@@ -15,7 +15,7 @@
     };
     taskwarrior = {
       enable = true;
-      colorTheme = "light-256";
+      colorTheme = "dark-gray-256";
     };
     vscode = {
       enable = true;

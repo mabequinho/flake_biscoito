@@ -47,6 +47,19 @@
     };
   };
 
+  homeage = {
+    identityPaths = [ "~/.ssh/id_ed25519" ];
+
+    installationType = "systemd";
+
+    file.mabeco_keys = {
+      # Path to encrypted file tracked by the git repository
+      source = ./files/mabeco.age;
+      symlinks = [ "${config.xdg.configHome}/mabeco_keys/mabeco_keys" ];
+      copies = [ "${config.xdg.configHome}/no-symlink-support/mabeco_keys" ];
+    };
+  };
+
   # Enable home-manager
   programs.home-manager.enable = true;
   # Nicely reload system units when changing configs

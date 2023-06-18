@@ -46,6 +46,7 @@
     (python311.withPackages (ps: with ps; [ pandas ]))
 
     #misc
+    rage
     tomb
     pinentry-gnome
     nerdfonts
