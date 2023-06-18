@@ -14,6 +14,11 @@ with lib.hm.gvariant;
       width = 600;
     };
 
+    "io/bassi/Amberol" = {
+      window-height = 662;
+      window-width = 600;
+    };
+
     "org/freedesktop/ibus/engine/typing-booster" = {
       autocapitalize = true;
       autocommitcharacters = ".,;:?!/[]{}=+-_)(";
@@ -34,7 +39,6 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders" = {
       folder-children = [
         "Utilities"
-        "YaST"
         "502da463-a171-48bf-a485-b27e6ef744e1"
         "bf60595e-f9f5-4bee-aa76-18c109f1caaa"
         "421bec7f-e535-4e61-bd60-3f1f22d6ab51"
@@ -44,7 +48,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/app-folders/folders/421bec7f-e535-4e61-bd60-3f1f22d6ab51" =
       {
-        apps = [ "vlc.desktop" "mupdf.desktop" "io.bassi.Amberol.desktop" ];
+        apps = [ "vlc.desktop" "mupdf.desktop" ];
         name = "Viewer";
         translate = false;
       };
@@ -74,13 +78,7 @@ with lib.hm.gvariant;
       translate = true;
     };
 
-    "org/gnome/desktop/app-folders/folders/YaST" = {
-      categories = [ "X-SuSE-YaST" ];
-      name = "suse-yast.directory";
-      translate = true;
-    };
-
-    "org/gnome/desktop/app-folders/folders/aac2832b-c83a-490c-97f7-9071a4548ce3" =
+        "org/gnome/desktop/app-folders/folders/aac2832b-c83a-490c-97f7-9071a4548ce3" =
       {
         apps = [
           "org.gnome.Nautilus.desktop"
@@ -97,8 +95,8 @@ with lib.hm.gvariant;
         apps = [
           "codium.desktop"
           "org.octave.Octave.desktop"
-          "org.gnome.Boxes.desktop"
           "com.usebottles.bottles.desktop"
+          "virt-manager.desktop"
         ];
         name = "Dev";
         translate = false;

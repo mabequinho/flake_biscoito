@@ -15,7 +15,6 @@
     imv
     mupdf
     vlc
-    amberol
 
     #gutils
     pika-backup

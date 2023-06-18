@@ -27,7 +27,6 @@
     gnome-terminal
     gnome-tweaks
     gnome-shell-extensions
-    gnome-boxes
     file-roller
     seahorse
     nautilus
@@ -37,6 +36,6 @@
     hide-activities-button
     espresso
     pop-shell
-  ]) ++ (with pkgs; [ hunspell ])
+  ]) ++ (with pkgs; [ hunspell virt-manager ])
     ++ (with pkgs.hunspellDicts; [ en-us-large pt-br ]);
 }
