@@ -39,6 +39,11 @@ with lib.hm.gvariant;
       inputmethod = "NoIME";
     };
 
+    "org/gnome/control-center" = {
+      last-panel = "display";
+      window-state = mkTuple [ 980 640 ];
+    };
+
     "org/gnome/desktop/a11y/magnifier" = { mag-factor = 5.0; };
 
     "org/gnome/desktop/app-folders" = {
@@ -301,7 +306,7 @@ with lib.hm.gvariant;
       night-light-schedule-automatic = false;
       night-light-schedule-from = 3.983333;
       night-light-schedule-to = 3.966667;
-      night-light-temperature = mkUint32 3700;
+      night-light-temperature = mkUint32 4700;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
