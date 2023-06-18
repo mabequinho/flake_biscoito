@@ -35,6 +35,7 @@
     hide-top-bar
     hide-activities-button
     espresso
+    pop-shell
   ]) ++ (with pkgs; [ hunspell ])
     ++ (with pkgs.hunspellDicts; [ en-us-large pt-br ]);
 }
