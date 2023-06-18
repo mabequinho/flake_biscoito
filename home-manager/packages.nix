@@ -52,7 +52,6 @@
     pinentry-gnome
     nerdfonts
     colloid-icon-theme
-    disfetch
 
   ];
 }
