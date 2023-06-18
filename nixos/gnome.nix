@@ -24,7 +24,6 @@
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
   environment.systemPackages = (with pkgs.gnome; [
-    gnome-terminal
     gnome-tweaks
     gnome-shell-extensions
     file-roller
@@ -36,6 +35,6 @@
     hide-activities-button
     espresso
     pop-shell
-  ]) ++ (with pkgs; [ hunspell virt-manager ])
+  ]) ++ (with pkgs; [ hunspell virt-manager blackbox-terminal ])
     ++ (with pkgs.hunspellDicts; [ en-us-large pt-br ]);
 }

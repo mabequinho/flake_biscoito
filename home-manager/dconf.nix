@@ -14,9 +14,16 @@ with lib.hm.gvariant;
       width = 600;
     };
 
-    "io/bassi/Amberol" = {
-      window-height = 662;
-      window-width = 600;
+    "com/raggesilver/BlackBox" = {
+      command-as-login-shell = false;
+      font = "Source Code Pro 10";
+      headerbar-draw-line-single-tab = false;
+      remember-window-size = true;
+      show-headerbar = false;
+      show-menu-button = true;
+      style-preference = mkUint32 0;
+      theme-light = "Dracula Light";
+      window-show-borders = true;
     };
 
     "org/freedesktop/ibus/engine/typing-booster" = {
@@ -27,11 +34,6 @@ with lib.hm.gvariant;
       dictionaryinstalltimestamp = "2023-06-17 21:10:34";
       disableinterminals = true;
       inputmethod = "NoIME";
-    };
-
-    "org/gnome/control-center" = {
-      last-panel = "multitasking";
-      window-state = mkTuple [ 1268 1032 ];
     };
 
     "org/gnome/desktop/a11y/magnifier" = { mag-factor = 5.0; };
@@ -78,7 +80,7 @@ with lib.hm.gvariant;
       translate = true;
     };
 
-        "org/gnome/desktop/app-folders/folders/aac2832b-c83a-490c-97f7-9071a4548ce3" =
+    "org/gnome/desktop/app-folders/folders/aac2832b-c83a-490c-97f7-9071a4548ce3" =
       {
         apps = [
           "org.gnome.Nautilus.desktop"
@@ -123,7 +125,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       clock-show-weekday = true;
-      color-scheme = "prefer-dark";
+      color-scheme = "default";
       document-font-name = "Liberation Sans 11";
       enable-animations = true;
       enable-hot-corners = true;
@@ -131,7 +133,7 @@ with lib.hm.gvariant;
       font-hinting = "slight";
       font-name = "Liberation Sans 11";
       icon-theme = "Colloid-light";
-      monospace-font-name = "Mononoki Nerd Font Mono 10";
+      monospace-font-name = "Source Code Pro 10";
       toolkit-accessibility = false;
     };
 
@@ -281,17 +283,17 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-18T10:01:18+0000";
+      timer-date = "2023-06-18T18:36:55+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-18T10:01:18+0000";
+      timer-state-date = "2023-06-18T18:36:55+0000";
       timer-state-duration = 0.0;
     };
 
     "org/gnome/settings-daemon/plugins/color" = {
-      night-light-enabled = true;
+      night-light-enabled = false;
       night-light-schedule-automatic = false;
       night-light-schedule-from = 3.983333;
       night-light-schedule-to = 3.966667;
@@ -333,7 +335,7 @@ with lib.hm.gvariant;
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" =
       {
         binding = "<Super>Return";
-        command = "gnome-terminal";
+        command = "blackbox";
         name = "terminal";
       };
 
@@ -374,7 +376,7 @@ with lib.hm.gvariant;
         "pomodoro@arun.codito.in"
         "Hide_Activities@shay.shayel.org"
       ];
-      favorite-apps = [ "org.gnome.Terminal.desktop" ];
+      favorite-apps = [ "com.raggesilver.BlackBox.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
     };
 
@@ -421,125 +423,6 @@ with lib.hm.gvariant;
       toggle-message-tray = [ ];
     };
 
-    "org/gnome/terminal/legacy" = { theme-variant = "dark"; };
-
-    "org/gnome/terminal/legacy/profiles:" = {
-      default = "45dcbd72-c045-49a5-b4c7-7238369607c9";
-      list = [
-        "5d738f04-f702-46a2-9575-03876f8ab496"
-        "0f05d245-3b64-4555-b9f2-4f5aa43cd4e7"
-        "10b5cdcc-d126-4d69-85da-21023f400f3a"
-        "45dcbd72-c045-49a5-b4c7-7238369607c9"
-      ];
-    };
-
-    "org/gnome/terminal/legacy/profiles:/:0f05d245-3b64-4555-b9f2-4f5aa43cd4e7" =
-      {
-        allow-bold = true;
-        background-color = "#D5D5D6D6DBDB";
-        bold-color = "#56565A5A6E6E";
-        bold-color-same-as-fg = true;
-        cursor-background-color = "#56565A5A6E6E";
-        cursor-colors-set = true;
-        cursor-foreground-color = "#D5D5D6D6DBDB";
-        foreground-color = "#56565A5A6E6E";
-        palette = [
-          "#0F0F0F0F1414"
-          "#8C8C43435151"
-          "#48485E5E3030"
-          "#8F8F5E5E1515"
-          "#343454548A8A"
-          "#5A5A4A4A7878"
-          "#0F0F4B4B6E6E"
-          "#34343B3B5858"
-          "#96969999A3A3"
-          "#8C8C43435151"
-          "#48485E5E3030"
-          "#8F8F5E5E1515"
-          "#343454548A8A"
-          "#5A5A4A4A7878"
-          "#0F0F4B4B6E6E"
-          "#34343B3B5858"
-        ];
-        use-theme-background = false;
-        use-theme-colors = false;
-        use-theme-transparency = false;
-        visible-name = "Tokyo Night Light";
-      };
-
-    "org/gnome/terminal/legacy/profiles:/:10b5cdcc-d126-4d69-85da-21023f400f3a" =
-      {
-        allow-bold = true;
-        background-color = "#F9F9F9F9F9F9";
-        bold-color = "#020202020202";
-        bold-color-same-as-fg = true;
-        cursor-background-color = "#020202020202";
-        cursor-colors-set = true;
-        cursor-foreground-color = "#F9F9F9F9F9F9";
-        foreground-color = "#020202020202";
-        palette = [
-          "#020202020202"
-          "#CDCD32323232"
-          "#0000BCBC0000"
-          "#A5A5A9A90000"
-          "#07075252A8A8"
-          "#BCBC0505BCBC"
-          "#05059898BCBC"
-          "#343434343434"
-          "#5E5E5E5E5E5E"
-          "#CDCD33333333"
-          "#1B1BCECE1A1A"
-          "#ADADBBBB5B5B"
-          "#07075252A8A8"
-          "#C4C45151CECE"
-          "#5252A8A8C7C7"
-          "#A6A6A3A3A6A6"
-        ];
-        use-theme-background = false;
-        use-theme-colors = false;
-        use-theme-transparency = false;
-        visible-name = "Vs Code Light+";
-      };
-
-    "org/gnome/terminal/legacy/profiles:/:45dcbd72-c045-49a5-b4c7-7238369607c9" =
-      {
-        allow-bold = true;
-        background-color = "#121212121212";
-        bold-color = "#DEDEDEDEDEDE";
-        bold-color-same-as-fg = true;
-        cursor-background-color = "#DEDEDEDEDEDE";
-        cursor-colors-set = true;
-        cursor-foreground-color = "#121212121212";
-        foreground-color = "#DEDEDEDEDEDE";
-        palette = [
-          "#929292929292"
-          "#E2E273737373"
-          "#9494B9B97979"
-          "#FFFFBABA7B7B"
-          "#9797BEBEDCDC"
-          "#E1E1C0C0FAFA"
-          "#000098988E8E"
-          "#DEDEDEDEDEDE"
-          "#BDBDBDBDBDBD"
-          "#FFFFA1A1A1A1"
-          "#BDBDDEDEABAB"
-          "#FFFFDCDCA0A0"
-          "#B1B1D8D8F6F6"
-          "#FBFBDADAFFFF"
-          "#1A1AB2B2A8A8"
-          "#FFFFFFFFFFFF"
-        ];
-        use-theme-background = false;
-        use-theme-colors = false;
-        use-theme-transparency = false;
-        visible-name = "Jellybeans";
-      };
-
-    "org/gnome/terminal/legacy/profiles:/:5d738f04-f702-46a2-9575-03876f8ab496" =
-      {
-        visible-name = "Default";
-      };
-
     "org/gnome/tweaks" = { show-extensions-notice = false; };
 
     "org/gtk/gtk4/settings/file-chooser" = {
@@ -570,6 +453,46 @@ with lib.hm.gvariant;
       type-format = "category";
       window-position = mkTuple [ 26 23 ];
       window-size = mkTuple [ 1231 902 ];
+    };
+
+    "org/virt-manager/virt-manager" = {
+      manager-window-height = 550;
+      manager-window-width = 550;
+    };
+
+    "org/virt-manager/virt-manager/confirm" = { unapplied-dev = true; };
+
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = [ "qemu:///system" ];
+      uris = [ "qemu:///system" ];
+    };
+
+    "org/virt-manager/virt-manager/details" = { show-toolbar = true; };
+
+    "org/virt-manager/virt-manager/new-vm" = {
+      cpu-default = "host-passthrough";
+      firmware = "uefi";
+      graphics-type = "system";
+    };
+
+    "org/virt-manager/virt-manager/paths" = {
+      media-default = "/home/mabeco/Documents/isos";
+    };
+
+    "org/virt-manager/virt-manager/urls" = {
+      isos =
+        [ "/home/mabeco/Documents/isos/ubuntu-22.04.2-live-server-amd64.iso" ];
+    };
+
+    "org/virt-manager/virt-manager/vmlist-fields" = {
+      disk-usage = false;
+      network-traffic = false;
+    };
+
+    "org/virt-manager/virt-manager/vms/4a3373ad3af8417c8bb77a02c2d216d1" = {
+      autoconnect = 1;
+      scaling = 1;
+      vm-window-size = mkTuple [ 1280 1043 ];
     };
 
     "system/locale" = { region = "pt_BR.UTF-8"; };
