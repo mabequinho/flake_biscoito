@@ -14,8 +14,18 @@ with lib.hm.gvariant;
       width = 600;
     };
 
+    "org/freedesktop/ibus/engine/typing-booster" = {
+      autocapitalize = true;
+      autocommitcharacters = ".,;:?!/[]{}=+-_)(";
+      autoselectcandidate = 1;
+      dictionary = "en_US";
+      dictionaryinstalltimestamp = "2023-06-17 21:10:34";
+      disableinterminals = true;
+      inputmethod = "NoIME";
+    };
+
     "org/gnome/control-center" = {
-      last-panel = "display";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -100,7 +110,10 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/input-sources" = {
-      sources = [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "xkb" "us+alt-intl" ]) ];
+      mru-sources =
+        [ (mkTuple [ "ibus" "typing-booster" ]) (mkTuple [ "xkb" "us" ]) ];
+      sources =
+        [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
       xkb-options = [ "terminate:ctrl_alt_bksp" ];
     };
 
@@ -369,6 +382,11 @@ with lib.hm.gvariant;
       enable-intellihide = false;
       mouse-sensitive = true;
       pressure-threshold = 200;
+    };
+
+    "org/gnome/shell/extensions/pop-shell" = {
+      smart-gaps = false;
+      tile-by-default = false;
     };
 
     "org/gnome/shell/extensions/space-bar/behavior" = {

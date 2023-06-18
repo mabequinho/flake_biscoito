@@ -28,6 +28,7 @@
         main = {
           capslock = "overload(meta, esc)";
           esc = "`";
+	  meta = "M-space";
         };
       };
     };

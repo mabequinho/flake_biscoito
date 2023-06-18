@@ -35,5 +35,6 @@
     hide-top-bar
     hide-activities-button
     espresso
-  ]);
+  ]) ++ (with pkgs; [ hunspell ])
+    ++ (with pkgs.hunspellDicts; [ en-us-large pt-br ]);
 }
