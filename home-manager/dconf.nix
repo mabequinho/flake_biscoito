@@ -25,8 +25,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "background";
-      window-state = mkTuple [ 980 640 ];
+      last-panel = "multitasking";
+      window-state = mkTuple [ 1268 1032 ];
     };
 
     "org/gnome/desktop/a11y/magnifier" = { mag-factor = 5.0; };
@@ -44,7 +44,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/app-folders/folders/421bec7f-e535-4e61-bd60-3f1f22d6ab51" =
       {
-        apps = [ "vlc.desktop" "mupdf.desktop" ];
+        apps = [ "vlc.desktop" "mupdf.desktop" "io.bassi.Amberol.desktop" ];
         name = "Viewer";
         translate = false;
       };
@@ -87,13 +87,19 @@ with lib.hm.gvariant;
           "org.gnome.FileRoller.desktop"
           "org.gnome.Pomodoro.desktop"
           "org.gnome.World.PikaBackup.desktop"
+          "emoji-picker.desktop"
         ];
         name = "Accessories";
       };
 
     "org/gnome/desktop/app-folders/folders/bf60595e-f9f5-4bee-aa76-18c109f1caaa" =
       {
-        apps = [ "codium.desktop" "org.octave.Octave.desktop" ];
+        apps = [
+          "codium.desktop"
+          "org.octave.Octave.desktop"
+          "org.gnome.Boxes.desktop"
+          "com.usebottles.bottles.desktop"
+        ];
         name = "Dev";
         translate = false;
       };
@@ -122,7 +128,7 @@ with lib.hm.gvariant;
       color-scheme = "prefer-dark";
       document-font-name = "Liberation Sans 11";
       enable-animations = true;
-      enable-hot-corners = false;
+      enable-hot-corners = true;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
       font-name = "Liberation Sans 11";
@@ -137,6 +143,7 @@ with lib.hm.gvariant;
         "firefox"
         "org-gnome-pomodoro"
         "org-gnome-world-pikabackup"
+        "org-gnome-settings"
       ];
       show-banners = true;
       show-in-lock-screen = false;
@@ -160,6 +167,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/org-gnome-pomodoro" = {
       application-id = "org.gnome.Pomodoro.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-settings" = {
+      application-id = "org.gnome.Settings.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-world-pikabackup" = {
@@ -355,7 +366,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout =
-        "[{'Utilities': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <2>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <3>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <4>}>}]";
+        "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <3>}>, 'Utilities': <{'position': <4>}>}]";
       command-history = [ "gnome-terminal" ];
       disabled-extensions = [ "space-bar@luchrioh" ];
       enabled-extensions = [
