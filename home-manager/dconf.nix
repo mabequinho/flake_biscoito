@@ -23,7 +23,7 @@ with lib.hm.gvariant;
       show-headerbar = true;
       show-menu-button = false;
       style-preference = mkUint32 0;
-      theme-light = "Pencil Light";
+      theme-light = "Grayscale Light (base16)";
       window-height = mkUint32 559;
       window-show-borders = true;
       window-width = mkUint32 716;
@@ -124,10 +124,8 @@ with lib.hm.gvariant;
     "org/gnome/desktop/background" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri =
-        "file:///home/mabeco/.wall";
-      picture-uri-dark =
-        "file:///home/mabeco/.wall";
+      picture-uri = "file:///home/mabeco/.wall";
+      picture-uri-dark = "file:///home/mabeco/.wall";
       primary-color = "#000000000000";
       secondary-color = "#000000000000";
     };
@@ -217,8 +215,7 @@ with lib.hm.gvariant;
       color-shading-type = "solid";
       lock-delay = mkUint32 300;
       picture-options = "zoom";
-      picture-uri =
-        "file:///home/mabeco/.wall";
+      picture-uri = "file:///home/mabeco/.wall";
       primary-color = "#000000000000";
       secondary-color = "#000000000000";
     };

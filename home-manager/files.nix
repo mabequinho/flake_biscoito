@@ -22,6 +22,8 @@
       };
     };
 
+    ".local/share/blackbox/schemes/base16-grayscale-light.json".source = ./files/base16-grayscale-light.json;
+
     ".local/share/applications/fish.desktop".source = ./files/hide.desktop;
     ".local/share/applications/cups.desktop".source = ./files/hide.desktop;
     ".local/share/applications/nvim.desktop".source = ./files/hide.desktop;

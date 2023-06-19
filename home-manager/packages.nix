@@ -47,6 +47,7 @@
     (python311.withPackages (ps: with ps; [ pandas ]))
 
     #misc
+    disfetch
     rage
     tomb
     pinentry-gnome
