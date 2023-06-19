@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     #menss
     profanity
+    nchat
     tiny
     mumble
     thunderbird
