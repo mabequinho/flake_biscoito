@@ -53,7 +53,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "background";
+      last-panel = "network";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -152,7 +152,7 @@ with lib.hm.gvariant;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
       font-name = "Liberation Sans 11";
-      icon-theme = "Colloid-light";
+      icon-theme = "Yaru-sage";
       monospace-font-name = "Source Code Pro 10";
       toolkit-accessibility = false;
     };
@@ -164,6 +164,7 @@ with lib.hm.gvariant;
         "org-gnome-pomodoro"
         "org-gnome-world-pikabackup"
         "org-gnome-settings"
+        "gnome-network-panel"
       ];
       show-banners = true;
       show-in-lock-screen = false;
@@ -175,6 +176,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/firefox" = {
       application-id = "firefox.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/gnome-network-panel" = {
+      application-id = "gnome-network-panel.desktop";
     };
 
     "org/gnome/desktop/notifications/application/gnome-power-panel" = {
@@ -281,6 +286,11 @@ with lib.hm.gvariant;
 
     "org/gnome/nautilus/window-state" = { initial-size = mkTuple [ 890 550 ]; };
 
+    "org/gnome/nm-applet/eap/a440e3f7-4686-46a4-a3db-a7cb95bbf2a7" = {
+      ignore-ca-cert = false;
+      ignore-phase2-ca-cert = false;
+    };
+
     "org/gnome/pomodoro/plugins/actions" = {
       actions-list = [ "/org/gnome/pomodoro/plugins/actions/action0/" ];
     };
@@ -303,12 +313,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-20T16:13:04+0000";
+      timer-date = "2023-06-20T17:17:43+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-20T16:13:04+0000";
+      timer-state-date = "2023-06-20T17:17:43+0000";
       timer-state-duration = 0.0;
     };
 
@@ -388,15 +398,15 @@ with lib.hm.gvariant;
       app-picker-layout =
         "[{'Utilities': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <2>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <3>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <4>}>}]";
       command-history = [ "gnome-terminal" ];
-      disabled-extensions = [ "space-bar@luchrioh" ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "espresso@coadmunkee.github.com"
-        "hidetopbar@mathieu.bidon.ca"
         "pomodoro@arun.codito.in"
         "Hide_Activities@shay.shayel.org"
         "gnomebedtime@ionutbortis.gmail.com"
         "unredirect@vaina.lt"
+        "user-theme@gnome-shell-extensions.gcampax.github.com"
+        "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
       ];
       favorite-apps = [ "com.raggesilver.BlackBox.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
@@ -436,6 +446,8 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/space-bar/behavior" = {
       smart-workspace-names = false;
     };
+
+    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-sage"; };
 
     "org/gnome/shell/keybindings" = {
       switch-to-application-1 = [ ];

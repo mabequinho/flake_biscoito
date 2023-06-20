@@ -26,6 +26,5 @@
     ];
     consoleLogLevel = 0;
     initrd.verbose = false;
-    tmp.useTmpfs = true;
   };
 }

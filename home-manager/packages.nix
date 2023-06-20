@@ -54,7 +54,7 @@
     tomb
     pinentry-gnome
     nerdfonts
-    colloid-icon-theme
+    yaru-theme
 
   ];
 }
