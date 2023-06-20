@@ -10,13 +10,14 @@
         ms-python.python
         ms-toolsai.jupyter
         jnoortheen.nix-ide
+        github.github-vscode-theme
       ];
       userSettings = {
         "editor.fontFamily" = "Mononoki Nerd Font Mono";
         "editor.lineHeight" = 24;
         "editor.fontLigatures" = true;
         "explorer.decorations.badges" = false;
-        "workbench.colorTheme" = "Quiet Light";
+        "workbench.colorTheme" = "GitHub Light Colorblind (Beta)";
         "window.menuBarVisibility" = "toggle";
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nil";

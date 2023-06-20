@@ -36,14 +36,23 @@
     #};
   };
 
-#  systemd.user.tmpfiles.rules = [
-#   "D /tmp/mabeco-cache 0700 mabeco wheel 1w"
-#    "L+ %h/.cache - - - - /tmp/mabeco-cache"
-#
-#    "D /tmp/mabeco-down 0700 mabeco wheel 1w"
-#    "L+ %h/Downloads - - - - /tmp/mabeco-down"
-#
-#    "D /tmp/mabeco-scsh 0700 mabeco wheel 1w"
-#    "L+ %h/Pictures/Screenshots - - - - /tmp/mabeco-scsh"
-#  ];
+  systemd.user.tmpfiles.rules = [
+    "D /tmp/mabeco-cache 0700 mabeco wheel 1w"
+    "L+ %h/.cache - - - - /tmp/mabeco-cache"
+
+    "D /tmp/mabeco-down 0700 mabeco wheel 1w"
+    "L+ %h/Downloads - - - - /tmp/mabeco-down"
+
+    "D /tmp/mabeco-scsh 0700 mabeco wheel 1w"
+    "L+ %h/Pictures/Screenshots - - - - /tmp/mabeco-scsh"
+  ];
+
+  xdg = {
+    mimeApps = {
+      enable = true;
+      defaultApplications = {
+        "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
+      };
+    };
+  };
 }

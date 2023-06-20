@@ -18,6 +18,7 @@
     ./gnome.nix
     ./networking.nix
     ./virt.nix
+    ./nix.nix
   ];
 
   nixpkgs = {

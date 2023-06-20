@@ -36,6 +36,5 @@
     gnome-bedtime
     disable-unredirect-fullscreen-windows
     espresso
-  ]) ++ (with pkgs; [ hunspell virt-manager blackbox-terminal ])
-    ++ (with pkgs.hunspellDicts; [ en-us-large pt-br ]);
+  ]) ++ (with pkgs; [ virt-manager blackbox-terminal ]);
 }

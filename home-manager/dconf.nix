@@ -411,6 +411,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/bedtime-mode" = {
       bedtime-mode-active = true;
+      color-tone-factor = 70;
       color-tone-preset = "grayscale";
     };
 
@@ -470,7 +471,7 @@ with lib.hm.gvariant;
     "org/gtk/settings/file-chooser" = {
       date-format = "regular";
       location-mode = "path-bar";
-      show-hidden = true;
+      show-hidden = false;
       show-size-column = true;
       show-type-column = true;
       sidebar-width = 155;
@@ -478,7 +479,7 @@ with lib.hm.gvariant;
       sort-directories-first = false;
       sort-order = "ascending";
       type-format = "category";
-      window-position = mkTuple [ 26 23 ];
+      window-position = mkTuple [ 664 81 ];
       window-size = mkTuple [ 1231 902 ];
     };
 
