@@ -16,13 +16,17 @@ with lib.hm.gvariant;
 
     "com/raggesilver/BlackBox" = {
       command-as-login-shell = false;
+      cursor-blink-mode = mkUint32 0;
+      cursor-shape = mkUint32 0;
       fill-tabs = true;
       font = "Source Code Pro 10";
-      headerbar-draw-line-single-tab = false;
+      headerbar-draw-line-single-tab = true;
+      pretty = false;
       remember-window-size = true;
       show-headerbar = true;
       show-menu-button = false;
       style-preference = mkUint32 0;
+      theme-dark = "base16: Twilight (dark)";
       theme-light = "Grayscale Light (base16)";
       window-height = mkUint32 559;
       window-show-borders = true;
@@ -112,10 +116,10 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders/folders/bf60595e-f9f5-4bee-aa76-18c109f1caaa" =
       {
         apps = [
-          "codium.desktop"
-          "org.octave.Octave.desktop"
-          "com.usebottles.bottles.desktop"
+          "nvim.desktop"
           "virt-manager.desktop"
+          "com.usebottles.bottles.desktop"
+          "org.octave.Octave.desktop"
         ];
         name = "Dev";
         translate = false;
