@@ -71,7 +71,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/app-folders/folders/421bec7f-e535-4e61-bd60-3f1f22d6ab51" =
       {
-        apps = [ "vlc.desktop" "mupdf.desktop" ];
+        apps = [ "vlc.desktop" "mupdf.desktop" "smartcode-stremio.desktop" ];
         name = "Viewer";
         translate = false;
       };
@@ -116,10 +116,11 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders/folders/bf60595e-f9f5-4bee-aa76-18c109f1caaa" =
       {
         apps = [
-          "nvim.desktop"
+          "codium.desktop"
           "virt-manager.desktop"
-          "com.usebottles.bottles.desktop"
           "org.octave.Octave.desktop"
+          "com.usebottles.bottles.desktop"
+          "nvim.desktop"
         ];
         name = "Dev";
         translate = false;
@@ -302,12 +303,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-18T19:42:27+0000";
+      timer-date = "2023-06-20T16:13:04+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-18T19:42:27+0000";
+      timer-state-date = "2023-06-20T16:13:04+0000";
       timer-state-duration = 0.0;
     };
 
@@ -385,7 +386,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout =
-        "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <3>}>, 'Utilities': <{'position': <4>}>}]";
+        "[{'Utilities': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <2>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <3>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <4>}>}]";
       command-history = [ "gnome-terminal" ];
       disabled-extensions = [ "space-bar@luchrioh" ];
       enabled-extensions = [

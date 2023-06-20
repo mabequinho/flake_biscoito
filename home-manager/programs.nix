@@ -5,5 +5,6 @@
     ./programs/nvim.nix
     ./programs/task.nix
     ./programs/ff.nix
+    ./programs/codium.nix
   ];
 }
