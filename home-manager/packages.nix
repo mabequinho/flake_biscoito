@@ -21,7 +21,6 @@
     pika-backup
     ulauncher
     bottles
-    stremio
 
     #utils
     zbar
