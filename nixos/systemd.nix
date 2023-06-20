@@ -9,7 +9,7 @@
           Unit = "systemd-poweroff.service";
         };
         wantedBy = [ "multi-user.target" ];
-        onFailure = [ systemd-poweroff.service ]
+        onFailure = [ systemd-poweroff.service ];
       };
       poffn = {
         description = "Poweroff during noon";
@@ -18,7 +18,7 @@
           Unit = "systemd-poweroff.service";
         };
         wantedBy = [ "multi-user.target" ];
-        onFailure = [ systemd-poweroff.service ]
+        onFailure = [ systemd-poweroff.service ];
       };
       poffe = {
         description = "Poweroff during evening";
@@ -27,7 +27,7 @@
           Unit = "systemd-poweroff.service";
         };
         wantedBy = [ "multi-user.target" ];
-        onFailure = [ systemd-poweroff.service ]
+        onFailure = [ systemd-poweroff.service ];
       };
     };
   };
