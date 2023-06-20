@@ -28,6 +28,7 @@ with lib.hm.gvariant;
       style-preference = mkUint32 0;
       theme-dark = "base16: Twilight (dark)";
       theme-light = "Grayscale Light (base16)";
+      was-maximized = true;
       window-height = mkUint32 559;
       window-show-borders = true;
       window-width = mkUint32 716;
@@ -53,7 +54,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "network";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -340,14 +341,14 @@ with lib.hm.gvariant;
       ];
       email = [ "<Super>m" ];
       home = [ "<Super>f" ];
-      logout = [ "<Super>x" ];
+      logout = [ ];
       magnifier-zoom-in = [ ];
       magnifier-zoom-out = [ ];
       mic-mute = [ "<Alt><Super>BackSpace" ];
       next = [ "<Super>bracketright" ];
       play = [ "<Super>backslash" ];
       previous = [ "<Super>bracketleft" ];
-      screensaver = [ ];
+      screensaver = [ "<Super>x" ];
       stop = [ ];
       volume-down = [ "<Super>minus" ];
       volume-mute = [ "<Super>BackSpace" ];
