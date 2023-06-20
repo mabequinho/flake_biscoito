@@ -19,6 +19,7 @@
     ./networking.nix
     ./virt.nix
     ./nix.nix
+    ./systemd.nix
   ];
 
   nixpkgs = {
