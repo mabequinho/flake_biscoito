@@ -448,7 +448,7 @@ with lib.hm.gvariant;
       smart-workspace-names = false;
     };
 
-    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-sage"; };
+    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-sage-dark"; };
 
     "org/gnome/shell/keybindings" = {
       switch-to-application-1 = [ ];
