@@ -16,7 +16,7 @@
       };
       timeout = 2;
     };
-    kernelPackages = pkgs.linuxKernel.packages.linux_zen;
+    kernelPackages = pkgs.linuxKernel.packages.linux_6_3;
     kernelParams = [ "amd_iommu=on" "iommu=pt" "video=HDMI-A-1:2560x1080@75" ];
     tmp.cleanOnBoot = true;
   };
