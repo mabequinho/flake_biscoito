@@ -5,7 +5,7 @@
       break-morning = {
         description = "morning break";
         timerConfig = {
-          OnCalendar = "*-*-* 09..09:30:00/5";
+          OnCalendar = "*-*-* 09:*:00/5";
           Persistent = false;
           Unit = "systemd-suspend.service";
         };
@@ -14,7 +14,7 @@
       break-noon = {
         description = "noon break";
         timerConfig = {
-          OnCalendar = "*-*-* 12..13:00:00/5";
+          OnCalendar = "*-*-* 12:*:00/5";
           Persistent = false;
           Unit = "systemd-suspend.service";
         };
@@ -23,7 +23,7 @@
       break-afternoon = {
         description = "afternoon break";
         timerConfig = {
-          OnCalendar = "*-*-* 15..15:30:00/5";
+          OnCalendar = "*-*-* 15:*:00/5";
           Persistent = false;
           Unit = "systemd-suspend.service";
         };
@@ -33,7 +33,7 @@
       break-evening = {
         description = "evening break";
         timerConfig = {
-          OnCalendar = "*-*-* 18..23:59:00/5";
+          OnCalendar = "*-*-* 18..23:*:00/5";
           Persistent = false;
           Unit = "systemd-suspend.service";
         };
@@ -42,7 +42,7 @@
       break-dawn = {
         description = "dawn break";
         timerConfig = {
-          OnCalendar = "*-*-* 00..07:00:00/5";
+          OnCalendar = "*-*-* 00..07:*:00/5";
           Persistent = false;
           Unit = "systemd-suspend.service";
         };
