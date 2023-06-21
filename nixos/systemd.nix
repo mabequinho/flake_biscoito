@@ -7,7 +7,7 @@
         timerConfig = {
           OnCalendar = "*-*-* 09..09:30:00/5";
           Persistent = false;
-          Unit = "systemd-poweroff.service";
+          Unit = "systemd-suspend.service";
         };
         wantedBy = [ "multi-user.target" ];
       };
@@ -16,7 +16,7 @@
         timerConfig = {
           OnCalendar = "*-*-* 12..13:00:00/5";
           Persistent = false;
-          Unit = "systemd-poweroff.service";
+          Unit = "systemd-suspend.service";
         };
         wantedBy = [ "multi-user.target" ];
       };
@@ -25,7 +25,7 @@
         timerConfig = {
           OnCalendar = "*-*-* 15..15:30:00/5";
           Persistent = false;
-          Unit = "systemd-poweroff.service";
+          Unit = "systemd-suspend.service";
         };
         wantedBy = [ "multi-user.target" ];
       };
@@ -35,7 +35,7 @@
         timerConfig = {
           OnCalendar = "*-*-* 18..23:59:00/5";
           Persistent = false;
-          Unit = "systemd-poweroff.service";
+          Unit = "systemd-suspend.service";
         };
         wantedBy = [ "multi-user.target" ];
       };
@@ -44,7 +44,7 @@
         timerConfig = {
           OnCalendar = "*-*-* 00..07:00:00/5";
           Persistent = false;
-          Unit = "systemd-poweroff.service";
+          Unit = "systemd-suspend.service";
         };
         wantedBy = [ "multi-user.target" ];
       };
