@@ -39,7 +39,10 @@
   home = {
     username = "mabeco";
     homeDirectory = "/home/mabeco";
-    sessionVariables = { VISUAL = "nvim"; };
+    sessionVariables = {
+      VISUAL = "nvim";
+      TERMINAL = "blackbox";
+    };
   };
 
   homeage = {
