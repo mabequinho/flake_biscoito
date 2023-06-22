@@ -5,17 +5,11 @@
     nchat
     tiny
     mumble
-    thunderbird
 
     #net
-    aria
+    transmission-gtk
     yt-dlp
     hakuneko
-
-    #viewer
-    imv
-    mupdf
-    vlc
 
     #gutils
     pika-backup

@@ -1,0 +1,48 @@
+{ config, lib, pkgs, ... }: {
+
+  systemd = {
+    timers = {
+      break = {
+        description = "breaks";
+        timerConfig = {
+          OnCalendar = [
+            "*-*-* 09:*:00/5"
+            "*-*-* 12:*:00/5"
+            "*-*-* 15:*:00/5"
+            "*-*-* 18..23:*:00/5"
+            "*-*-* 00..07:*:00/5"
+          ];
+          Persistent = false;
+          Unit = "systemd-suspend.service";
+        };
+        wantedBy = [ "multi-user.target" ];
+      };
+    };
+
+    services = {
+      breakreminder = {
+        description = "Break notificaton";
+        environment = {
+          DISPLAY = ":0";
+          BindReadOnlyPaths = "${lib.getBin pkgs.dbus}/bin/";
+        };
+        script = ''
+          ${
+            lib.getBin pkgs.libnotify
+          }/bin/notify-send -u critical -c suspend "Take a break" "Break in 2 minutes"
+        '';
+      };
+      gscreensaver = {
+        description = "Lock gnome screen";
+         environment = {
+          DISPLAY = ":0";
+        };
+       script = ''
+          ${
+            lib.getBin pkgs.dbus
+          }/bin/dbus-send --session --dest=org.gnome.ScreenSaver --type=method_call --print-reply --reply-timeout=20000 /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true
+        '';
+      };
+    };
+  };
+}

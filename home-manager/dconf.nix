@@ -19,7 +19,7 @@ with lib.hm.gvariant;
       cursor-blink-mode = mkUint32 0;
       cursor-shape = mkUint32 0;
       fill-tabs = true;
-      font = "Source Code Pro 10";
+      font = "Mononoki Nerd Font Mono 10";
       headerbar-draw-line-single-tab = true;
       pretty = false;
       remember-window-size = true;
@@ -28,7 +28,7 @@ with lib.hm.gvariant;
       style-preference = mkUint32 0;
       theme-dark = "base16: Twilight (dark)";
       theme-light = "Grayscale Light (base16)";
-      was-maximized = true;
+      was-maximized = false;
       window-height = mkUint32 559;
       window-show-borders = true;
       window-width = mkUint32 716;
@@ -53,12 +53,31 @@ with lib.hm.gvariant;
       inputmethod = "NoIME";
     };
 
+    "org/gnome/Geary" = { migrated-config = true; };
+
+    "org/gnome/Totem" = {
+      active-plugins = [
+        "vimeo"
+        "variable-rate"
+        "skipto"
+        "screenshot"
+        "screensaver"
+        "save-file"
+        "rotation"
+        "recent"
+        "movie-properties"
+        "open-directory"
+        "mpris"
+        "autoload-subtitles"
+        "apple-trailers"
+      ];
+      subtitle-encoding = "UTF-8";
+    };
+
     "org/gnome/control-center" = {
       last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
-
-    "org/gnome/desktop/a11y/magnifier" = { mag-factor = 5.0; };
 
     "org/gnome/desktop/app-folders" = {
       folder-children = [
@@ -67,25 +86,46 @@ with lib.hm.gvariant;
         "bf60595e-f9f5-4bee-aa76-18c109f1caaa"
         "421bec7f-e535-4e61-bd60-3f1f22d6ab51"
         "aac2832b-c83a-490c-97f7-9071a4548ce3"
+        "82b4a6f4-550b-4668-9bb2-c23b32a624d5"
+        "20a4ca91-0dda-4d2e-9660-900dd0691c01"
+        "9c7ccf49-8355-4747-82f6-e5ec6d15411b"
+        "7a1434a7-6019-4318-99f3-eab69516706c"
       ];
     };
 
-    "org/gnome/desktop/app-folders/folders/421bec7f-e535-4e61-bd60-3f1f22d6ab51" =
+    "org/gnome/desktop/app-folders/folders/20a4ca91-0dda-4d2e-9660-900dd0691c01" =
       {
-        apps = [ "vlc.desktop" "mupdf.desktop" "smartcode-stremio.desktop" ];
-        name = "Viewer";
-        translate = false;
+        apps = [ "org.gnome.eog.desktop" "org.gnome.Evince.desktop" ];
+        name = "Graphics";
       };
 
     "org/gnome/desktop/app-folders/folders/502da463-a171-48bf-a485-b27e6ef744e1" =
       {
         apps = [
           "firefox.desktop"
-          "thunderbird.desktop"
           "info.mumble.Mumble.desktop"
           "hakuneko-desktop.desktop"
+          "org.gnome.Geary.desktop"
         ];
         name = "Internet";
+      };
+
+    "org/gnome/desktop/app-folders/folders/7a1434a7-6019-4318-99f3-eab69516706c" =
+      {
+        apps = [ "org.gnome.Connections.desktop" "transmission-gtk.desktop" ];
+        name = "Internet";
+      };
+
+    "org/gnome/desktop/app-folders/folders/82b4a6f4-550b-4668-9bb2-c23b32a624d5" =
+      {
+        apps = [ "org.gnome.Totem.desktop" "org.gnome.Music.desktop" ];
+        name = "Sound & Video";
+      };
+
+    "org/gnome/desktop/app-folders/folders/9c7ccf49-8355-4747-82f6-e5ec6d15411b" =
+      {
+        apps = [ "org.gnome.Calendar.desktop" "org.gnome.Contacts.desktop" ];
+        name = "Office";
       };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
@@ -138,7 +178,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/input-sources" = {
       mru-sources =
-        [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
+        [ (mkTuple [ "ibus" "typing-booster" ]) (mkTuple [ "xkb" "us" ]) ];
       sources =
         [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
       xkb-options = [ "terminate:ctrl_alt_bksp" ];
@@ -154,18 +194,18 @@ with lib.hm.gvariant;
       font-hinting = "slight";
       font-name = "Liberation Sans 11";
       icon-theme = "Yaru-sage";
-      monospace-font-name = "Source Code Pro 10";
+      monospace-font-name = "Mononoki Nerd Font Mono 10";
       toolkit-accessibility = false;
     };
 
     "org/gnome/desktop/notifications" = {
       application-children = [
-        "thunderbird"
         "firefox"
         "org-gnome-pomodoro"
         "org-gnome-world-pikabackup"
         "org-gnome-settings"
         "gnome-network-panel"
+        "org-gnome-nautilus"
       ];
       show-banners = true;
       show-in-lock-screen = false;
@@ -199,16 +239,13 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Settings.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/org-gnome-world-pikabackup-monitor" =
+      {
+        application-id = "org.gnome.World.PikaBackup.Monitor.desktop";
+      };
+
     "org/gnome/desktop/notifications/application/org-gnome-world-pikabackup" = {
       application-id = "org.gnome.World.PikaBackup.desktop";
-    };
-
-    "org/gnome/desktop/notifications/application/thunderbird" = {
-      application-id = "thunderbird.desktop";
-    };
-
-    "org/gnome/desktop/peripherals/touchpad" = {
-      two-finger-scrolling-enabled = true;
     };
 
     "org/gnome/desktop/peripherals/trackball" = {
@@ -266,6 +303,10 @@ with lib.hm.gvariant;
       focus-mode = "sloppy";
     };
 
+    "org/gnome/evince/default" = {
+      window-ratio = mkTuple [ 0.7125 0.658125 ];
+    };
+
     "org/gnome/evolution-data-server" = { migrated = true; };
 
     "org/gnome/mutter" = {
@@ -279,13 +320,16 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/nautilus/preferences" = {
-      default-folder-viewer = "list-view";
+      default-folder-viewer = "icon-view";
       migrated-gtk-settings = true;
       search-filter-time-type = "last_modified";
       search-view = "list-view";
     };
 
-    "org/gnome/nautilus/window-state" = { initial-size = mkTuple [ 890 550 ]; };
+    "org/gnome/nautilus/window-state" = {
+      initial-size = mkTuple [ 890 550 ];
+      maximized = false;
+    };
 
     "org/gnome/nm-applet/eap/a440e3f7-4686-46a4-a3db-a7cb95bbf2a7" = {
       ignore-ca-cert = false;
@@ -314,12 +358,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-20T17:17:43+0000";
+      timer-date = "2023-06-22T19:11:05+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-20T17:17:43+0000";
+      timer-state-date = "2023-06-22T19:11:05+0000";
       timer-state-duration = 0.0;
     };
 
@@ -397,7 +441,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout =
-        "[{'Utilities': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <2>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <3>}>, '421bec7f-e535-4e61-bd60-3f1f22d6ab51': <{'position': <4>}>}]";
+        "[{'82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <2>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <3>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <4>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <5>}>, '9c7ccf49-8355-4747-82f6-e5ec6d15411b': <{'position': <6>}>, '20a4ca91-0dda-4d2e-9660-900dd0691c01': <{'position': <7>}>}]";
       command-history = [ "gnome-terminal" ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
@@ -417,7 +461,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list =
-        [ "org.gnome.Pomodoro.desktop:4" "thunderbird.desktop:4" ];
+        [ "org.gnome.Pomodoro.desktop:4" "geary-autostart.desktop:4" ];
     };
 
     "org/gnome/shell/extensions/bedtime-mode" = {
@@ -430,22 +474,6 @@ with lib.hm.gvariant;
       has-battery = false;
       show-notifications = false;
       user-enabled = false;
-    };
-
-    "org/gnome/shell/extensions/hidetopbar" = {
-      enable-active-window = false;
-      enable-intellihide = false;
-      mouse-sensitive = true;
-      pressure-threshold = 200;
-    };
-
-    "org/gnome/shell/extensions/pop-shell" = {
-      smart-gaps = false;
-      tile-by-default = false;
-    };
-
-    "org/gnome/shell/extensions/space-bar/behavior" = {
-      smart-workspace-names = false;
     };
 
     "org/gnome/shell/extensions/user-theme" = { name = "Yaru-sage-dark"; };
