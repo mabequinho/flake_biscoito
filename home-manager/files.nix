@@ -28,6 +28,7 @@
 
     ".local/share/applications/fish.desktop".source = ./files/hide.desktop;
     ".local/share/applications/cups.desktop".source = ./files/hide.desktop;
+    ".local/share/applications/nvim.desktop".source = ./files/hide.desktop;
 
     ".local/bin/gnome-terminal".source = "${lib.getBin pkgs.blackbox-terminal}/bin/blackbox";
 
