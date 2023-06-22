@@ -87,17 +87,9 @@ with lib.hm.gvariant;
         "421bec7f-e535-4e61-bd60-3f1f22d6ab51"
         "aac2832b-c83a-490c-97f7-9071a4548ce3"
         "82b4a6f4-550b-4668-9bb2-c23b32a624d5"
-        "20a4ca91-0dda-4d2e-9660-900dd0691c01"
-        "9c7ccf49-8355-4747-82f6-e5ec6d15411b"
         "7a1434a7-6019-4318-99f3-eab69516706c"
       ];
     };
-
-    "org/gnome/desktop/app-folders/folders/20a4ca91-0dda-4d2e-9660-900dd0691c01" =
-      {
-        apps = [ "org.gnome.eog.desktop" "org.gnome.Evince.desktop" ];
-        name = "Graphics";
-      };
 
     "org/gnome/desktop/app-folders/folders/502da463-a171-48bf-a485-b27e6ef744e1" =
       {
@@ -112,20 +104,26 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/app-folders/folders/7a1434a7-6019-4318-99f3-eab69516706c" =
       {
-        apps = [ "org.gnome.Connections.desktop" "transmission-gtk.desktop" ];
-        name = "Internet";
+        apps = [
+          "org.gnome.Connections.desktop"
+          "transmission-gtk.desktop"
+          "org.gnome.Contacts.desktop"
+          "org.gnome.Calendar.desktop"
+        ];
+        name = "Misc";
+        translate = false;
       };
 
     "org/gnome/desktop/app-folders/folders/82b4a6f4-550b-4668-9bb2-c23b32a624d5" =
       {
-        apps = [ "org.gnome.Totem.desktop" "org.gnome.Music.desktop" ];
-        name = "Sound & Video";
-      };
-
-    "org/gnome/desktop/app-folders/folders/9c7ccf49-8355-4747-82f6-e5ec6d15411b" =
-      {
-        apps = [ "org.gnome.Calendar.desktop" "org.gnome.Contacts.desktop" ];
-        name = "Office";
+        apps = [
+          "org.gnome.Totem.desktop"
+          "org.gnome.Music.desktop"
+          "org.gnome.eog.desktop"
+          "org.gnome.Evince.desktop"
+        ];
+        name = "Media";
+        translate = false;
       };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
@@ -441,7 +439,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout =
-        "[{'82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <2>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <3>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <4>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <5>}>, '9c7ccf49-8355-4747-82f6-e5ec6d15411b': <{'position': <6>}>, '20a4ca91-0dda-4d2e-9660-900dd0691c01': <{'position': <7>}>}]";
+        "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <3>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <4>}>, 'Utilities': <{'position': <5>}>}]";
       command-history = [ "gnome-terminal" ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
@@ -520,7 +518,7 @@ with lib.hm.gvariant;
       sort-directories-first = false;
       sort-order = "ascending";
       type-format = "category";
-      window-position = mkTuple [ 664 81 ];
+      window-position = mkTuple [ 26 23 ];
       window-size = mkTuple [ 1231 902 ];
     };
 
