@@ -16,8 +16,13 @@
       enable = true;
       interval = "weekly";
     };
+    ananicy = {
+      enable = true;
+      package = pkgs.ananicy-cpp;
+    };
+    irqbalance.enable = true;
     udev.extraRules =
-      "\n		ACTION==\"add|change\", KERNEL==\"sd[a-z]*\", ATTR{queue/rotational}==\"0\", ATTR{queue/scheduler}=\"none\" \n		ACTION==\"add|change\", KERNEL==\"sd[a-z]*\", ATTR{queue/rotational}==\"1\", ATTR{queue/scheduler}=\"bfq\"\n		";
+      "\n		ACTION==\"add|change\", KERNEL==\"sd[a-z]*\", ATTR{queue/rotational}==\"0\", ATTR{queue/scheduler}=\"mq-deadline\" \n		ACTION==\"add|change\", KERNEL==\"sd[a-z]*\", ATTR{queue/rotational}==\"1\", ATTR{queue/scheduler}=\"bfq\"\n		";
     clamav = {
       daemon.enable = true;
       updater.enable = true;
