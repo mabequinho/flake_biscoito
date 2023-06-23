@@ -14,6 +14,33 @@ with lib.hm.gvariant;
       width = 600;
     };
 
+    "com/github/wwmm/easyeffects" = {
+      last-used-input-preset = "Presets";
+      last-used-output-preset = "Presets";
+      process-all-inputs = true;
+      window-fullscreen = false;
+      window-height = 429;
+      window-maximized = false;
+      window-width = 676;
+    };
+
+    "com/github/wwmm/easyeffects/spectrum" = {
+      color = mkTuple [ 1.0 1.0 ];
+      color-axis-labels = mkTuple [ 1.0 1.0 ];
+    };
+
+    "com/github/wwmm/easyeffects/streaminputs" = {
+      plugins = [ "stereo_tools#0" "rnnoise#0" ];
+    };
+
+    "com/github/wwmm/easyeffects/streaminputs/rnnoise/0" = {
+      output-gain = 0.0;
+    };
+
+    "com/github/wwmm/easyeffects/streaminputs/stereotools/0" = {
+      mode = "LR > L+R (Mono Sum L+R)";
+    };
+
     "com/raggesilver/BlackBox" = {
       command-as-login-shell = false;
       cursor-blink-mode = mkUint32 0;
@@ -75,7 +102,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "keyboard";
+      last-panel = "sound";
       window-state = mkTuple [ 980 640 ];
     };
 
