@@ -4,8 +4,6 @@
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
 
-    # You can also split up your configuration and import pieces of it here:
-    # ./nvim.nix
     ./programs.nix
     ./files.nix
     ./terminal/fish.nix
@@ -40,20 +38,6 @@
     username = "mabeco";
     homeDirectory = "/home/mabeco";
     sessionVariables = { VISUAL = "nvim"; };
-    sessionPath = [ "$HOME/.local/bin" ];
-  };
-
-  homeage = {
-    identityPaths = [ "~/.ssh/id_ed25519" ];
-
-    installationType = "systemd";
-
-    file.mabeco_keys = {
-      # Path to encrypted file tracked by the git repository
-      source = ./files/mabeco.age;
-      symlinks = [ "${config.xdg.configHome}/mabeco_keys/mabeco_keys" ];
-      copies = [ "${config.xdg.configHome}/no-symlink-support/mabeco_keys" ];
-    };
   };
 
   # Enable home-manager

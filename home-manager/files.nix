@@ -29,16 +29,7 @@
     ".local/share/applications/fish.desktop".source = ./files/hide.desktop;
     ".local/share/applications/cups.desktop".source = ./files/hide.desktop;
     ".local/share/applications/nvim.desktop".source = ./files/hide.desktop;
-
-    ".local/bin/gnome-terminal".source = "${lib.getBin pkgs.blackbox-terminal}/bin/blackbox";
-
-    #".local/share/VeroptBR3215AOC.oxt".source = pkgs.fetchurl {
-    #  url =
-    #    "https://pt-br.libreoffice.org/assets/Uploads/PT-BR-Documents/VERO/VeroptBR3215AOC.oxt";
-    #  sha256 = "1vhh09867gcrkbdcnzd89zx7d60q2g32ybapifgnkmd0mbca6wbm";
-    #};
   };
-
   systemd.user.tmpfiles.rules = [
     "D /tmp/mabeco-cache 0700 mabeco wheel 1w"
     "L+ %h/.cache - - - - /tmp/mabeco-cache"
@@ -58,9 +49,9 @@
       };
     };
     userDirs = {
-    publicShare = "${config.home.homeDirectory}/.Public";
-    templates ="${config.home.homeDirectory}/.Templates";
-    desktop = "${config.home.homeDirectory}/.Desktop";
+      publicShare = "${config.home.homeDirectory}/.Public";
+      templates = "${config.home.homeDirectory}/.Templates";
+      desktop = "${config.home.homeDirectory}/.Desktop";
     };
   };
 }

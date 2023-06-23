@@ -11,14 +11,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    homeage = {
-      url = "github:jordanisaacs/homeage";
-      # Optional
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { nixpkgs, home-manager, homeage, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
       biscoito = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; }; # Pass flake inputs to our config
@@ -34,8 +29,7 @@
         extraSpecialArgs = {
           inherit inputs;
         }; # Pass flake inputs to our config
-        modules =
-          [ ./home-manager/home.nix homeage.homeManagerModules.homeage ];
+        modules = [ ./home-manager/home.nix ];
       };
     };
   };
