@@ -8,7 +8,7 @@
       shellAliases = {
         ls = "ls -A --color=auto -cltp --si --group-directories-first";
         rebh =
-          "home-manager switch -j 8 --flake $HOME/git/flake_biscoito#mabeco@biscoito";
+          "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito";
         rebr =
           "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";
 	nix-hell = "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito ; sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";

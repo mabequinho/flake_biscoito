@@ -57,5 +57,10 @@
         "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
       };
     };
+    userDirs = {
+    publicShare = "${config.home.homeDirectory}/.Public";
+    templates ="${config.home.homeDirectory}/.Templates";
+    desktop = "${config.home.homeDirectory}/.Desktop";
+    };
   };
 }
