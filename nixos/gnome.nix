@@ -44,7 +44,7 @@
   systemd.services."autovt@tty1".enable = false;
   environment.systemPackages =
     (with pkgs.gnome; [ gnome-tweaks gnome-shell-extensions pomodoro ])
-    ++ (with pkgs; [ dconf2nix libnotify virt-manager blackbox-terminal calibre ])
+    ++ (with pkgs; [ dconf2nix libnotify virt-manager blackbox-terminal ])
     ++ (with pkgs.gnomeExtensions; [
       hide-activities-button
       gnome-bedtime
