@@ -24,6 +24,7 @@
     pkgs.gnome-text-editor
     pkgs.gnome-photos
     pkgs.gnome-console
+    pkgs.gnome-connections
     yelp
     simple-scan
     gnome-system-monitor

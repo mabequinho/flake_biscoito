@@ -109,6 +109,7 @@ with lib.hm.gvariant;
           "transmission-gtk.desktop"
           "org.gnome.Contacts.desktop"
           "org.gnome.Calendar.desktop"
+          "com.github.wwmm.easyeffects.desktop"
         ];
         name = "Misc";
         translate = false;
@@ -137,6 +138,12 @@ with lib.hm.gvariant;
       categories = [ "X-GNOME-Utilities" ];
       excluded-apps = [ "org.gnome.FileRoller.desktop" ];
       name = "X-GNOME-Utilities.directory";
+      translate = true;
+    };
+
+    "org/gnome/desktop/app-folders/folders/YaST" = {
+      categories = [ "X-SuSE-YaST" ];
+      name = "suse-yast.directory";
       translate = true;
     };
 
@@ -318,7 +325,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/nautilus/preferences" = {
-      default-folder-viewer = "icon-view";
+      default-folder-viewer = "list-view";
       migrated-gtk-settings = true;
       search-filter-time-type = "last_modified";
       search-view = "list-view";
@@ -439,7 +446,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout =
-        "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <3>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <4>}>, 'Utilities': <{'position': <5>}>}]";
+        "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <3>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <4>}>, 'Utilities': <{'position': <5>}>}]";
       command-history = [ "gnome-terminal" ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
