@@ -13,6 +13,11 @@
         device = "nodev";
         efiSupport = true;
         enableCryptodisk = true;
+        splashImage = pkgs.fetchurl {
+          url =
+            "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/wall.png";
+          sha256 = "0j3p8bhg319axnkmamf8mazrl4p67ix7kbnkl4v4ggkdf29hljg6";
+        };
       };
       timeout = 2;
     };

@@ -18,8 +18,8 @@
 
     ".wall" = {
       source = pkgs.fetchurl {
-        url = "https://w.wallhaven.cc/full/1j/wallhaven-1jlwv3.jpg";
-        sha256 = "1qls8yfriiwiaxcsma2jf04a12in1sz382wklpw9val7k32wkfgn";
+        url = "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/wall.png";
+        sha256 = "0j3p8bhg319axnkmamf8mazrl4p67ix7kbnkl4v4ggkdf29hljg6";
       };
     };
 
