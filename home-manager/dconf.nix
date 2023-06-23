@@ -15,13 +15,14 @@ with lib.hm.gvariant;
     };
 
     "com/github/wwmm/easyeffects" = {
+      bypass = false;
       last-used-input-preset = "Presets";
       last-used-output-preset = "Presets";
       process-all-inputs = true;
       window-fullscreen = false;
-      window-height = 429;
+      window-height = 627;
       window-maximized = false;
-      window-width = 676;
+      window-width = 789;
     };
 
     "com/github/wwmm/easyeffects/spectrum" = {
@@ -30,15 +31,21 @@ with lib.hm.gvariant;
     };
 
     "com/github/wwmm/easyeffects/streaminputs" = {
-      plugins = [ "stereo_tools#0" "rnnoise#0" ];
+      input-device =
+        "alsa_input.usb-046d_C505_HD_Webcam_4B4301B0-02.mono-fallback";
+      plugins = [ "rnnoise#0" "stereo_tools#0" ];
+      use-default-input-device = true;
     };
 
-    "com/github/wwmm/easyeffects/streaminputs/rnnoise/0" = {
-      output-gain = 0.0;
-    };
+    "com/github/wwmm/easyeffects/streaminputs/rnnoise/0" = { bypass = false; };
 
     "com/github/wwmm/easyeffects/streaminputs/stereotools/0" = {
       mode = "LR > L+R (Mono Sum L+R)";
+    };
+
+    "com/github/wwmm/easyeffects/streamoutputs" = {
+      output-device = "alsa_output.pci-0000_00_14.2.analog-stereo";
+      use-default-output-device = true;
     };
 
     "com/raggesilver/BlackBox" = {
@@ -55,7 +62,7 @@ with lib.hm.gvariant;
       style-preference = mkUint32 0;
       theme-dark = "base16: Twilight (dark)";
       theme-light = "Grayscale Light (base16)";
-      was-maximized = false;
+      was-maximized = true;
       window-height = mkUint32 559;
       window-show-borders = true;
       window-width = mkUint32 716;
@@ -102,7 +109,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "info-overview";
+      last-panel = "sound";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -210,7 +217,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/input-sources" = {
       mru-sources =
-        [ (mkTuple [ "ibus" "typing-booster" ]) (mkTuple [ "xkb" "us" ]) ];
+        [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
       sources =
         [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
       xkb-options = [ "terminate:ctrl_alt_bksp" ];
@@ -390,12 +397,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-22T19:11:05+0000";
+      timer-date = "2023-06-23T16:45:47+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-22T19:11:05+0000";
+      timer-state-date = "2023-06-23T16:45:47+0000";
       timer-state-duration = 0.0;
     };
 
