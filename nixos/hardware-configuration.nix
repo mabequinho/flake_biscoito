@@ -40,13 +40,13 @@
   fileSystems."/nix" = {
     device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
     fsType = "btrfs";
-    options = [ "subvol=@nix" ];
+    options = [ "subvol=@nix" "noatime" ];
   };
 
   fileSystems."/home" = {
     device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
     fsType = "btrfs";
-    options = [ "subvol=@home" ];
+    options = [ "subvol=@home" "noatime" ];
   };
 
   fileSystems."/boot/efi" = {
