@@ -22,7 +22,12 @@
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
     fsType = "btrfs";
-    options = [ "subvol=@root" "compress=zstd" "noatime" ];
+    options = [
+      "subvol=@root"
+      #most arguments on the first volume goes to every other volume on the same filesystem.
+      "compress=lzo"
+      "noatime"
+    ];
   };
 
   boot.initrd.luks.devices."biscoito" = {
@@ -35,13 +40,13 @@
   fileSystems."/nix" = {
     device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
     fsType = "btrfs";
-    options = [ "subvol=@nix" "compress=zstd" "noatime" ];
+    options = [ "subvol=@nix" ];
   };
 
   fileSystems."/home" = {
     device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
     fsType = "btrfs";
-    options = [ "subvol=@home" "compress=zstd" "noatime" ];
+    options = [ "subvol=@home" ];
   };
 
   fileSystems."/boot/efi" = {
