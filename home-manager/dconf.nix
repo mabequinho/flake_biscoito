@@ -500,7 +500,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list =
-        [ "org.gnome.Pomodoro.desktop:4" "geary-autostart.desktop:4" ];
+        [ "org.gnome.Pomodoro.desktop:4" "org.gnome.Geary.desktop:4" ];
     };
 
     "org/gnome/shell/extensions/bedtime-mode" = {
