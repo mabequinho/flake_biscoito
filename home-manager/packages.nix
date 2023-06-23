@@ -15,6 +15,7 @@
     pika-backup
     ulauncher
     bottles
+    easyeffects 
 
     #utils
     zbar
