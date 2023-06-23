@@ -20,6 +20,7 @@
     ./virt.nix
     ./nix.nix
     ./systemd.nix
+    ./pipewire.nix
   ];
 
   nixpkgs = {

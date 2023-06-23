@@ -102,7 +102,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "sound";
+      last-panel = "info-overview";
       window-state = mkTuple [ 980 640 ];
     };
 
