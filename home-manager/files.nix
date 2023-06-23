@@ -18,8 +18,17 @@
 
     ".wall" = {
       source = pkgs.fetchurl {
-        url = "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/wall.png";
+        url =
+          "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/home-manager/files/wall.png";
         sha256 = "0j3p8bhg319axnkmamf8mazrl4p67ix7kbnkl4v4ggkdf29hljg6";
+      };
+    };
+
+    ".local/share/icons/Tewi" = {
+      source = pkgs.fetchzip {
+        url =
+          "https://github.com/mabequinho/flake_biscoito/raw/main/home-manager/files/Tewi.zip";
+        sha256 = "17pl69qc3r3m1m2rn3q1czcj1mrkzrszz8bj2r66rgbc8lr32vrh";
       };
     };
 

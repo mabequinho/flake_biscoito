@@ -87,7 +87,11 @@ with lib.hm.gvariant;
       inputmethod = "NoIME";
     };
 
-    "org/gnome/Geary" = { migrated-config = true; };
+    "org/gnome/Geary" = {
+      migrated-config = true;
+      window-height = 1053;
+      window-width = 1280;
+    };
 
     "org/gnome/Totem" = {
       active-plugins = [
@@ -226,6 +230,7 @@ with lib.hm.gvariant;
     "org/gnome/desktop/interface" = {
       clock-show-weekday = true;
       color-scheme = "default";
+      cursor-theme = "Tewi";
       document-font-name = "Liberation Sans 11";
       enable-animations = true;
       enable-hot-corners = true;
@@ -250,6 +255,10 @@ with lib.hm.gvariant;
       show-in-lock-screen = false;
     };
 
+    "org/gnome/desktop/notifications/application/calibre-gui" = {
+      application-id = "calibre-gui.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/codium" = {
       application-id = "codium.desktop";
     };
@@ -264,6 +273,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/gnome-power-panel" = {
       application-id = "gnome-power-panel.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-geary" = {
+      application-id = "org.gnome.Geary.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-nautilus" = {
@@ -340,10 +353,6 @@ with lib.hm.gvariant;
     "org/gnome/desktop/wm/preferences" = {
       auto-raise = true;
       focus-mode = "sloppy";
-    };
-
-    "org/gnome/evince/default" = {
-      window-ratio = mkTuple [ 0.7125 0.658125 ];
     };
 
     "org/gnome/evolution-data-server" = { migrated = true; };
@@ -482,6 +491,7 @@ with lib.hm.gvariant;
       app-picker-layout =
         "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <3>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <4>}>, 'Utilities': <{'position': <5>}>}]";
       command-history = [ "gnome-terminal" ];
+      disabled-extensions = [ ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "espresso@coadmunkee.github.com"
