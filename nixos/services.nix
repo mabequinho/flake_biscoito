@@ -7,7 +7,7 @@
       group = "users";
       openFirewall = true;
       options = {
-        calibreLibrary = "/home/mabeco/Documents/calibre-library/";
+        calibreLibrary = "/home/mabeco/Documents/.Calibre/";
         enableBookUploading = true;
         enableBookConversion = true;
       };
