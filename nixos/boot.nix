@@ -16,7 +16,7 @@
         splashImage = pkgs.fetchurl {
           url =
             "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/home-manager/files/wall.png";
-          sha256 = "0j3p8bhg319axnkmamf8mazrl4p67ix7kbnkl4v4ggkdf29hljg6";
+          sha256 = "0c3350l7ya8xxfs64whzbw3s1h6zjfpc0pgz8qhf3xwjjcbcbwvg";
         };
       };
       timeout = 2;
