@@ -93,9 +93,7 @@ with lib.hm.gvariant;
       window-width = 1280;
     };
 
-    "org/gnome/control-center" = {
-      window-state = mkTuple [ 980 640 ];
-    };
+    "org/gnome/control-center" = { window-state = mkTuple [ 980 640 ]; };
 
     "org/gnome/desktop/app-folders" = {
       folder-children = [
@@ -137,6 +135,7 @@ with lib.hm.gvariant;
           "org.gnome.eog.desktop"
           "org.gnome.Evince.desktop"
           "vlc.desktop"
+          "com.github.johnfactotum.Foliate.desktop"
         ];
         name = "Media";
         translate = false;
