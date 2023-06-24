@@ -39,13 +39,12 @@
   systemd.services."autovt@tty1".enable = false;
   environment.systemPackages = (with pkgs.gnome; [
     nautilus
-    nautilus-python
     gnome-tweaks
     gnome-shell-extensions
     pomodoro
     eog
     gnome-calendar
-  ]) ++ (with pkgs; [ dconf2nix blackbox-terminal nautilus-open-any-terminal ])
+  ]) ++ (with pkgs; [ dconf2nix blackbox-terminal ])
     ++ (with pkgs.gnomeExtensions; [
       hide-activities-button
       gnome-bedtime
