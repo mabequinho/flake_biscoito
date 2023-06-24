@@ -43,6 +43,7 @@
     (python311.withPackages (ps: with ps; [ pandas ]))
 
     #misc
+    vlc
     disfetch
     rage
     tomb

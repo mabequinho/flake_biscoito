@@ -93,27 +93,7 @@ with lib.hm.gvariant;
       window-width = 1280;
     };
 
-    "org/gnome/Totem" = {
-      active-plugins = [
-        "vimeo"
-        "variable-rate"
-        "skipto"
-        "screenshot"
-        "screensaver"
-        "save-file"
-        "rotation"
-        "recent"
-        "movie-properties"
-        "open-directory"
-        "mpris"
-        "autoload-subtitles"
-        "apple-trailers"
-      ];
-      subtitle-encoding = "UTF-8";
-    };
-
     "org/gnome/control-center" = {
-      last-panel = "sound";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -134,7 +114,6 @@ with lib.hm.gvariant;
         apps = [
           "firefox.desktop"
           "info.mumble.Mumble.desktop"
-          "hakuneko-desktop.desktop"
           "org.gnome.Geary.desktop"
         ];
         name = "Internet";
@@ -143,11 +122,10 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders/folders/7a1434a7-6019-4318-99f3-eab69516706c" =
       {
         apps = [
-          "org.gnome.Connections.desktop"
           "transmission-gtk.desktop"
-          "org.gnome.Contacts.desktop"
           "org.gnome.Calendar.desktop"
           "com.github.wwmm.easyeffects.desktop"
+          "hakuneko-desktop.desktop"
         ];
         name = "Misc";
         translate = false;
@@ -156,10 +134,9 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders/folders/82b4a6f4-550b-4668-9bb2-c23b32a624d5" =
       {
         apps = [
-          "org.gnome.Totem.desktop"
-          "org.gnome.Music.desktop"
           "org.gnome.eog.desktop"
           "org.gnome.Evince.desktop"
+          "vlc.desktop"
         ];
         name = "Media";
         translate = false;
@@ -204,7 +181,6 @@ with lib.hm.gvariant;
           "virt-manager.desktop"
           "org.octave.Octave.desktop"
           "com.usebottles.bottles.desktop"
-          "nvim.desktop"
         ];
         name = "Dev";
         translate = false;
@@ -237,7 +213,7 @@ with lib.hm.gvariant;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
       font-name = "Liberation Sans 11";
-      icon-theme = "Yaru-sage";
+      icon-theme = "Yaru-bark";
       monospace-font-name = "Mononoki Nerd Font Mono 10";
       toolkit-accessibility = false;
     };
@@ -253,10 +229,6 @@ with lib.hm.gvariant;
       ];
       show-banners = true;
       show-in-lock-screen = false;
-    };
-
-    "org/gnome/desktop/notifications/application/calibre-gui" = {
-      application-id = "calibre-gui.desktop";
     };
 
     "org/gnome/desktop/notifications/application/codium" = {
@@ -525,7 +497,7 @@ with lib.hm.gvariant;
       user-enabled = false;
     };
 
-    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-sage-dark"; };
+    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-bark-dark"; };
 
     "org/gnome/shell/keybindings" = {
       switch-to-application-1 = [ ];
