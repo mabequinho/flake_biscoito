@@ -2,9 +2,6 @@
   programs = {
     fish = {
       enable = true;
-      shellInit = ''
-        any-nix-shell fish --info-right | source
-      '';
       shellAliases = {
         ls = "ls -A --color=auto -cltp --si --group-directories-first";
         rebh =

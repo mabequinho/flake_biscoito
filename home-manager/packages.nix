@@ -25,7 +25,6 @@
     bottom
     radeontop
     ffmpeg_5-full
-    any-nix-shell
     playerctl
     zip
     rar
