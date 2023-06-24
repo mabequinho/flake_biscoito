@@ -44,13 +44,11 @@
     pomodoro
     eog
     gnome-calendar
-  ]) ++ (with pkgs; [
-    dconf2nix
-    blackbox-terminal
-  ]) ++ (with pkgs.gnomeExtensions; [
-    hide-activities-button
-    gnome-bedtime
-    disable-unredirect-fullscreen-windows
-    espresso
-  ]);
+  ]) ++ (with pkgs; [ dconf2nix blackbox-terminal ])
+    ++ (with pkgs.gnomeExtensions; [
+      hide-activities-button
+      gnome-bedtime
+      disable-unredirect-fullscreen-windows
+      espresso
+    ]);
 }

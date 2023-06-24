@@ -13,13 +13,14 @@
         device = "nodev";
         efiSupport = true;
         enableCryptodisk = true;
-        splashImage = pkgs.fetchurl {
-          url =
-            "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/home-manager/files/wall.png";
-          sha256 = "0c3350l7ya8xxfs64whzbw3s1h6zjfpc0pgz8qhf3xwjjcbcbwvg";
-        };
+        backgroundColor = "#000000";
       };
       timeout = 2;
+    };
+    plymouth = {
+      enable = true;
+      theme = "pixels";
+      themePackages = with pkgs; [ adi1090x-plymouth-themes ];
     };
     kernelPackages = pkgs.linuxKernel.packages.linux_6_3;
     kernelParams =
