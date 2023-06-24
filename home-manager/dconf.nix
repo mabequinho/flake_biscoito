@@ -6,12 +6,22 @@ with lib.hm.gvariant;
 {
   dconf.settings = {
     "apps/seahorse/listing" = {
-      keyrings-selected = [ "openssh:///home/mabeco/.ssh" ];
+      keyrings-selected = [
+        "secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring"
+      ];
     };
 
     "apps/seahorse/windows/key-manager" = {
       height = 476;
       width = 600;
+    };
+
+    "com/github/johnfactotum/Foliate/library" = {
+      height = 600;
+      maximized = false;
+      page = "library";
+      view-mode = "grid";
+      width = 800;
     };
 
     "com/github/wwmm/easyeffects" = {
@@ -62,7 +72,7 @@ with lib.hm.gvariant;
       style-preference = mkUint32 0;
       theme-dark = "base16: Twilight (dark)";
       theme-light = "Grayscale Light (base16)";
-      was-maximized = true;
+      was-maximized = false;
       window-height = mkUint32 559;
       window-show-borders = true;
       window-width = mkUint32 716;
@@ -89,11 +99,14 @@ with lib.hm.gvariant;
 
     "org/gnome/Geary" = {
       migrated-config = true;
-      window-height = 1053;
+      window-height = 1048;
       window-width = 1280;
     };
 
-    "org/gnome/control-center" = { window-state = mkTuple [ 980 640 ]; };
+    "org/gnome/control-center" = {
+      last-panel = "default-apps";
+      window-state = mkTuple [ 980 640 ];
+    };
 
     "org/gnome/desktop/app-folders" = {
       folder-children = [
@@ -225,6 +238,8 @@ with lib.hm.gvariant;
         "org-gnome-settings"
         "gnome-network-panel"
         "org-gnome-nautilus"
+        "gnome-power-panel"
+        "org-gnome-geary"
       ];
       show-banners = true;
       show-in-lock-screen = false;
@@ -326,6 +341,10 @@ with lib.hm.gvariant;
       focus-mode = "sloppy";
     };
 
+    "org/gnome/evince/default" = {
+      window-ratio = mkTuple [ 0.5624999998242186 0.375 ];
+    };
+
     "org/gnome/evolution-data-server" = { migrated = true; };
 
     "org/gnome/mutter" = {
@@ -377,12 +396,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-23T16:45:47+0000";
+      timer-date = "2023-06-24T20:40:35+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-23T16:45:47+0000";
+      timer-state-date = "2023-06-24T20:40:35+0000";
       timer-state-duration = 0.0;
     };
 
@@ -472,6 +491,7 @@ with lib.hm.gvariant;
         "unredirect@vaina.lt"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
+        "no-overview@fthx"
       ];
       favorite-apps = [ "com.raggesilver.BlackBox.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
@@ -527,6 +547,10 @@ with lib.hm.gvariant;
       type-format = "category";
       view-type = "list";
       window-size = mkTuple [ 1005 651 ];
+    };
+
+    "org/gtk/settings/color-chooser" = {
+      selected-color = mkTuple [ true 0.6039215686274509 ];
     };
 
     "org/gtk/settings/file-chooser" = {

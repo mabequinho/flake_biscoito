@@ -50,5 +50,6 @@
       gnome-bedtime
       disable-unredirect-fullscreen-windows
       espresso
+      no-overview
     ]);
 }

@@ -13,9 +13,8 @@
         device = "nodev";
         efiSupport = true;
         enableCryptodisk = true;
-        backgroundColor = "#000000";
       };
-      timeout = 2;
+      timeout = 1;
     };
     plymouth = {
       enable = true;
