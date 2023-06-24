@@ -60,7 +60,13 @@
       auto-optimise-store = true;
     };
   };
-  environment.systemPackages = with pkgs; [ git ddcutil libva-utils libnotify virt-manager ];
+  environment.systemPackages = with pkgs; [
+    git
+    ddcutil
+    libva-utils
+    libnotify
+    virt-manager
+  ];
   time.timeZone = "America/Fortaleza";
   i18n = {
     defaultLocale = "en_US.UTF-8";
