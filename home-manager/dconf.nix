@@ -103,11 +103,6 @@ with lib.hm.gvariant;
       window-width = 1280;
     };
 
-    "org/gnome/control-center" = {
-      last-panel = "default-apps";
-      window-state = mkTuple [ 980 640 ];
-    };
-
     "org/gnome/desktop/app-folders" = {
       folder-children = [
         "Utilities"
@@ -219,12 +214,12 @@ with lib.hm.gvariant;
       clock-show-weekday = true;
       color-scheme = "default";
       cursor-theme = "Tewi";
-      document-font-name = "Liberation Sans 11";
+      document-font-name = "Mononoki Nerd Font 11";
       enable-animations = true;
       enable-hot-corners = true;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
-      font-name = "Liberation Sans 11";
+      font-name = "Mononoki Nerd Font 11";
       icon-theme = "Yaru-bark";
       monospace-font-name = "Mononoki Nerd Font Mono 10";
       toolkit-accessibility = false;
