@@ -16,6 +16,7 @@
     ulauncher
     bottles
     easyeffects
+    foliate
 
     #utils
     zbar
