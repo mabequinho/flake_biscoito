@@ -503,7 +503,6 @@ with lib.hm.gvariant;
     "org/gnome/shell" = {
       app-picker-layout =
         "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <3>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <4>}>, 'Utilities': <{'position': <5>}>}]";
-      command-history = [ "gnome-terminal" ];
       disabled-extensions = [ ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
@@ -513,7 +512,6 @@ with lib.hm.gvariant;
         "gnomebedtime@ionutbortis.gmail.com"
         "unredirect@vaina.lt"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
-        "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
         "no-overview@fthx"
       ];
       favorite-apps = [ "com.raggesilver.BlackBox.desktop" ];
