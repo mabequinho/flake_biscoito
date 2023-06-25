@@ -103,7 +103,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "datetime";
+      last-panel = "display";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -255,6 +255,10 @@ with lib.hm.gvariant;
       application-id = "firefox.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/gnome-datetime-panel" = {
+      application-id = "gnome-datetime-panel.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/gnome-network-panel" = {
       application-id = "gnome-network-panel.desktop";
     };
@@ -286,6 +290,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/org-gnome-world-pikabackup" = {
       application-id = "org.gnome.World.PikaBackup.desktop";
+    };
+
+    "org/gnome/desktop/peripherals/touchpad" = {
+      two-finger-scrolling-enabled = true;
     };
 
     "org/gnome/desktop/peripherals/trackball" = {
@@ -421,10 +429,9 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = false;
-      night-light-last-coordinates = mkTuple [ (-5.091615671387423) (-42.803) ];
       night-light-schedule-automatic = false;
-      night-light-schedule-from = 3.983333;
-      night-light-schedule-to = 3.966667;
+      night-light-schedule-from = 18.0;
+      night-light-schedule-to = 7.0;
       night-light-temperature = mkUint32 4700;
     };
 
