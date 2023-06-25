@@ -2,9 +2,8 @@
   home.packages = with pkgs; [
     #menss
     profanity
-    nchat
-    tiny
-    mumble
+    discord
+    telegram-desktop
 
     #net
     transmission-gtk
@@ -46,8 +45,6 @@
     vlc
     disfetch
     rage
-    tomb
-    pinentry-gnome
     nerdfonts
     yaru-theme
 
