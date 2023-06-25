@@ -7,5 +7,6 @@
     ./programs/ff.nix
     ./programs/codium.nix
     ./programs/fish.nix
+    ./programs/emacs.nix
   ];
 }
