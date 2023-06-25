@@ -103,6 +103,11 @@ with lib.hm.gvariant;
       window-width = 1280;
     };
 
+    "org/gnome/control-center" = {
+      last-panel = "region";
+      window-state = mkTuple [ 1142 807 ];
+    };
+
     "org/gnome/desktop/app-folders" = {
       folder-children = [
         "Utilities"
@@ -119,8 +124,9 @@ with lib.hm.gvariant;
       {
         apps = [
           "firefox.desktop"
-          "info.mumble.Mumble.desktop"
           "org.gnome.Geary.desktop"
+          "discord.desktop"
+          "org.telegram.desktop.desktop"
         ];
         name = "Internet";
       };
@@ -336,9 +342,7 @@ with lib.hm.gvariant;
       focus-mode = "sloppy";
     };
 
-    "org/gnome/evince/default" = {
-      window-ratio = mkTuple [ 0.5624999998242186 0.375 ];
-    };
+    "org/gnome/evince/default" = { window-ratio = mkTuple [ 0.5625 0.375 ]; };
 
     "org/gnome/evolution-data-server" = { migrated = true; };
 
@@ -545,7 +549,7 @@ with lib.hm.gvariant;
     };
 
     "org/gtk/settings/color-chooser" = {
-      selected-color = mkTuple [ true 0.6039215686274509 ];
+      selected-color = mkTuple [ true 0.603922 ];
     };
 
     "org/gtk/settings/file-chooser" = {
