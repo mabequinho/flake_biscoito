@@ -194,12 +194,9 @@ with lib.hm.gvariant;
       };
 
     "org/gnome/desktop/background" = {
-      color-shading-type = "solid";
       picture-options = "zoom";
       picture-uri = "file:///home/mabeco/.wall";
       picture-uri-dark = "file:///home/mabeco/.wall";
-      primary-color = "#000000000000";
-      secondary-color = "#000000000000";
     };
 
     "org/gnome/desktop/datetime" = { automatic-timezone = true; };
@@ -303,12 +300,9 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/screensaver" = {
-      color-shading-type = "solid";
       lock-delay = mkUint32 300;
       picture-options = "zoom";
       picture-uri = "file:///home/mabeco/.wall";
-      primary-color = "#000000000000";
-      secondary-color = "#000000000000";
     };
 
     "org/gnome/desktop/search-providers" = {

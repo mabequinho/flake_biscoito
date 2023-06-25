@@ -1,4 +1,7 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, ... }: {
+
+  home.file.".mozilla/firefox/vzd30f0u.default/chrome/firefox-gnome-theme".source =
+    inputs.firefox-gnome-theme;
 
   programs = {
     firefox = {
@@ -6,11 +9,18 @@
       package = pkgs.firefox-bin;
       profiles = {
         "vzd30f0u.default" = {
+          settings = {
+            "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+            "svg.context-properties.content.enabled" = true;
+            "layers.acceleration.force-enabled" = true;
+            "media.ffmpeg.vaapi.enabled" = true;
+          };
+          userContent = ''
+            @import "firefox-gnome-theme/userContent.css";
+            '';
           userChrome = ''
-            #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
-            width: 0px !important;
-            padding: 0px !important;
-            }
+
+            @import "firefox-gnome-theme/userChrome.css";
 
             :root {
             /* delay before expanding tabs, set to '0' for no delay */

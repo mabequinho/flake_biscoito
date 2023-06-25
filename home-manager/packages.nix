@@ -46,6 +46,8 @@
     vlc
     disfetch
     rage
+
+    #theming
     nerdfonts
     yaru-theme
 
