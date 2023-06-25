@@ -60,7 +60,7 @@ with lib.hm.gvariant;
     "com/raggesilver/BlackBox" = {
       command-as-login-shell = false;
       cursor-blink-mode = mkUint32 0;
-      cursor-shape = mkUint32 0;
+      cursor-shape = mkUint32 2;
       fill-tabs = true;
       font = "Mononoki Nerd Font Mono 10";
       headerbar-draw-line-single-tab = true;
