@@ -499,8 +499,12 @@ with lib.hm.gvariant;
     "org/gnome/shell/app-switcher" = { current-workspace-only = true; };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list =
-        [ "org.gnome.Pomodoro.desktop:4" "org.gnome.Geary.desktop:4" ];
+      application-list = [
+        "org.gnome.Pomodoro.desktop:4"
+        "org.gnome.Geary.desktop:4"
+        "discord.desktop:3"
+        "org.telegram.desktop.desktop:3"
+      ];
     };
 
     "org/gnome/shell/extensions/bedtime-mode" = {
