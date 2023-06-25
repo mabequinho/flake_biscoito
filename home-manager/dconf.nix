@@ -102,6 +102,11 @@ with lib.hm.gvariant;
       window-width = 1280;
     };
 
+    "org/gnome/control-center" = {
+      last-panel = "user-accounts";
+      window-state = mkTuple [ 980 640 ];
+    };
+
     "org/gnome/desktop/app-folders" = {
       folder-children = [
         "Utilities"
@@ -219,7 +224,7 @@ with lib.hm.gvariant;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
       font-name = "Ubuntu Nerd Font Condensed 10";
-      icon-theme = "Yaru-bark";
+      icon-theme = "Yaru-purple";
       monospace-font-name = "Mononoki Nerd Font Mono 10";
       toolkit-accessibility = false;
     };
@@ -339,8 +344,6 @@ with lib.hm.gvariant;
       auto-raise = true;
       focus-mode = "sloppy";
     };
-
-    "org/gnome/evince/default" = { window-ratio = mkTuple [ 0.5625 0.375 ]; };
 
     "org/gnome/evolution-data-server" = { migrated = true; };
 
@@ -531,7 +534,7 @@ with lib.hm.gvariant;
       user-enabled = false;
     };
 
-    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-bark-dark"; };
+    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-purple-dark"; };
 
     "org/gnome/shell/keybindings" = {
       switch-to-application-1 = [ ];
@@ -550,40 +553,6 @@ with lib.hm.gvariant;
     "org/gnome/system/location" = { enabled = true; };
 
     "org/gnome/tweaks" = { show-extensions-notice = false; };
-
-    "org/gtk/gtk4/settings/file-chooser" = {
-      date-format = "regular";
-      location-mode = "path-bar";
-      show-hidden = false;
-      show-size-column = true;
-      show-type-column = true;
-      sidebar-width = 140;
-      sort-column = "name";
-      sort-directories-first = true;
-      sort-order = "ascending";
-      type-format = "category";
-      view-type = "list";
-      window-size = mkTuple [ 1005 651 ];
-    };
-
-    "org/gtk/settings/color-chooser" = {
-      selected-color = mkTuple [ true 0.603922 ];
-    };
-
-    "org/gtk/settings/file-chooser" = {
-      date-format = "regular";
-      location-mode = "path-bar";
-      show-hidden = false;
-      show-size-column = true;
-      show-type-column = true;
-      sidebar-width = 155;
-      sort-column = "name";
-      sort-directories-first = false;
-      sort-order = "ascending";
-      type-format = "category";
-      window-position = mkTuple [ 26 23 ];
-      window-size = mkTuple [ 1231 902 ];
-    };
 
     "org/virt-manager/virt-manager" = {
       manager-window-height = 550;
