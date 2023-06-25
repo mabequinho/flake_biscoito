@@ -102,11 +102,6 @@ with lib.hm.gvariant;
       window-width = 1280;
     };
 
-    "org/gnome/control-center" = {
-      last-panel = "display";
-      window-state = mkTuple [ 980 640 ];
-    };
-
     "org/gnome/desktop/app-folders" = {
       folder-children = [
         "Utilities"
