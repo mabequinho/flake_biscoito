@@ -103,7 +103,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "user-accounts";
+      last-panel = "background";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -199,9 +199,14 @@ with lib.hm.gvariant;
       };
 
     "org/gnome/desktop/background" = {
+      color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri = "file:///home/mabeco/.wall";
-      picture-uri-dark = "file:///home/mabeco/.wall";
+      picture-uri =
+        "file:///run/current-system/sw/share/backgrounds/gnome/vnc-l.webp";
+      picture-uri-dark =
+        "file:///run/current-system/sw/share/backgrounds/gnome/vnc-d.webp";
+      primary-color = "#77767B";
+      secondary-color = "#000000";
     };
 
     "org/gnome/desktop/datetime" = { automatic-timezone = true; };
@@ -305,9 +310,13 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/screensaver" = {
+      color-shading-type = "solid";
       lock-delay = mkUint32 300;
       picture-options = "zoom";
-      picture-uri = "file:///home/mabeco/.wall";
+      picture-uri =
+        "file:///run/current-system/sw/share/backgrounds/gnome/vnc-l.webp";
+      primary-color = "#77767B";
+      secondary-color = "#000000";
     };
 
     "org/gnome/desktop/search-providers" = {
