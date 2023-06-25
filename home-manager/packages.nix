@@ -18,6 +18,7 @@
     foliate
 
     #utils
+    nix-your-shell
     zbar
     wl-clipboard
     detox

@@ -6,9 +6,8 @@ with lib.hm.gvariant;
 {
   dconf.settings = {
     "apps/seahorse/listing" = {
-      keyrings-selected = [
-        "secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring"
-      ];
+      keyrings-selected =
+        [ "secret-service:///org/freedesktop/secrets/collection/login" ];
     };
 
     "apps/seahorse/windows/key-manager" = {
@@ -104,8 +103,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "region";
-      window-state = mkTuple [ 1142 807 ];
+      last-panel = "datetime";
+      window-state = mkTuple [ 980 640 ];
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -207,6 +206,8 @@ with lib.hm.gvariant;
       primary-color = "#000000000000";
       secondary-color = "#000000000000";
     };
+
+    "org/gnome/desktop/datetime" = { automatic-timezone = true; };
 
     "org/gnome/desktop/input-sources" = {
       mru-sources =
@@ -346,6 +347,20 @@ with lib.hm.gvariant;
 
     "org/gnome/evolution-data-server" = { migrated = true; };
 
+    "org/gnome/file-roller/listing" = {
+      list-mode = "as-folder";
+      name-column-width = 250;
+      show-path = false;
+      sort-method = "name";
+      sort-type = "ascending";
+    };
+
+    "org/gnome/file-roller/ui" = {
+      sidebar-width = 200;
+      window-height = 480;
+      window-width = 600;
+    };
+
     "org/gnome/mutter" = {
       center-new-windows = true;
       edge-tiling = true;
@@ -395,17 +410,18 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-24T20:40:35+0000";
+      timer-date = "2023-06-25T13:39:37+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-24T20:40:35+0000";
+      timer-state-date = "2023-06-25T13:39:37+0000";
       timer-state-duration = 0.0;
     };
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = false;
+      night-light-last-coordinates = mkTuple [ (-5.091615671387423) (-42.803) ];
       night-light-schedule-automatic = false;
       night-light-schedule-from = 3.983333;
       night-light-schedule-to = 3.966667;
@@ -509,7 +525,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/bedtime-mode" = {
       bedtime-mode-active = true;
-      color-tone-factor = 70;
+      color-tone-factor = 85;
       color-tone-preset = "grayscale";
     };
 
@@ -534,6 +550,8 @@ with lib.hm.gvariant;
       toggle-application-view = [ ];
       toggle-message-tray = [ ];
     };
+
+    "org/gnome/system/location" = { enabled = true; };
 
     "org/gnome/tweaks" = { show-extensions-notice = false; };
 
@@ -611,7 +629,7 @@ with lib.hm.gvariant;
       vm-window-size = mkTuple [ 1280 1043 ];
     };
 
-    "system/locale" = { region = "pt_BR.UTF-8"; };
+    "system/locale" = { region = "en_US.UTF-8"; };
 
   };
 }

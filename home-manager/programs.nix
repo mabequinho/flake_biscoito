@@ -6,5 +6,6 @@
     ./programs/task.nix
     ./programs/ff.nix
     ./programs/codium.nix
+    ./programs/fish.nix
   ];
 }
