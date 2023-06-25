@@ -57,26 +57,6 @@ with lib.hm.gvariant;
       use-default-output-device = true;
     };
 
-    "com/raggesilver/BlackBox" = {
-      command-as-login-shell = false;
-      cursor-blink-mode = mkUint32 0;
-      cursor-shape = mkUint32 2;
-      fill-tabs = true;
-      font = "Mononoki Nerd Font Mono 10";
-      headerbar-draw-line-single-tab = true;
-      pretty = false;
-      remember-window-size = true;
-      show-headerbar = true;
-      show-menu-button = false;
-      style-preference = mkUint32 0;
-      theme-dark = "base16: Twilight (dark)";
-      theme-light = "Grayscale Light (base16)";
-      was-maximized = false;
-      window-height = mkUint32 559;
-      window-show-borders = true;
-      window-width = mkUint32 716;
-    };
-
     "com/usebottles/bottles" = {
       epic-games = false;
       startup-view = "page_list";
@@ -94,6 +74,11 @@ with lib.hm.gvariant;
       dictionaryinstalltimestamp = "2023-06-17 21:10:34";
       disableinterminals = true;
       inputmethod = "NoIME";
+    };
+
+    "org/gnome/Console" = {
+      last-window-size = mkTuple [ 572 433 ];
+      theme = "auto";
     };
 
     "org/gnome/Geary" = {
@@ -419,12 +404,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-25T13:39:37+0000";
+      timer-date = "2023-06-25T19:58:17+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-25T13:39:37+0000";
+      timer-state-date = "2023-06-25T19:58:17+0000";
       timer-state-duration = 0.0;
     };
 
@@ -514,7 +499,7 @@ with lib.hm.gvariant;
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "no-overview@fthx"
       ];
-      favorite-apps = [ "com.raggesilver.BlackBox.desktop" ];
+      favorite-apps = [ "org.gnome.Console.desktop" ];
       welcome-dialog-last-shown-version = "44.2";
     };
 
@@ -560,6 +545,21 @@ with lib.hm.gvariant;
     "org/gnome/system/location" = { enabled = true; };
 
     "org/gnome/tweaks" = { show-extensions-notice = false; };
+
+    "org/gtk/settings/file-chooser" = {
+      date-format = "regular";
+      location-mode = "path-bar";
+      show-hidden = false;
+      show-size-column = true;
+      show-type-column = true;
+      sidebar-width = 150;
+      sort-column = "name";
+      sort-directories-first = false;
+      sort-order = "ascending";
+      type-format = "category";
+      window-position = mkTuple [ 26 23 ];
+      window-size = mkTuple [ 1124 822 ];
+    };
 
     "org/virt-manager/virt-manager" = {
       manager-window-height = 550;
