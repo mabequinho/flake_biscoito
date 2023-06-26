@@ -26,7 +26,7 @@
   services = {
     gnome = {
       core-utilities.enable = false;
-      gnome-online-accounts.enable = false;
+      gnome-online-accounts.enable = true;
       gnome-keyring.enable = true;
       sushi.enable = true;
     };
