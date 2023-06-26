@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
 
@@ -24,13 +24,7 @@
       };
     };
 
-    ".local/share/icons/Tewi" = {
-      source = pkgs.fetchzip {
-        url =
-          "https://github.com/mabequinho/flake_biscoito/raw/main/home-manager/files/Tewi.zip";
-        sha256 = "17pl69qc3r3m1m2rn3q1czcj1mrkzrszz8bj2r66rgbc8lr32vrh";
-      };
-    };
+    ".local/share/icons".source = inputs.touhou-cursors;
 
     ".local/share/blackbox/schemes/base16-grayscale-light.json".source =
       ./files/base16-grayscale-light.json;

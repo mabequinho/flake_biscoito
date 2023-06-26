@@ -11,8 +11,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    firefox-gnome-theme = {
-      url = "github:rafaelmardojai/firefox-gnome-theme";
+    touhou-cursors = {
+      url = "github:mabequinho/touhou-cursors";
       flake = false;
     };
 

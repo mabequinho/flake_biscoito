@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "firefox-gnome-theme": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1686524487,
-        "narHash": "sha256-o53fws/jwhLfxiYfTyYpKSGi61d5LHzGgSCkt3DNGRI=",
-        "owner": "rafaelmardojai",
-        "repo": "firefox-gnome-theme",
-        "rev": "83b5b96b0ff5f30543b4e6137e268bcf9933c328",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rafaelmardojai",
-        "repo": "firefox-gnome-theme",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -39,11 +23,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1687555006,
-        "narHash": "sha256-GD2Kqb/DXQBRJcHqkM2qFZqbVenyO7Co/80JHRMg2U0=",
+        "lastModified": 1687729501,
+        "narHash": "sha256-mTLkMePoHUWvTCf3NuKbeYEea/tsikSIKBWwb9OfRr4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "33223d479ffde3d05ac16c6dff04ae43cc27e577",
+        "rev": "35130d4b4f0b8c50ed2aceb909a538c66c91d4a0",
         "type": "github"
       },
       "original": {
@@ -55,9 +39,25 @@
     },
     "root": {
       "inputs": {
-        "firefox-gnome-theme": "firefox-gnome-theme",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "touhou-cursors": "touhou-cursors"
+      }
+    },
+    "touhou-cursors": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1687768710,
+        "narHash": "sha256-ND9D395vE/+0UkAto3H+LXCqeLKFpbXtLtNA/cr4/1I=",
+        "owner": "mabequinho",
+        "repo": "touhou-cursors",
+        "rev": "3b6c885b210e2406d33f3f5c1352a7dfe8b1d75b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mabequinho",
+        "repo": "touhou-cursors",
+        "type": "github"
       }
     }
   },
