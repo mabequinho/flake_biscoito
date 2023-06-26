@@ -3,6 +3,13 @@
   home.file = {
 
     ".emacs.d/init.el".text = ''
+;; If you want to use powerline, (require 'powerline) must be
+;; before (require 'moe-theme).
+(add-to-list 'load-path "${pkgs.emacsPackages.poweline}")
+;; (require 'powerline)
+
+
+
       (add-to-list 'custom-theme-load-path "${pkgs.emacsPackages.moe-theme}/share/emacs/site-lisp/elpa/moe-theme-20230518.1108/")
       (add-to-list 'load-path "${pkgs.emacsPackages.moe-theme}/share/emacs/site-lisp/elpa/moe-theme-20230518.1108/")
       (require 'moe-theme)
