@@ -37,7 +37,13 @@
     username = "mabeco";
     homeDirectory = "/home/mabeco";
   };
-
+  homeage = {
+    identityPaths = [ "~/.ssh/id_ed25519" ];
+    installationType = "systemd";
+    pkg = pkgs.rage;
+    file."mail.nix" = { source = ./programs/mail.nix.age; };
+    file."task.nix" = { source = ./programs/task.nix.age; };
+  };
   # Enable home-manager
   programs.home-manager.enable = true;
   # Nicely reload system units when changing configs

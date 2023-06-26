@@ -8,11 +8,11 @@
       shellAliases = {
         ls = "ls -A --color=auto -cltp --si --group-directories-first";
         rebh =
-          "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito";
+          "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito --impure";
         rebr =
           "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";
         nix-hell =
-          "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito ; sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";
+          "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito --impure; sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";
         lports = "sudo netstat -tulpn | grep LISTEN";
         wp = "wgetpaste";
         slam = "tomb slam --force all";

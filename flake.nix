@@ -10,7 +10,11 @@
       url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+    homeage = {
+      url = "github:jordanisaacs/homeage";
+      # Optional
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     touhou-cursors = {
       url = "github:mabequinho/touhou-cursors";
       flake = false;
@@ -18,7 +22,7 @@
 
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, homeage, ... }@inputs: {
     nixosConfigurations = {
       biscoito = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; }; # Pass flake inputs to our config
@@ -34,7 +38,8 @@
         extraSpecialArgs = {
           inherit inputs;
         }; # Pass flake inputs to our config
-        modules = [ ./home-manager/home.nix ];
+        modules =
+          [ ./home-manager/home.nix homeage.homeManagerModules.homeage ];
       };
     };
   };

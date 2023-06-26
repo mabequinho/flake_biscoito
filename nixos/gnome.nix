@@ -22,12 +22,12 @@
     dconf.enable = true;
     seahorse.enable = true;
     evince.enable = true;
-    geary.enable = true;
     file-roller.enable = true;
   };
   services = {
     gnome = {
       core-utilities.enable = false;
+      gnome-online-accounts.enable = false;
       gnome-keyring.enable = true;
       sushi.enable = true;
     };

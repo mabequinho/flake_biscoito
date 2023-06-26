@@ -35,6 +35,7 @@
     wgetpaste
     tree
     tcpdump
+    rage
 
     #langs
     octaveFull
