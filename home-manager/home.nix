@@ -36,7 +36,6 @@
   home = {
     username = "mabeco";
     homeDirectory = "/home/mabeco";
-    sessionVariables = { VISUAL = "nvim"; };
   };
 
   # Enable home-manager

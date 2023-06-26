@@ -19,7 +19,7 @@
       enable = true;
       package = pkgs.emacs-gtk;
       extraConfig = "";
-      extraPackages = epkgs: with epkgs; [ moe-theme jupyter ];
+      extraPackages = epkgs: with epkgs; [ moe-theme ];
       overrides = self: super: { };
     };
   };
