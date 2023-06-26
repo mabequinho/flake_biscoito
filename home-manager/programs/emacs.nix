@@ -19,7 +19,7 @@
       enable = true;
       package = pkgs.emacs-gtk;
       extraConfig = "";
-      extraPackages = epkgs: with epkgs; [ moe-theme ];
+      extraPackages = epkgs: with epkgs; [ moe-theme powerline ];
       overrides = self: super: { };
     };
   };
