@@ -32,10 +32,12 @@
       settings = {
         main = {
           capslock = "overload(control, esc)";
+          leftcontrol = "M-a";
+          meta = "M-space";
           esc = "`";
           up = "/";
           down = "compose";
-          left = "rightalt";
+          left = "oneshot(meta)";
           right = "rightcontrol";
           "/" = "up";
           compose = "down";
