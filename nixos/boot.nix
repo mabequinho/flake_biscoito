@@ -1,6 +1,3 @@
-# This is your system's configuration file.
-# Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
-
 { inputs, lib, config, pkgs, ... }: {
   boot = {
     loader = {
@@ -15,11 +12,6 @@
         enableCryptodisk = true;
       };
       timeout = 1;
-    };
-    plymouth = {
-      enable = true;
-      theme = "pixels";
-      themePackages = with pkgs; [ adi1090x-plymouth-themes ];
     };
     kernelPackages = pkgs.linuxKernel.packages.linux_6_3;
     kernelParams =

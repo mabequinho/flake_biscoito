@@ -14,7 +14,6 @@
         user = "mabeco";
       };
     };
-    videoDrivers = [ "amdgpu" ];
   };
 
   services.power-profiles-daemon.enable = lib.mkForce false;
