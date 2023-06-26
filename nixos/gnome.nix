@@ -21,7 +21,6 @@
   programs = {
     dconf.enable = true;
     seahorse.enable = true;
-    evince.enable = true;
     file-roller.enable = true;
   };
   services = {

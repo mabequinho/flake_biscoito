@@ -14,7 +14,7 @@
     pika-backup
     ulauncher
     easyeffects
-    foliate
+    mate.atril
 
     #utils
     screen
