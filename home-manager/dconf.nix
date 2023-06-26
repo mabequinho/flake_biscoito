@@ -6,6 +6,7 @@ with lib.hm.gvariant;
 {
   dconf.settings = {
     "apps/seahorse/listing" = {
+      item-filter = "any";
       keyrings-selected =
         [ "secret-service:///org/freedesktop/secrets/collection/login" ];
     };
@@ -13,14 +14,6 @@ with lib.hm.gvariant;
     "apps/seahorse/windows/key-manager" = {
       height = 476;
       width = 600;
-    };
-
-    "com/github/johnfactotum/Foliate/library" = {
-      height = 600;
-      maximized = false;
-      page = "library";
-      view-mode = "grid";
-      width = 800;
     };
 
     "com/github/wwmm/easyeffects" = {
@@ -66,30 +59,9 @@ with lib.hm.gvariant;
       window-width = 880;
     };
 
-    "org/freedesktop/ibus/engine/typing-booster" = {
-      autocapitalize = true;
-      autocommitcharacters = ".,;:?!/[]{}=+-_)(";
-      autoselectcandidate = 1;
-      dictionary = "en_US";
-      dictionaryinstalltimestamp = "2023-06-17 21:10:34";
-      disableinterminals = true;
-      inputmethod = "NoIME";
-    };
-
     "org/gnome/Console" = {
       last-window-size = mkTuple [ 572 433 ];
       theme = "auto";
-    };
-
-    "org/gnome/Geary" = {
-      migrated-config = true;
-      window-height = 1048;
-      window-width = 1280;
-    };
-
-    "org/gnome/control-center" = {
-      last-panel = "keyboard";
-      window-state = mkTuple [ 980 640 ];
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -134,6 +106,7 @@ with lib.hm.gvariant;
           "org.gnome.Evince.desktop"
           "vlc.desktop"
           "com.github.johnfactotum.Foliate.desktop"
+          "atril.desktop"
         ];
         name = "Media";
         translate = false;
@@ -197,8 +170,6 @@ with lib.hm.gvariant;
     "org/gnome/desktop/datetime" = { automatic-timezone = true; };
 
     "org/gnome/desktop/input-sources" = {
-      mru-sources =
-        [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
       sources = [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "xkb" "us+alt-intl" ]) ];
       xkb-options = [ "terminate:ctrl_alt_bksp" ];
     };
@@ -221,26 +192,16 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications" = {
       application-children = [
-        "firefox"
         "org-gnome-pomodoro"
         "org-gnome-world-pikabackup"
         "org-gnome-settings"
         "gnome-network-panel"
         "org-gnome-nautilus"
         "gnome-power-panel"
-        "org-gnome-geary"
         "org-gnome-console"
       ];
       show-banners = true;
       show-in-lock-screen = false;
-    };
-
-    "org/gnome/desktop/notifications/application/codium" = {
-      application-id = "codium.desktop";
-    };
-
-    "org/gnome/desktop/notifications/application/firefox" = {
-      application-id = "firefox.desktop";
     };
 
     "org/gnome/desktop/notifications/application/gnome-datetime-panel" = {
@@ -259,12 +220,12 @@ with lib.hm.gvariant;
       application-id = "gnome-printers-panel.desktop";
     };
 
-    "org/gnome/desktop/notifications/application/org-gnome-console" = {
-      application-id = "org.gnome.Console.desktop";
+    "org/gnome/desktop/notifications/application/librewolf" = {
+      application-id = "librewolf.desktop";
     };
 
-    "org/gnome/desktop/notifications/application/org-gnome-geary" = {
-      application-id = "org.gnome.Geary.desktop";
+    "org/gnome/desktop/notifications/application/org-gnome-console" = {
+      application-id = "org.gnome.Console.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-nautilus" = {
@@ -579,6 +540,15 @@ with lib.hm.gvariant;
       type-format = "category";
       window-position = mkTuple [ 26 23 ];
       window-size = mkTuple [ 1124 822 ];
+    };
+
+    "org/mate/atril" = {
+      document-directory =
+        "@ms 'file:///home/mabeco/Documents/Calibre/Eric%20Matthes/Python%20Crash%20Course%20(30)'";
+    };
+
+    "org/mate/atril/default" = {
+      window-ratio = mkTuple [ 1.65 1.8216666666666668 ];
     };
 
     "org/virt-manager/virt-manager" = {
