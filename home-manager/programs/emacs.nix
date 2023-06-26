@@ -20,7 +20,7 @@ home.file = {
       package = pkgs.emacs-nox;
       extraConfig = '' 
       '';
-      extraPackages = epkgs: with epkgs; [ moe-theme ];
+      extraPackages = epkgs: with epkgs; [ moe-theme jupyter ];
       overrides = self: super: {};
     };
   };
