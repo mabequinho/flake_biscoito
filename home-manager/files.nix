@@ -4,9 +4,9 @@
 
   home.file = {
 
-    ".detoxrc".source = ./files/detoxrc;
+    ".detoxrc".source = ./sources/detoxrc;
 
-    ".bashrc".source = ./files/bashrc;
+    ".bashrc".source = ./sources/bashrc;
 
     ".face" = {
       source = pkgs.fetchurl {
@@ -16,22 +16,11 @@
       };
     };
 
-    ".wall" = {
-      source = pkgs.fetchurl {
-        url =
-          "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/home-manager/files/wall.png";
-        sha256 = "0c3350l7ya8xxfs64whzbw3s1h6zjfpc0pgz8qhf3xwjjcbcbwvg";
-      };
-    };
-
     ".local/share/icons".source = inputs.touhou-cursors;
 
-    ".local/share/blackbox/schemes/base16-grayscale-light.json".source =
-      ./files/base16-grayscale-light.json;
-
-    ".local/share/applications/fish.desktop".source = ./files/hide.desktop;
-    ".local/share/applications/cups.desktop".source = ./files/hide.desktop;
-    ".local/share/applications/nvim.desktop".source = ./files/hide.desktop;
+    ".local/share/applications/fish.desktop".source = ./sources/hide.desktop;
+    ".local/share/applications/cups.desktop".source = ./sources/hide.desktop;
+    ".local/share/applications/nvim.desktop".source = ./sources/hide.desktop;
   };
   systemd.user.tmpfiles.rules = [
     "D /tmp/mabeco-cache 0700 mabeco wheel 1w"
