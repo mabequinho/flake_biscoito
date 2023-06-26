@@ -42,7 +42,6 @@
     gnome-shell-extensions
     pomodoro
     eog
-    gnome-calendar
   ]) ++ (with pkgs; [ dconf2nix ]) ++ (with pkgs.gnomeExtensions; [
     hide-activities-button
     gnome-bedtime
