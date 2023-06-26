@@ -18,6 +18,7 @@
     foliate
 
     #utils
+    screen
     nix-your-shell
     zbar
     wl-clipboard

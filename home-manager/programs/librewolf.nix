@@ -1,22 +1,20 @@
 { config, pkgs, inputs, ... }: {
 
   programs = {
-    firefox = {
+    librewolf = {
       enable = true;
-      package = pkgs.firefox-bin;
-      profiles = {
-        "vzd30f0u.default" = {
-          settings = {
-            "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
-            "media.ffmpeg.vaapi.enabled" = true;
-          };
-          userContent = ''
-            '';
-          userChrome = ''
+      settings = {
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        "media.ffmpeg.vaapi.enabled" = true;
+      };
+    };
+  };
+  home.file = {
+".librewolf/mabeco/chrome/userChrome.css".text = ''
 #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
-width: 0px !important;
-padding: 0px !important;
-}
+            width: 0px !important;
+            padding: 0px !important;
+            }
 :root {
     /* delay before expanding tabs, set to '0' for no delay */
     --delay: 0.5s;
@@ -376,9 +374,7 @@ padding: 0px !important;
         display: none !important;
     }
 }
-          '';
-        };
-      };
-    };
+
+'';
   };
 }
