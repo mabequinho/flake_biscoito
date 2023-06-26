@@ -88,7 +88,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "background";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -199,8 +199,7 @@ with lib.hm.gvariant;
     "org/gnome/desktop/input-sources" = {
       mru-sources =
         [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
-      sources =
-        [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "ibus" "typing-booster" ]) ];
+      sources = [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "xkb" "us+alt-intl" ]) ];
       xkb-options = [ "terminate:ctrl_alt_bksp" ];
     };
 
@@ -252,6 +251,14 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/gnome-power-panel" = {
       application-id = "gnome-power-panel.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/gnome-printers-panel" = {
+      application-id = "gnome-printers-panel.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-console" = {
+      application-id = "org.gnome.Console.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-geary" = {
@@ -413,14 +420,6 @@ with lib.hm.gvariant;
       timer-state-duration = 0.0;
     };
 
-    "org/gnome/settings-daemon/plugins/color" = {
-      night-light-enabled = false;
-      night-light-schedule-automatic = false;
-      night-light-schedule-from = 18.0;
-      night-light-schedule-to = 7.0;
-      night-light-temperature = mkUint32 4700;
-    };
-
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
@@ -545,6 +544,8 @@ with lib.hm.gvariant;
     "org/gnome/system/location" = { enabled = true; };
 
     "org/gnome/tweaks" = { show-extensions-notice = false; };
+
+    "org/gtk/gtk4/settings/file-chooser" = { show-hidden = true; };
 
     "org/gtk/settings/file-chooser" = {
       date-format = "regular";
