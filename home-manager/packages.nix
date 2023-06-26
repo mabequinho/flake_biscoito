@@ -17,6 +17,7 @@
     mate.atril
 
     #utils
+    mangal
     screen
     nix-your-shell
     zbar

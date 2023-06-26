@@ -1,5 +1,5 @@
-{ inputs, lib, config, pkgs, ... }: {
-
+{ config, pkgs, ... }: {
+  imports = [ /run/user/1000/secrets/ssystemd.nix ];
   systemd = {
     user = {
       services = {

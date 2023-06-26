@@ -8,7 +8,7 @@
     ./files.nix
     ./packages.nix
     ./dconf.nix
-    ./systemd.nix
+    ./systemd/systemd.nix
   ];
 
   nixpkgs = {
@@ -43,6 +43,7 @@
     pkg = pkgs.rage;
     file."mail.nix" = { source = ./programs/mail.nix.age; };
     file."task.nix" = { source = ./programs/task.nix.age; };
+    file."ssystemd.nix" = { source = ./systemd/ssystemd.nix.age; };
   };
   # Enable home-manager
   programs.home-manager.enable = true;
