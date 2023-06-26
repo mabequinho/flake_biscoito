@@ -19,7 +19,6 @@
     ./networking.nix
     ./virt.nix
     ./nix.nix
-    ./systemd.nix
     ./pipewire.nix
   ];
 
@@ -67,12 +66,6 @@
     libnotify
     virt-manager
   ];
-  i18n = {
-    inputMethod = {
-      enabled = "ibus";
-      ibus.engines = with pkgs.ibus-engines; [ typing-booster ];
-    };
-  };
   security.sudo.wheelNeedsPassword = false;
   users.users = {
     mabeco = {
