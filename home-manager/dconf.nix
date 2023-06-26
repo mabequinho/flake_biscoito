@@ -108,7 +108,7 @@ with lib.hm.gvariant;
       {
         apps = [
           "librewolf.desktop"
-          "org.gnome.Geary.desktop"
+          "thunderbird.desktop"
           "Fluffychat.desktop"
           "org.telegram.desktop.desktop"
         ];
@@ -288,6 +288,10 @@ with lib.hm.gvariant;
       application-id = "org.gnome.World.PikaBackup.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/thunderbird" = {
+      application-id = "thunderbird.desktop";
+    };
+
     "org/gnome/desktop/peripherals/touchpad" = {
       two-finger-scrolling-enabled = true;
     };
@@ -413,12 +417,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-26T14:03:37+0000";
+      timer-date = "2023-06-26T17:15:31+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-26T14:03:37+0000";
+      timer-state-date = "2023-06-26T17:15:31+0000";
       timer-state-duration = 0.0;
     };
 
@@ -488,7 +492,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout =
-        "[{'Utilities': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <2>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <3>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <4>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <5>}>}]";
+        "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <3>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <4>}>, 'Utilities': <{'position': <5>}>}]";
       disabled-extensions = [ ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
@@ -509,9 +513,9 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
         "org.gnome.Pomodoro.desktop:4"
-        "org.gnome.Geary.desktop:4"
-        "discord.desktop:3"
         "org.telegram.desktop.desktop:3"
+        "thunderbird.desktop:4"
+        "Fluffychat.desktop:3"
       ];
     };
 
