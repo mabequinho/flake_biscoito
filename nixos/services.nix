@@ -31,9 +31,8 @@
       enable = true;
       settings = {
         main = {
-          capslock = "overload(meta, esc)";
+          capslock = "overload(control, esc)";
           esc = "`";
-          meta = "M-space";
           up = "/";
           down = "compose";
           left = "rightalt";

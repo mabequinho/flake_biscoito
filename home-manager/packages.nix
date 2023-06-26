@@ -2,8 +2,8 @@
   home.packages = with pkgs; [
     #menss
     profanity
-    discord
     telegram-desktop
+    fluffychat
 
     #net
     transmission-gtk
@@ -13,7 +13,6 @@
     #gutils
     pika-backup
     ulauncher
-    bottles
     easyeffects
     foliate
 

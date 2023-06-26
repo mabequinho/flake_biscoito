@@ -107,9 +107,9 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders/folders/502da463-a171-48bf-a485-b27e6ef744e1" =
       {
         apps = [
-          "firefox.desktop"
+          "librewolf.desktop"
           "org.gnome.Geary.desktop"
-          "discord.desktop"
+          "Fluffychat.desktop"
           "org.telegram.desktop.desktop"
         ];
         name = "Internet";
@@ -174,10 +174,10 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders/folders/bf60595e-f9f5-4bee-aa76-18c109f1caaa" =
       {
         apps = [
-          "codium.desktop"
+          "emacs.desktop"
+          "emacsclient.desktop"
           "virt-manager.desktop"
           "org.octave.Octave.desktop"
-          "com.usebottles.bottles.desktop"
         ];
         name = "Dev";
         translate = false;
@@ -213,6 +213,7 @@ with lib.hm.gvariant;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
       font-name = "Ubuntu Nerd Font Condensed 10";
+      gtk-key-theme = "Emacs";
       icon-theme = "Yaru-purple";
       monospace-font-name = "Mononoki Nerd Font Mono 10";
       toolkit-accessibility = false;
@@ -228,6 +229,7 @@ with lib.hm.gvariant;
         "org-gnome-nautilus"
         "gnome-power-panel"
         "org-gnome-geary"
+        "org-gnome-console"
       ];
       show-banners = true;
       show-in-lock-screen = false;
@@ -411,12 +413,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/pomodoro/state" = {
-      timer-date = "2023-06-25T19:58:17+0000";
+      timer-date = "2023-06-26T14:03:37+0000";
       timer-elapsed = 0.0;
       timer-paused = false;
       timer-score = 0.0;
       timer-state = "null";
-      timer-state-date = "2023-06-25T19:58:17+0000";
+      timer-state-date = "2023-06-26T14:03:37+0000";
       timer-state-duration = 0.0;
     };
 
@@ -468,9 +470,9 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" =
       {
-        binding = "<Super>c";
-        command = "codium";
-        name = "code";
+        binding = "<Super>e";
+        command = "emacs";
+        name = "emacs";
       };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" =
@@ -486,7 +488,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout =
-        "[{'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <0>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <1>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <2>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <3>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <4>}>, 'Utilities': <{'position': <5>}>}]";
+        "[{'Utilities': <{'position': <0>}>, 'aac2832b-c83a-490c-97f7-9071a4548ce3': <{'position': <1>}>, 'bf60595e-f9f5-4bee-aa76-18c109f1caaa': <{'position': <2>}>, '502da463-a171-48bf-a485-b27e6ef744e1': <{'position': <3>}>, '82b4a6f4-550b-4668-9bb2-c23b32a624d5': <{'position': <4>}>, '7a1434a7-6019-4318-99f3-eab69516706c': <{'position': <5>}>}]";
       disabled-extensions = [ ];
       enabled-extensions = [
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
@@ -545,7 +547,20 @@ with lib.hm.gvariant;
 
     "org/gnome/tweaks" = { show-extensions-notice = false; };
 
-    "org/gtk/gtk4/settings/file-chooser" = { show-hidden = true; };
+    "org/gtk/gtk4/settings/file-chooser" = {
+      date-format = "regular";
+      location-mode = "path-bar";
+      show-hidden = true;
+      show-size-column = true;
+      show-type-column = true;
+      sidebar-width = 140;
+      sort-column = "name";
+      sort-directories-first = false;
+      sort-order = "ascending";
+      type-format = "category";
+      view-type = "list";
+      window-size = mkTuple [ 811 374 ];
+    };
 
     "org/gtk/settings/file-chooser" = {
       date-format = "regular";
