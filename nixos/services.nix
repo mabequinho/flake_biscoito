@@ -1,17 +1,8 @@
 { config, pkgs, ... }: {
 
   services = {
-getty.autologinUser = "mabeco";
+    getty.autologinUser = "mabeco";
     udisks2.enable = true;
-    physlock = {
-      enable = true;
-      lockMessage = "Good";
-      allowAnyUser = true;
-      lockOn = {
-        suspend = true;
-        hibernate = true;
-      };
-    };
     calibre-web = {
       enable = true;
       user = "mabeco";

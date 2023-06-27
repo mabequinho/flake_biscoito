@@ -15,6 +15,23 @@
       automount = true;
       notify = true;
     };
-    swayidle = { enable = true; };
+    swayidle = {
+      enable = true;
+      systemdTarget = "hyprland-session.target";
+      events = [{
+        event = "before-sleep";
+        command = "${pkgs.swaylock}/bin/swaylock -fF";
+      }];
+      timeouts = [
+        {
+          timeout = 300;
+          command = "${pkgs.swaylock}/bin/swaylock -fF";
+        }
+        {
+          timeout = 600;
+          command = "${pkgs.systemc}/bin/systemctl suspend";
+        }
+      ];
+    };
   };
 }

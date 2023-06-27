@@ -15,7 +15,11 @@
       # Optional
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    touhou-cursors = {
+    cpc-hypr = {
+      url = "github:catppuccin/hyprland";
+      flake = false;
+    };
+   touhou-cursors = {
       url = "github:mabequinho/touhou-cursors";
       flake = false;
     };

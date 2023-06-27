@@ -1,9 +1,5 @@
 { config, pkgs, libs, ... }: {
-  imports = [
-    ./services.nix 
-    ./programs.nix
-    ./packages.nix
-  ];
+  imports = [ ./services.nix ./programs.nix ./packages.nix ];
   wayland.windowManager.hyprland = {
     enable = true;
     systemdIntegration = true;
@@ -68,7 +64,6 @@
        #W ACTIONS
        bind = $mainMod, Q, killactive,
        bind = $mainMod, M, fullscreen, 1
-       bind = $mainMod, X, exit,
        bind = $mainMod, P, pin,
        ##MASTER
        bind = $mainMod, S,layoutmsg,swapwithmaster master
