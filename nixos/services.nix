@@ -40,8 +40,7 @@
       enable = true;
       settings = {
         main = {
-          capslock = "overload(meta, esc)";
-          meta = "M-space";
+          capslock = "overload(control, esc)";
           esc = "`";
           up = "/";
           down = "compose";
