@@ -1,4 +1,4 @@
-{ config, pkgs, libs, ... }: {
+{ config, pkgs, inputs, ... }: {
   home = {
     packages = with pkgs;
       [
@@ -6,9 +6,9 @@
         qt6.qtwayland
         tofi
         hyprpaper
-        gnome.nautilus
-        gnome.file-roller
-      ] ++ (with libsForQt5; [ polkit-kde-agent qt5.qtwayland ]);
+	portfolio-filemanager
+	gnome.file-roller
+      ] ++ (with libsForQt5; [ polkit-kde-agent qt5.qtwayland ]) ++ [inputs.hyprland-contrib.packages.${pkgs.system}.grimblast];
   };
   xdg.configFile = {
     "tofi/config".source = ./sources/tofi-soy-milk;

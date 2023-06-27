@@ -7,7 +7,6 @@
     opengl = {
       enable = true;
       driSupport = true;
-      extraPackages = with pkgs; [ rocm-opencl-icd ];
     };
   };
   boot.initrd.availableKernelModules =

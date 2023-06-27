@@ -1,6 +1,8 @@
 { config, pkgs, ... }: {
 
   services = {
+getty.autologinUser = "mabeco";
+    udisks2.enable = true;
     physlock = {
       enable = true;
       lockMessage = "Good";

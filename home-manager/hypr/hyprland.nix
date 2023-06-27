@@ -18,6 +18,7 @@
        exec-once=hyprctl setcursor Tewi 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
+       windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
 
        $colorA = rgb(ffc1cc)
        $colorI = rgb(c1fff4)
@@ -62,15 +63,15 @@
        #LAUNCH
        bind = $mainMod, return, exec, kitty
        bind = $mainMod, A, exec, tofi-drun --drun-launch=true 
-       bind=,Print,exec,flameshot
+       bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
 
        #W ACTIONS
        bind = $mainMod, Q, killactive,
-       bind = $mainMod, F, fullscreen, 1
+       bind = $mainMod, M, fullscreen, 1
        bind = $mainMod, X, exit,
        bind = $mainMod, P, pin,
        ##MASTER
-       bind = $mainMod, M,layoutmsg,swapwithmaster master
+       bind = $mainMod, S,layoutmsg,swapwithmaster master
 
        # Move focus with mainMod + [hjkl]
        bind = $mainMod, h, movefocus, l
@@ -95,6 +96,10 @@
        bind = $mainMod ALT, 2, movetoworkspace, 2
        bind = $mainMod ALT, 3, movetoworkspace, 3
        bind = $mainMod ALT, 4, movetoworkspace, 4
+
+       # Move/resize windows with mainMod + LMB/RMB and dragging
+       bindm = $mainMod, mouse:272, movewindow
+       bindm = $mainMod, mouse:273, resizewindow
 
     '';
   };

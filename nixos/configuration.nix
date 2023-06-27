@@ -65,6 +65,7 @@
     libnotify
     virt-manager
   ];
+  programs.dconf.enable = true;
   security.sudo.wheelNeedsPassword = false;
   users.users = {
     mabeco = {

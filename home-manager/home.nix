@@ -7,7 +7,6 @@
     ./programs.nix
     ./files.nix
     ./packages.nix
-    ./dconf.nix
     ./systemd/systemd.nix
     ./hypr/hyprland.nix
   ];
