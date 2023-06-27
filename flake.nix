@@ -19,10 +19,10 @@
       url = "github:mabequinho/touhou-cursors";
       flake = false;
     };
-
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { nixpkgs, home-manager, homeage, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, homeage, hyprland, ... }@inputs: {
     nixosConfigurations = {
       biscoito = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; }; # Pass flake inputs to our config
@@ -38,8 +38,12 @@
         extraSpecialArgs = {
           inherit inputs;
         }; # Pass flake inputs to our config
-        modules =
-          [ ./home-manager/home.nix homeage.homeManagerModules.homeage ];
+        modules = [
+          ./home-manager/home.nix
+          homeage.homeManagerModules.homeage
+          hyprland.homeManagerModules.default
+          { wayland.windowManager.hyprland.enable = true; }
+        ];
       };
     };
   };
