@@ -9,6 +9,7 @@
     ./packages.nix
     ./dconf.nix
     ./systemd/systemd.nix
+    ./hypr/hyprland.nix
   ];
 
   nixpkgs = {
