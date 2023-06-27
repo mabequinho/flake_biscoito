@@ -42,7 +42,6 @@
           ./home-manager/home.nix
           homeage.homeManagerModules.homeage
           hyprland.homeManagerModules.default
-          { wayland.windowManager.hyprland.enable = true; }
         ];
       };
     };
