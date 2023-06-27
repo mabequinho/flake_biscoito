@@ -1,33 +1,24 @@
 { config, pkgs, libs, ... }: {
   programs = {
-
-    waybar = {
+    eww = {
       enable = true;
-      systemd.enable = true;
-      settings = [ ];
-      style = [ ];
-
+      package = pkgs.eww-wayland;
+      configDir = ./sources;
+    };
+    kitty = {
+      enable = true;
+      font = {
+        name = "Mononoki Nerd Font Mono";
+        size = 9;
+      };
+      theme = "Atom";
+    };
+    obs-studio = { enable = true; };
+    mpv = {
+      enable = true;
     };
     imv = {
       enable = true;
-
     };
-    mpv = {
-      enable = true;
-
-    };
-    swaylock = {
-      enable = true;
-
-    };
-    foot = {
-      enable = true;
-
-    };
-    obs-studio = {
-      enable = true;
-
-    };
-
   };
 }

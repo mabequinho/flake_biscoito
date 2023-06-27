@@ -23,7 +23,7 @@
   programs = {
     emacs = {
       enable = true;
-      package = pkgs.emacs-gtk;
+      package = pkgs.emacs-nox;
       extraConfig = "";
       extraPackages = epkgs: with epkgs; [ moe-theme powerline ];
       overrides = self: super: { };

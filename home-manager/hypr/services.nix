@@ -15,6 +15,6 @@
       notify = true;
     };
     flameshot = { enable = true; };
-    swayidle = { enable = false; };
+    swayidle = { enable = true; };
   };
 }
