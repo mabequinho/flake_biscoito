@@ -1,6 +1,15 @@
 { config, pkgs, ... }: {
 
   services = {
+    physlock = {
+      enable = true;
+      lockMessage = "Good";
+      allowAnyUser = true;
+      lockOn = {
+        suspend = true;
+        hibernate = true;
+      };
+    };
     calibre-web = {
       enable = true;
       user = "mabeco";
