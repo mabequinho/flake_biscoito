@@ -15,6 +15,7 @@
     ulauncher
     easyeffects
     mate.atril
+    tidal-hifi
 
     #utils
     mangal

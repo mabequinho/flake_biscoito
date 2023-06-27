@@ -31,13 +31,12 @@
       enable = true;
       settings = {
         main = {
-          capslock = "overload(control, esc)";
-          leftcontrol = "M-a";
+          capslock = "overload(meta, esc)";
           meta = "M-space";
           esc = "`";
           up = "/";
           down = "compose";
-          left = "oneshot(meta)";
+          left = "leftalt";
           right = "rightcontrol";
           "/" = "up";
           compose = "down";
