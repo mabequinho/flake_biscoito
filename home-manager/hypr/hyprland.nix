@@ -50,17 +50,32 @@
        };
 
        # See https://wiki.hyprland.org/Configuring/Keywords/ for more
-       $mainMod = CTRL 
+       $mainMod = SUPER
 
        #LAUNCH
        bind = $mainMod, return, exec, kitty
        bind = $mainMod, A, exec, tofi-drun --drun-launch=true 
        bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
 
+       #SLIDERS
+       ##VOL
+       bind = $mainMod, equal, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+ 
+       bind = $mainMod, minus, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+       ##BRIGHTNESS
+       bind = $mainMod ALT, equal, exec, ddcutil setvcp 10 + 20 
+       bind = $mainMod ALT, minus, exec, ddcutil setvcp 10 - 20
+
        #W ACTIONS
        bind = $mainMod, Q, killactive,
-       bind = $mainMod, M, fullscreen, 1
+       bind = $mainMod, F, fullscreen, 0 
+       bind = $mainMod, M, fakefullscreen,
+       bind = $mainMod, space, togglefloating,
+       bind = $mainMod, P, togglefloating,
        bind = $mainMod, P, pin,
+       bind = $mainMod, X, exit,
+       # to switch between windows in a floating workspace
+       bind = SUPER,Tab,cyclenext,
+       bind = SUPER,Tab,bringactivetotop,
        ##MASTER
        bind = $mainMod, S,layoutmsg,swapwithmaster master
 

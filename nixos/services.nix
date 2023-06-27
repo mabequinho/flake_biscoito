@@ -33,7 +33,7 @@
       enable = true;
       settings = {
         main = {
-          capslock = "overload(control, esc)";
+          capslock = "overload(meta, esc)";
           esc = "`";
           up = "/";
           down = "compose";
