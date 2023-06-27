@@ -3,12 +3,16 @@
     mako = {
       enable = true;
       anchor = "top-right";
-      backgroundColor = "#FFC1CCFF"; # bubblegum
-      borderColor = "#C1EBFF"; # Very pale blue
-      font = "Ubuntu Nerd Font Condensed 10";
+      backgroundColor = "#eff1f5";
+      borderColor = "#1e1e2e";
+      progressColor="over #ccd0da";
+      font = "Mononoki Nerd Font Mono 10";
       icons = false;
-      textColor = "#000000FF";
+      textColor = "#4c4f69";
       defaultTimeout = 10000;
+      borderRadius = 6;
+      borderSize = 2;
+
     };
     udiskie = {
       enable = true;

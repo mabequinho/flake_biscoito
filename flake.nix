@@ -15,7 +15,7 @@
       # Optional
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    cpc-hypr = {
+    catppuccin-hyprland= {
       url = "github:catppuccin/hyprland";
       flake = false;
     };

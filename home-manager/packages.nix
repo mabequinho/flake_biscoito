@@ -44,11 +44,9 @@
 
     #misc
     disfetch
-    rage
 
     #theming
     nerdfonts
-    yaru-theme
 
   ];
 }

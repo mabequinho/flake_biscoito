@@ -1,12 +1,12 @@
 # Font
 font = Mononoki Nerd Font Mono
-font-size = 9
+font-size = 10
 
 # Window Style
 horizontal = true
 anchor = top
 width = 100%
-height = 48
+height = 32 
 
 outline-width = 0
 border-width = 0
@@ -21,8 +21,8 @@ padding-right = 0
 prompt-text = "Can I have a"
 prompt-padding = 30
 
-background-color = #fff0dc
-text-color = #4280a0
+background-color = #eff1f5
+text-color = #4c4f69
 
 prompt-background = #eebab1
 prompt-background-padding = 4, 10

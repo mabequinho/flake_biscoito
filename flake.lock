@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "cpc-hypr": {
+    "catppuccin-hyprland": {
       "flake": false,
       "locked": {
         "lastModified": 1683122293,
@@ -152,7 +152,7 @@
     },
     "root": {
       "inputs": {
-        "cpc-hypr": "cpc-hypr",
+        "catppuccin-hyprland": "catppuccin-hyprland",
         "home-manager": "home-manager",
         "homeage": "homeage",
         "hyprland": "hyprland",

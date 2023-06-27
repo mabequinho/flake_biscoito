@@ -1,35 +1,31 @@
-{ config, pkgs, libs, ... }: {
+{ config, pkgs, libs, inputs, ... }: {
   imports = [ ./services.nix ./programs.nix ./packages.nix ];
+  home.file.".config/hypr/catppuccin".source = inputs.catppuccin-hyprland;
   wayland.windowManager.hyprland = {
     enable = true;
     systemdIntegration = true;
     recommendedEnvironment = true;
     extraConfig = ''
-
+       source=~/.config/hypr/catppuccin/themes/latte.conf
        #ENVS
        env = QT_QPA_PLATFORM,wayland
-       env = XCURSOR_THEME,Tewi
-       env = XCURSOR_SIZE,10
 
-       exec-once=hyprctl setcursor Tewi 10 & hyprpaper & thunderbird
+       exec-once=hyprctl setcursor Mokou 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
        windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
 
-       $colorA = rgb(ffc1cc)
-       $colorI = rgb(c1fff4)
-
        general {
-       border_size = 3 
-       gaps_in = 0
-       gaps_out = 0
+       border_size = 2 
+       gaps_in = 1
+       gaps_out = 1
        layout = master
-       col.active_border = $colorA  
-       col.inactive_border = $colorI 
-       col.group_border = $colorI 
-       col.group_border_active = $colorA
-       col.group_border_locked = $colorI 
-       col.group_border_locked_active = $colorA
+       col.active_border = $base
+       col.inactive_border = $overlay0
+       col.group_border_active = $base
+       col.group_border = $overlay0
+       col.group_border_locked_active = $base
+       col.group_border_locked = $overlay0
        }
        master {
        new_is_master = false
@@ -37,7 +33,7 @@
        orientation = right
        }
        decoration {
-       rounding = 3 
+       rounding = 6 
        drop_shadow = false
        }
        input {
@@ -102,9 +98,5 @@
     enable = true;
     platformTheme = "gtk";
     style.name = "adwaita";
-  };
-  gtk = {
-    enable = true;
-    cursorTheme.name = "Tewi";
   };
 }
