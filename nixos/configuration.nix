@@ -15,7 +15,6 @@
     ./hardware-configuration.nix
     ./boot.nix
     ./services.nix
-    ./gnome.nix
     ./networking.nix
     ./virt.nix
     ./nix.nix

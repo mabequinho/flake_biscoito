@@ -1,6 +1,6 @@
 { config, pkgs, libs, ... }: {
   imports = [
-    #./services.nix 
+    ./services.nix 
     ./programs.nix
     ./packages.nix
   ];

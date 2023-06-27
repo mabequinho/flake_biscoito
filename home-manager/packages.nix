@@ -12,13 +12,11 @@
 
     #gutils
     pika-backup
-    ulauncher
     easyeffects
     mate.atril
     tidal-hifi
 
     #utils
-    mangal
     screen
     nix-your-shell
     zbar
@@ -32,7 +30,6 @@
     rar
     p7zip
     rbw
-    playerctl
     wget
     wgetpaste
     tree
@@ -46,7 +43,6 @@
     (python311.withPackages (ps: with ps; [ pandas ]))
 
     #misc
-    vlc
     disfetch
     rage
 
