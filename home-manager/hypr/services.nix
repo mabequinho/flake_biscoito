@@ -18,6 +18,7 @@
       enable = true;
       automount = true;
       notify = true;
+      tray = "never";
     };
     swayidle = {
       enable = true;

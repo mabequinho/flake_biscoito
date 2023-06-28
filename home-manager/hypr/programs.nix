@@ -1,5 +1,5 @@
 { config, pkgs, libs, ... }: {
-  imports = [ ./programs/ironbar.nix ];
+  imports = [ ./sources/programs/waybar.nix ];
   programs = {
     obs-studio = { enable = true; };
     mpv = { enable = true; };

@@ -4,7 +4,6 @@
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -15,7 +14,7 @@
       # Optional
       inputs.nixpkgs.follows = "nixpkgs";
     };
-   touhou-cursors = {
+    touhou-cursors = {
       url = "github:mabequinho/touhou-cursors";
       flake = false;
     };
@@ -24,13 +23,9 @@
       url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    ironbar = {
-    url = "github:JakeStanger/ironbar";
-    inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { nixpkgs, home-manager, homeage, hyprland, ironbar, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, homeage, hyprland, ... }@inputs: {
     nixosConfigurations = {
       biscoito = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; }; # Pass flake inputs to our config
@@ -54,7 +49,6 @@
           ./home-manager/home.nix
           homeage.homeManagerModules.homeage
           hyprland.homeManagerModules.default
-          ironbar.homeManagerModules.default
         ];
       };
     };

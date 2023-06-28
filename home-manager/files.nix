@@ -17,6 +17,13 @@
         sha256 = "1ghz5cg8ydkgw1rai6y24v29mvf84vxza30ffkyakl56n2krx4qa";
       };
     };
+
+    cursors = {
+      recursive = true;
+      source = inputs.touhou-cursors;
+      target = ".local/share/icons";
+    };
+    
     ".local/share/applications/fish.desktop".source = ./sources/hide.desktop;
     ".local/share/applications/cups.desktop".source = ./sources/hide.desktop;
   };
