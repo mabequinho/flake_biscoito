@@ -54,7 +54,7 @@
        $mainMod = SUPER
 
        #LAUNCH
-       bind = $mainMod, return, exec, kitty
+       bind = $mainMod, return, exec, foot
        bind = $mainMod, B, exec, librewolf 
        bind = $mainMod, A, exec, tofi-drun --drun-launch=true 
        bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png

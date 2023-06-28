@@ -23,7 +23,7 @@
         yt = "yt-dlp";
         tree = "tree --dirsfirst";
         git-hell = "git add -A ; git commit -a ; git push";
-	vi = "emacs";
+        vi = "emacs";
       };
       plugins = [{
         name = "hydro";
