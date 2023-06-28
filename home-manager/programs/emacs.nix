@@ -5,7 +5,10 @@
       ;;interface
       (menu-bar-mode 0)
       (tool-bar-mode 0)
-      (global-linum-mode 1)
+      (require 'linum-relative)
+      (setq linum-relative-backend 'display-line-numbers-mode)
+      (linum-relative-global-mode)
+
 
       ;;modus-themes https://protesilaos.com/emacs/modus-themes
       (require 'modus-themes)
@@ -35,6 +38,7 @@
         with epkgs; [
           modus-themes
           evil
+          linum-relative
           nix-mode
           centaur-tabs
           all-the-icons
