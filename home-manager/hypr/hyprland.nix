@@ -66,10 +66,14 @@
        bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
        bind = SHIFT,Print, exec, grimblast --notify --cursor copy screen
 
-       #SLIDERS
+       #CTL
        ##VOL
        bind = $mainMod, equal, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+ 
        bind = $mainMod, minus, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+       bind = $mainMod, backspace, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+       bind = $mainMod ALT, backspace, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+       ##MPRIS
+       bind = $mainMod, backslash, exec, playerctl play-pause
        ##BRIGHTNESS
        bind = $mainMod ALT, equal, exec, ddcutil setvcp 10 + 20 
        bind = $mainMod ALT, minus, exec, ddcutil setvcp 10 - 20

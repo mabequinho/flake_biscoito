@@ -10,7 +10,7 @@
         microbar = {
           layer = "top";
           position = "top";
-          mode = "overlay";
+#          mode = "overlay";
           passthrough = false;
           spacing = 6;
           modules-left = [ "tray" ];

@@ -11,10 +11,7 @@
     hakuneko
 
     #gutils
-    pika-backup
-    easyeffects
     mate.atril
-    tidal-hifi
 
     #utils
     screen

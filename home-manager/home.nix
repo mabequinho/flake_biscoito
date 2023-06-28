@@ -9,6 +9,7 @@
     ./packages.nix
     ./systemd/systemd.nix
     ./hypr/hyprland.nix
+    ./misc/rnnoise.nix
   ];
 
   nixpkgs = {
