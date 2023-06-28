@@ -14,6 +14,7 @@
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
        windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
+       windowrulev2 = float,class:(org.kde.polkit-kde-authentication-agent-1),title:(Authentication Required — PolicyKit1 KDE Agent)
 
        general {
        border_size = 2 
@@ -54,6 +55,7 @@
 
        #LAUNCH
        bind = $mainMod, return, exec, kitty
+       bind = $mainMod, B, exec, librewolf 
        bind = $mainMod, A, exec, tofi-drun --drun-launch=true 
        bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
        bind = SHIFT,Print, exec, grimblast --notify --cursor copy screen

@@ -7,6 +7,8 @@
     ".detoxrc".source = ./sources/detoxrc;
 
     ".bashrc".source = ./sources/bashrc;
+    
+    ".bash_profile".source = ./sources/bash_profile;
 
     ".face" = {
       source = pkgs.fetchurl {
