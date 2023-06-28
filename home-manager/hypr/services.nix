@@ -3,16 +3,15 @@
     mako = {
       enable = true;
       anchor = "top-right";
-      backgroundColor = "#eff1f5";
-      borderColor = "#1e1e2e";
-      progressColor = "over #ccd0da";
-      font = "Mononoki Nerd Font Mono 10";
+      backgroundColor = "#232323";
+      textColor = "#aeadaf";
+      progressColor = "over #d4823d";
+      borderColor = "#999999";
+      font = "Mononoki Nerd Font Mono 20";
       icons = false;
-      textColor = "#4c4f69";
       defaultTimeout = 10000;
       borderRadius = 6;
       borderSize = 2;
-
     };
     udiskie = {
       enable = true;

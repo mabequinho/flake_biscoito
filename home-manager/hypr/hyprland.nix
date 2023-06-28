@@ -10,6 +10,9 @@
        #ENVS
        env = QT_QPA_PLATFORM,wayland
 
+       $act = rgb(FFFFFF)
+       $ina = rgb(777777)
+
        exec-once=hyprctl setcursor Aya 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
@@ -21,12 +24,12 @@
        gaps_in = 1
        gaps_out = 1
        layout = master
-       col.active_border = $base
-       col.inactive_border = $overlay0
-       col.group_border_active = $base
-       col.group_border = $overlay0
-       col.group_border_locked_active = $base
-       col.group_border_locked = $overlay0
+       col.active_border = $act
+       col.inactive_border = $ina
+       col.group_border_active = $act
+       col.group_border = $ina
+       col.group_border_locked_active = $act
+       col.group_border_locked = $ina
        }
        master {
        new_is_master = false
