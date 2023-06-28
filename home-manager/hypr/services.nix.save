@@ -5,7 +5,7 @@
       anchor = "top-right";
       backgroundColor = "#eff1f5";
       borderColor = "#1e1e2e";
-      progressColor = "over #ccd0da";
+      progressColor="over #ccd0da";
       font = "Mononoki Nerd Font Mono 10";
       icons = false;
       textColor = "#4c4f69";

@@ -10,7 +10,7 @@
        #ENVS
        env = QT_QPA_PLATFORM,wayland
 
-       exec-once=hyprctl setcursor Mokou 10 & hyprpaper & thunderbird
+       exec-once=hyprctl setcursor Aya 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
        windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
@@ -56,6 +56,7 @@
        bind = $mainMod, return, exec, kitty
        bind = $mainMod, A, exec, tofi-drun --drun-launch=true 
        bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
+       bind = SHIFT,Print, exec, grimblast --notify --cursor copy screen
 
        #SLIDERS
        ##VOL
@@ -86,10 +87,10 @@
        bind = $mainMod, j, movefocus, d
 
        # Move active window to direction with mainMod + SHITF + [hjkl]
-       bind = $mainMod SHIFT, h, movewindow, l
-       bind = $mainMod SHIFT, l, movewindow, r
-       bind = $mainMod SHIFT, k, movewindow, u
-       bind = $mainMod SHIFT, j, movewindow, d
+       bind = $mainMod ALT, h, movewindow, l
+       bind = $mainMod ALT, l, movewindow, r
+       bind = $mainMod ALT, k, movewindow, u
+       bind = $mainMod ALT, j, movewindow, d
 
       # Switch workspaces with mainMod + [0-9]
        bind = $mainMod, 1, workspace, 1
@@ -113,5 +114,12 @@
     enable = true;
     platformTheme = "gtk";
     style.name = "adwaita";
+  };
+  gtk = {
+    enable = true;
+    cursorTheme = {
+      name = "Aya";
+      size = 10;
+    };
   };
 }
