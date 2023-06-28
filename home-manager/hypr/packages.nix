@@ -15,9 +15,9 @@
   xdg.configFile = {
     "tofi/config".source = ./sources/tofi-soy-milk;
     "hypr/hyprpaper.conf".source = ./sources/hyprpaper.conf;
-    "hypr/wall.jpg".source = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/1k/wallhaven-1k3ej9.jpg";
-      sha256 = "0m2pkq36i2fdnw8q788cn8r5rnd7ymx45jx5xafry96rb2wj75v1";
+    "hypr/wall.png".source = pkgs.fetchurl {
+      url = "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/wall.png";
+      sha256 = "17g0pxaschiwdhcrbhkr71bcwmyb59bsnaaksi68zxyn25fr4vr1";
     };
   };
 }

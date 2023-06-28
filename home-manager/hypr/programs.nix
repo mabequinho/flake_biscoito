@@ -5,14 +5,6 @@
       package = pkgs.eww-wayland;
       configDir = ./sources;
     };
-    kitty = {
-      enable = true;
-      font = {
-        name = "Mononoki Nerd Font Mono";
-        size = 9;
-      };
-      theme = "Catppuccin-Latte";
-    };
     obs-studio = { enable = true; };
     mpv = { enable = true; };
     imv = { enable = true; };

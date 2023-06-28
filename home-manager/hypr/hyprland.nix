@@ -1,17 +1,16 @@
 { config, pkgs, libs, inputs, ... }: {
   imports = [ ./services.nix ./programs.nix ./packages.nix ];
-  home.file.".config/hypr/catppuccin".source = inputs.catppuccin-hyprland;
   wayland.windowManager.hyprland = {
     enable = true;
     systemdIntegration = true;
     recommendedEnvironment = true;
     extraConfig = ''
-       source=~/.config/hypr/catppuccin/themes/latte.conf
        #ENVS
        env = QT_QPA_PLATFORM,wayland
 
-       $act = rgb(FFFFFF)
-       $ina = rgb(777777)
+       #https://www.color-hex.com/color-palette/13735
+       $act = rgb(ddadad)
+       $ina = rgb(d6c7c7)
 
        exec-once=hyprctl setcursor Aya 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
@@ -20,9 +19,9 @@
        windowrulev2 = float,class:(org.kde.polkit-kde-authentication-agent-1),title:(Authentication Required — PolicyKit1 KDE Agent)
 
        general {
-       border_size = 2 
-       gaps_in = 1
-       gaps_out = 1
+       border_size = 4 
+       gaps_in = 2 
+       gaps_out = 2 
        layout = master
        col.active_border = $act
        col.inactive_border = $ina

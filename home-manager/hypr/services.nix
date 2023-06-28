@@ -6,8 +6,8 @@
       backgroundColor = "#232323";
       textColor = "#aeadaf";
       progressColor = "over #d4823d";
-      borderColor = "#999999";
-      font = "Mononoki Nerd Font Mono 20";
+      borderColor = "#ddadad";
+      font = "Mononoki Nerd Font Mono 8";
       icons = false;
       defaultTimeout = 10000;
       borderRadius = 6;

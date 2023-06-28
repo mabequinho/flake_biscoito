@@ -15,10 +15,6 @@
       # Optional
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    catppuccin-hyprland= {
-      url = "github:catppuccin/hyprland";
-      flake = false;
-    };
    touhou-cursors = {
       url = "github:mabequinho/touhou-cursors";
       flake = false;
