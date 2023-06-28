@@ -15,7 +15,6 @@
           "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito --impure; sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";
         lports = "sudo netstat -tulpn | grep LISTEN";
         wp = "wgetpaste";
-        slam = "tomb slam --force all";
         g = "git";
         gc = "git commit -a";
         ga = "git add -A";
@@ -24,7 +23,7 @@
         yt = "yt-dlp";
         tree = "tree --dirsfirst";
         git-hell = "git add -A ; git commit -a ; git push";
-        gogh = ''bash -c  "$(wget -qO- https://git.io/vQgMr)"'';
+	vi = "emacs";
       };
       plugins = [{
         name = "hydro";
