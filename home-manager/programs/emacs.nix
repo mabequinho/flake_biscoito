@@ -17,6 +17,9 @@
       (setq moe-theme-modeline-color 'purple)
       (moe-dark)
       (powerline-moe-theme)
+      ;; Enable Evil
+      (require 'evil)
+      (evil-mode 1)
     '';
 
   };
@@ -25,7 +28,7 @@
       enable = true;
       package = pkgs.emacs-gtk;
       extraConfig = "";
-      extraPackages = epkgs: with epkgs; [ moe-theme powerline ];
+      extraPackages = epkgs: with epkgs; [ moe-theme powerline evil];
       overrides = self: super: { };
     };
   };

@@ -36,6 +36,9 @@
   home = {
     username = "mabeco";
     homeDirectory = "/home/mabeco";
+    sessionVariables = {
+      EDITOR = "emacs";
+    };
   };
   homeage = {
     identityPaths = [ "~/.ssh/id_ed25519" ];
