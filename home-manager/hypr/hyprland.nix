@@ -15,6 +15,7 @@
        exec-once=hyprctl setcursor Aya 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
+windowrulev2 = float,class:(fluffychat),title:(fluffychat)
        windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
        windowrulev2 = float,class:(org.kde.polkit-kde-authentication-agent-1),title:(Authentication Required — PolicyKit1 KDE Agent)
 
@@ -37,9 +38,11 @@
        }
        decoration {
        rounding = 6 
-       drop_shadow = false
        }
        input {
+       kb_layout = us,us
+       kb_variant = ,intl
+       kb_options = grp:win_space_toggle,grp_led:caps
        follow_mouse = 1
        accel_profile = adaptive
        scroll_method = on_button_down
@@ -50,6 +53,7 @@
        disable_splash_rendering = true
        mouse_move_enables_dpms = true
        key_press_enables_dpms = true
+       enable_swallow = true
        };
 
        # See https://wiki.hyprland.org/Configuring/Keywords/ for more
@@ -58,6 +62,7 @@
        #LAUNCH
        bind = $mainMod, return, exec, foot
        bind = $mainMod, B, exec, librewolf 
+       bind = $mainMod, E, exec, foot emacs
        bind = $mainMod, A, exec, tofi-drun --drun-launch=true 
        bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
        bind = SHIFT,Print, exec, grimblast --notify --cursor copy screen
@@ -74,7 +79,6 @@
        bind = $mainMod, Q, killactive,
        bind = $mainMod, F, fullscreen, 0 
        bind = $mainMod, M, fakefullscreen,
-       bind = $mainMod, space, togglefloating,
        bind = $mainMod, P, togglefloating,
        bind = $mainMod, P, pin,
        bind = $mainMod, X, exit,

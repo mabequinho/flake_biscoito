@@ -19,7 +19,7 @@
       interval = "weekly";
     };
     ananicy = {
-      enable = true;
+      enable = false;
       package = pkgs.ananicy-cpp;
     };
     irqbalance.enable = true;
