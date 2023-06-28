@@ -17,9 +17,6 @@
         sha256 = "1ghz5cg8ydkgw1rai6y24v29mvf84vxza30ffkyakl56n2krx4qa";
       };
     };
-
-    ".local/share/icons".source = inputs.touhou-cursors;
-
     ".local/share/applications/fish.desktop".source = ./sources/hide.desktop;
     ".local/share/applications/cups.desktop".source = ./sources/hide.desktop;
   };

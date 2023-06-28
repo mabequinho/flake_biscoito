@@ -24,9 +24,13 @@
       url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ironbar = {
+    url = "github:JakeStanger/ironbar";
+    inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, homeage, hyprland, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, homeage, hyprland, ironbar, ... }@inputs: {
     nixosConfigurations = {
       biscoito = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; }; # Pass flake inputs to our config
@@ -50,6 +54,7 @@
           ./home-manager/home.nix
           homeage.homeManagerModules.homeage
           hyprland.homeManagerModules.default
+          ironbar.homeManagerModules.default
         ];
       };
     };

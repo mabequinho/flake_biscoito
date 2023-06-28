@@ -1,6 +1,10 @@
 { config, pkgs, libs, ... }: {
-  imports = [ ./programs/ironbar.nix ];
   programs = {
+    eww = {
+      enable = true;
+      package = pkgs.eww-wayland;
+      configDir = ./sources;
+    };
     obs-studio = { enable = true; };
     mpv = { enable = true; };
     imv = { enable = true; };
