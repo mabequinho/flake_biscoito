@@ -16,7 +16,8 @@
     "tofi/config".source = ./sources/tofi-soy-milk;
     "hypr/hyprpaper.conf".source = ./sources/hyprpaper.conf;
     "hypr/wall.png".source = pkgs.fetchurl {
-      url = "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/wall.png";
+      url =
+        "https://raw.githubusercontent.com/mabequinho/flake_biscoito/main/wall.png";
       sha256 = "17g0pxaschiwdhcrbhkr71bcwmyb59bsnaaksi68zxyn25fr4vr1";
     };
   };
