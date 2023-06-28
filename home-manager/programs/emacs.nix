@@ -38,6 +38,7 @@
         with epkgs; [
           modus-themes
           evil
+          format-all
           linum-relative
           nix-mode
           centaur-tabs
