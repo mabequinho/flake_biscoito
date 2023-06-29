@@ -13,6 +13,10 @@
         };
       };
     };
+    kmscon = {
+      enable = true;
+      hwRender = true;
+    };
     gnome.gnome-keyring.enable = true;
     udisks2.enable = true;
     calibre-web = {
@@ -31,8 +35,8 @@
       interval = "weekly";
     };
     ananicy = {
-      enable = false;
-      package = pkgs.ananicy-cpp;
+      enable = true;
+      package = pkgs.ananicy;
     };
     irqbalance.enable = true;
     udev.extraRules =
