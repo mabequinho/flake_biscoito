@@ -1,6 +1,6 @@
 { config, pkgs, ... }: {
 
   home.packages = with pkgs;
-    [ nixfmt ] ++ [ (python311.withPackages (ps: with ps; [ pyflakes ])) ];
+    [ nixfmt ] ++ [ (python311.withPackages (ps: with ps; [ yapf ])) ];
 
 }

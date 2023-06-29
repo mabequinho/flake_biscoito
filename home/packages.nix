@@ -21,8 +21,8 @@
     zbar
     wl-clipboard
     detox
-    bottom
     radeontop
+    nmon
     ffmpeg_5-full
     playerctl
     zip

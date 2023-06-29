@@ -3,6 +3,7 @@
   imports = [
     ./modes.nix
     ./init.nix
+    ./code.nix
     ./emacs.desktop.nix
   ];
 
@@ -29,6 +30,9 @@
           #modes
           nix-mode
           python-mode
+
+          #code
+          format-all
 
         ];
 

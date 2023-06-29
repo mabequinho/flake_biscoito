@@ -7,12 +7,8 @@
       '';
       shellAliases = {
         ls = "ls -A --color=auto -cltp --si --group-directories-first";
-        rebh =
-          "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito --impure";
-        rebr =
-          "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";
         nix-hell =
-          "home-manager switch -j 8 --flake $HOME/Documents/git/flake_biscoito#mabeco@biscoito --impure; sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito";
+          "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito --impure";
         lports = "sudo netstat -tulpn | grep LISTEN";
         wp = "wgetpaste";
         g = "git";
@@ -25,7 +21,7 @@
         git-hell = "git add -A ; git commit -a ; git push";
         epkgsearch = "nix-env -f '<nixpkgs>' -qaP -A emacsPackages.";
         op = "handlr open ";
-	vi = "emacs";
+        vi = "emacs";
       };
       plugins = [{
         name = "hydro";

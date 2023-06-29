@@ -3,6 +3,8 @@
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
+    inputs.homeage.homeManagerModules.homeage
+    inputs.hyprland.homeManagerModules.default
     ./programs.nix
     ./files.nix
     ./packages.nix

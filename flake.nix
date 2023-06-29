@@ -25,32 +25,30 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, homeage, hyprland, ... }@inputs: {
-    nixosConfigurations = {
-      biscoito = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; }; # Pass flake inputs to our config
-        # > Our main nixos configuration file <
-        modules = [
-          hyprland.nixosModules.default
-          { programs.hyprland.enable = true; }
-          ./nixos/configuration.nix
-        ];
+  outputs = inputs@{ nixpkgs, home-manager, homeage, touhou-cursors, hyprland
+    , hyprland-contrib, ... }: {
+      nixosConfigurations = {
+        biscoito = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          system = "x86_64-linux";
+          modules = [
+            ./nixos/configuration.nix
+            hyprland.nixosModules.default
+            { programs.hyprland.enable = true; }
+            home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = false;
+                useUserPackages = true;
+                users.mabeco = import ./home/home.nix;
+                extraSpecialArgs = { inherit inputs; };
+              };
+              # Optionally, use home-manager.extraSpecialArgs to pass
+              # arguments to home.nix
+            }
+          ];
+        };
       };
     };
 
-    homeConfigurations = {
-      "mabeco@biscoito" = home-manager.lib.homeManagerConfiguration {
-        pkgs =
-          nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
-        extraSpecialArgs = {
-          inherit inputs;
-        }; # Pass flake inputs to our config
-        modules = [
-          ./home/home.nix
-          homeage.homeManagerModules.homeage
-          hyprland.homeManagerModules.default
-        ];
-      };
-    };
-  };
 }
