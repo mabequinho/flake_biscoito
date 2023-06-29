@@ -82,6 +82,7 @@
        bind = $mainMod, Q, killactive,
        bind = $mainMod, F, fullscreen, 0 
        bind = $mainMod, M, fakefullscreen,
+       bind = $mainMod, T, togglefloating,
        bind = $mainMod, P, togglefloating,
        bind = $mainMod, P, pin,
        bind = $mainMod, X, exit,
