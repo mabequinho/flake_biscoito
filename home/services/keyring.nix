@@ -4,7 +4,6 @@
       enable = true;
       components = [ "ssh" ];
     };
-    home.packages = with pkgs; [
-      libsecret
-    ];
+  };
+  Home.packages = with pkgs; [ libsecret ];
 }
