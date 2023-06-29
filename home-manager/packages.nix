@@ -15,6 +15,7 @@
     mate.atril
 
     #utils
+    handlr-regex
     screen
     nix-your-shell
     zbar
