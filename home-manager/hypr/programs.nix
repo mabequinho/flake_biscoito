@@ -15,24 +15,26 @@
         # author: Protesilaos Stavrou (https://protesilaos.com)
         # description: Dark theme with warm hues (WCAG AA compliant)
         colors = {
-          foreground = "aeadaf";
-          background = "232323";
-          regular0 = "232323";
-          regular1 = "d4823d";
-          regular2 = "8c9e3d";
-          regular3 = "b1942b";
-          regular4 = "6e9cb0";
-          regular5 = "b58d88";
-          regular6 = "6da280";
-          regular7 = "949d9f";
-          bright0 = "312e30";
-          bright1 = "d0913d";
-          bright2 = "96a42d";
-          bright3 = "a8a030";
-          bright4 = "8e9cc0";
-          bright5 = "d58888";
-          bright6 = "7aa880";
-          bright7 = "aeadaf";
+          foreground = "ffffff";
+          background = "000000";
+          regular0 = "000000";
+          regular1 = "ff8059";
+          regular2 = "44bc44";
+          regular3 = "d0bc00";
+          regular4 = "2fafff";
+          regular5 = "feacd0";
+          regular6 = "00d3d0";
+          regular7 = "bfbfbf";
+          bright0 = "595959";
+          bright1 = "ef8b50";
+          bright2 = "70b900";
+          bright3 = "c0c530";
+          bright4 = "79a8ff";
+          bright5 = "b6a0ff";
+          bright6 = "6ae4b9";
+          bright7 = "ffffff";
+          selection-foreground = "949d9f";
+          selection-background = "312e30";
         };
       };
     };
