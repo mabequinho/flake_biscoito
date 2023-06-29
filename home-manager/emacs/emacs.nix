@@ -20,7 +20,10 @@
           modus-themes
           centaur-tabs
           linum-relative
+
+          #EVIL
           evil
+          goto-chg
 
           #modes
           nix-mode
