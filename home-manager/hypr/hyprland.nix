@@ -32,7 +32,7 @@
        }
        master {
        new_is_master = false
-       no_gaps_when_only = true
+       no_gaps_when_only = false
        orientation = right
        }
        decoration {

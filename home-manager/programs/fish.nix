@@ -24,7 +24,8 @@
         tree = "tree --dirsfirst";
         git-hell = "git add -A ; git commit -a ; git push";
         epkgsearch = "nix-env -f '<nixpkgs>' -qaP -A emacsPackages.";
-        op = "handlr open";
+        op = "handlr open ";
+	vi = "emacs";
       };
       plugins = [{
         name = "hydro";
