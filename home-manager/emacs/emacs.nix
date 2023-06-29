@@ -11,7 +11,7 @@
 
       enable = true;
 
-      package = pkgs.emacs-nox;
+      package = pkgs.emacs-gtk;
 
       extraPackages = epkgs:
         with epkgs; [
