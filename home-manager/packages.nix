@@ -1,4 +1,5 @@
 { config, pkgs, ... }: {
+  imports = [./packages/lang.nix ];
   home.packages = with pkgs; [
     #menss
     profanity
@@ -35,9 +36,6 @@
 
     #langs
     octaveFull
-    nixfmt
-    nil
-    (python311.withPackages (ps: with ps; [ pandas ]))
 
     #misc
     disfetch

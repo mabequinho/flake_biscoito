@@ -24,7 +24,7 @@
 
           #modes
           nix-mode
-          python
+          python-mode
 
         ];
 
