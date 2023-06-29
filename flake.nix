@@ -46,7 +46,7 @@
           inherit inputs;
         }; # Pass flake inputs to our config
         modules = [
-          ./home-manager/home.nix
+          ./home/home.nix
           homeage.homeManagerModules.homeage
           hyprland.homeManagerModules.default
         ];
