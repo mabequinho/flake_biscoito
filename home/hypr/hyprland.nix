@@ -12,7 +12,7 @@
        $act = rgb(ddadad)
        $ina = rgb(d6c7c7)
 
-       exec-once=hyprctl setcursor Aya 10 & hyprpaper & thunderbird
+       exec-once=hyprctl setcursor Sanae 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
        windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
@@ -130,7 +130,7 @@
   gtk = {
     enable = true;
     cursorTheme = {
-      name = "Aya";
+      name = "Sanae";
       size = 10;
     };
   };
