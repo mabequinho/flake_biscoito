@@ -69,7 +69,7 @@
 
        #CTL
        ##VOL
-       bind = $mainMod, equal, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+ 
+       bind = $mainMod, equal, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ 
        bind = $mainMod, minus, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
        bind = $mainMod, backspace, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
        bind = $mainMod ALT, backspace, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle

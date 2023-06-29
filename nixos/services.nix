@@ -1,7 +1,15 @@
 { config, pkgs, ... }: {
 
   services = {
-    getty.autologinUser = "mabeco";
+    xserver = {
+      displayManager = {
+        autoLogin = {
+          enable = true;
+          user = "mabeco";
+        };
+        sddm = { enable = true; };
+      };
+    };
     gnome.gnome-keyring.enable = true;
     udisks2.enable = true;
     calibre-web = {

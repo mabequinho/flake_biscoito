@@ -6,7 +6,8 @@
         qt6.qtwayland
         tofi
         hyprpaper
-        physlock
+        hyprpicker
+        waylock
         portfolio-filemanager
         gnome.file-roller
       ] ++ (with libsForQt5; [ polkit-kde-agent qt5.qtwayland ])
