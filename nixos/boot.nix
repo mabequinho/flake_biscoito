@@ -13,14 +13,17 @@
       };
       timeout = 1;
     };
-    plymouth = {
-      enable = true;
-      themePackages = [ pkgs.adi1090x-plymouth-themes ];
-      theme = "pixels";
-    };
+    initrd.verbose = true;
+    consoleLogLevel = 0;
     kernelPackages = pkgs.linuxKernel.packages.linux_6_3;
-    kernelParams =
-      [ "amd_iommu=on" "iommu=pt" "video=HDMI-A-1:2560x1080@75" "nowatchdog" ];
+    kernelParams = [
+      "amd_iommu=on"
+      "iommu=pt"
+      "video=HDMI-A-1:2560x1080@75"
+      "nowatchdog"
+      "quiet"
+      "udev.log_level=3"
+    ];
     tmp.cleanOnBoot = true;
   };
 }

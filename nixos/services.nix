@@ -2,15 +2,14 @@
 
   services = {
     xserver = {
-      enable = false;
+      enable = true;
       displayManager = {
         autoLogin = {
           enable = true;
           user = "mabeco";
         };
-        gdm = {
+        sddm = {
           enable = true;
-          wayland = true;
         };
       };
     };

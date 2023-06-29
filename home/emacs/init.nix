@@ -10,6 +10,7 @@
       (require 'linum-relative)
       (setq linum-relative-backend 'display-line-numbers-mode)
       (linum-relative-global-mode)
+      (setq inhibit-startup-screen t)
       ;;font
       (add-to-list 'default-frame-alist
              '(font . "Mononoki Nerd Font Mono-8"))
