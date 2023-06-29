@@ -21,6 +21,10 @@
       notify = true;
       tray = "never";
     };
+    gnome-keyring = {
+      enable = true;
+      components = [ "ssh" ];
+    };
     swayidle = {
       enable = true;
       systemdTarget = "hyprland-session.target";
