@@ -28,7 +28,6 @@
     zip
     rar
     p7zip
-    rbw
     wget
     wgetpaste
     tree
@@ -40,6 +39,7 @@
 
     #misc
     disfetch
+    bitwarden-cli
 
     #theming
     nerdfonts
