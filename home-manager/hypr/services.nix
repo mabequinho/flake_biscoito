@@ -10,7 +10,7 @@
       borderColor = "#ddadad";
       font = "Mononoki Nerd Font Mono 8";
       icons = false;
-      defaultTimeout = 10000;
+#      defaultTimeout = 10000;
       borderRadius = 6;
       borderSize = 2;
     };
