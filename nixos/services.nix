@@ -2,6 +2,7 @@
 
   services = {
     getty.autologinUser = "mabeco";
+    gnome.gnome-keyring.enable = true;
     udisks2.enable = true;
     calibre-web = {
       enable = true;
