@@ -7,18 +7,18 @@
       '';
       shellAliases = {
         ls = "ls -A --color=auto -cltp --si --group-directories-first";
-        nix-hell =
+        nixhell =
           "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito --impure";
         lports = "sudo netstat -tulpn | grep LISTEN";
         wp = "wgetpaste";
         g = "git";
         gc = "git commit -a";
         ga = "git add -A";
-        gp = "git push";
+        gp = "sshpass -p $(secret-tool lookup ssh-mabeco ssh-mabeco-pass) -P 'key' git push";
         py = "python3";
         yt = "yt-dlp";
         tree = "tree --dirsfirst";
-        git-hell = "git add -A ; git commit -a ; git push";
+        githell = "git add -A ; git commit -a ; sshpass -p $(secret-tool lookup ssh-mabeco ssh-mabeco-pass) -P 'key' git push";
         epkgsearch = "nix-env -f '<nixpkgs>' -qaP -A emacsPackages.";
         op = "handlr open ";
         vi = "emacs";

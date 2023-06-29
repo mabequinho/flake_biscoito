@@ -46,6 +46,7 @@
     pkg = pkgs.rage;
     file."mail.nix" = { source = ./programs/mail.nix.age; };
     file."task.nix" = { source = ./programs/task.nix.age; };
+    file."rbw.nix" = { source = ./programs/rbw.nix.age; };
     file."ssystemd.nix" = { source = ./systemd/ssystemd.nix.age; };
   };
   # Enable home-manager

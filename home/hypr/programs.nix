@@ -10,6 +10,7 @@
         main = {
           font = "Mononoki Nerd Font Mono:size=8";
           term = "xterm-256color";
+          pad = "6x6";
         };
         # theme: Tempus Classic
         # author: Protesilaos Stavrou (https://protesilaos.com)

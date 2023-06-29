@@ -7,5 +7,6 @@
     ./programs/ssh.nix
     /run/user/1000/secrets/mail.nix
     /run/user/1000/secrets/task.nix
+    /run/user/1000/secrets/rbw.nix
   ];
 }

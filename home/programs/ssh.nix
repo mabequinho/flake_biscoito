@@ -6,5 +6,5 @@
       package = pkgs.openssh;
     };
   };
-  home.packages = [ pkgs.libsecret ];
+  home.packages = with pkgs; [ libsecret sshpass ];
 }
