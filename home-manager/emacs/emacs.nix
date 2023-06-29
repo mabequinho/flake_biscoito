@@ -3,6 +3,7 @@
   imports = [
     ./modes.nix
     ./init.nix
+    ./emacs.desktop.nix
   ];
 
   programs = {
