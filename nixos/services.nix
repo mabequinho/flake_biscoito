@@ -2,12 +2,16 @@
 
   services = {
     xserver = {
+      enable = false;
       displayManager = {
         autoLogin = {
           enable = true;
           user = "mabeco";
         };
-        sddm = { enable = true; };
+        gdm = {
+          enable = true;
+          wayland = true;
+        };
       };
     };
     gnome.gnome-keyring.enable = true;

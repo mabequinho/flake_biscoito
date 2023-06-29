@@ -10,6 +10,10 @@
       (require 'linum-relative)
       (setq linum-relative-backend 'display-line-numbers-mode)
       (linum-relative-global-mode)
+      ;;font
+      (add-to-list 'default-frame-alist
+             '(font . "Mononoki Nerd Font Mono-8"))
+
 
       ;;modus-themes https://protesilaos.com/emacs/modus-themes
       (require 'modus-themes)

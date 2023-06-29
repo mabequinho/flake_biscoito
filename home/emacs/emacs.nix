@@ -4,7 +4,6 @@
     ./modes.nix
     ./init.nix
     ./code.nix
-    ./emacs.desktop.nix
   ];
 
   programs = {
@@ -13,7 +12,7 @@
 
       enable = true;
 
-      package = pkgs.emacs-nox;
+      package = pkgs.emacs-gtk;
 
       extraPackages = epkgs:
         with epkgs; [

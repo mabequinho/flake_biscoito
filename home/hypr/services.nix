@@ -26,12 +26,12 @@
       systemdTarget = "hyprland-session.target";
       events = [{
         event = "before-sleep";
-        command = "${pkgs.swaylock}/bin/swaylock -fF";
+        command = "${pkgs.waylock}/bin/waylock -fork-on-lock";
       }];
       timeouts = [
         {
           timeout = 300;
-          command = "${pkgs.swaylock}/bin/swaylock -fF";
+          command = "${pkgs.waylock}/bin/waylock -fork-on-lock";
         }
         {
           timeout = 360;
