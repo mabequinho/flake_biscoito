@@ -5,8 +5,8 @@
       enable = true;
       anchor = "top-right";
       height = 1000;
-      backgroundColor = "#232323";
-      textColor = "#aeadaf";
+      backgroundColor = "#FBF7F0";
+      textColor = "#000000";
       progressColor = "over #d4823d";
       borderColor = "#ddadad";
       font = "Mononoki Nerd Font Mono 8";

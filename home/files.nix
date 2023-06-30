@@ -21,9 +21,7 @@
       source = inputs.touhou-cursors;
       target = ".local/share/icons";
     };
-    
-    ".local/share/applications/fish.desktop".source = ./sources/hide.desktop;
-    ".local/share/applications/cups.desktop".source = ./sources/hide.desktop;
+
   };
   systemd.user.tmpfiles.rules = [
     "D /tmp/mabeco-cache 0700 mabeco wheel 1w"
