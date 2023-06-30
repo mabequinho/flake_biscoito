@@ -1,4 +1,4 @@
-{ config, pkgs, libs, ... }: {
+{ config, pkgs, libs, inputs, ... }: {
   programs = {
     waybar = {
       enable = false;
