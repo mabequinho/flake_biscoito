@@ -49,6 +49,7 @@
        }
        decoration {
        rounding = 6 
+       dim_around = 1.0
        }
        input {
        kb_layout = us,us
