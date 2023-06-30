@@ -141,5 +141,9 @@
       name = "Sanae";
       size = 10;
     };
+    iconTheme = {
+      package = pkgs.yaru-theme;
+      name = "Yaru";
+    };
   };
 }
