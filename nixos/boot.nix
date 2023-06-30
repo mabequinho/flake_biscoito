@@ -16,7 +16,7 @@
     };
     plymouth = {
       enable = true;
-      theme = "pixels";
+      theme = "colorful_sliced";
       themePackages = [ pkgs.adi1090x-plymouth-themes ];
     };
     initrd.verbose = false;
