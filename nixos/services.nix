@@ -13,10 +13,6 @@
         };
       };
     };
-    kmscon = {
-      enable = true;
-      hwRender = true;
-    };
     geoclue2.enable = true;
     gnome.gnome-keyring.enable = true;
     udisks2.enable = true;
