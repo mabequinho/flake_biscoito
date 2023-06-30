@@ -1,10 +1,6 @@
 { config, pkgs, ... }: {
 
-  imports = [
-    ./modes.nix
-    ./init.nix
-    ./code.nix
-  ];
+  imports = [ ./modes.nix ./init.nix ./code.nix ];
 
   programs = {
 
@@ -39,6 +35,15 @@
 
     };
 
+  };
+
+  services = {
+    emacs = {
+      enable = true;
+      client = { enable = true; };
+      defaultEditor = true;
+      socketActivation.enable = true;
+    };
   };
 
 }

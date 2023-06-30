@@ -12,18 +12,11 @@
        $act = rgb(ddadad)
        $ina = rgb(d6c7c7)
 
-       exec-once=hyprctl setcursor Sanae 10 & hyprpaper & ulauncher & thunderbird
+       exec-once=hyprctl setcursor Sanae 10 & hyprpaper & thunderbird
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
        windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
        windowrulev2 = float,class:(org.kde.polkit-kde-authentication-agent-1),title:(Authentication Required — PolicyKit1 KDE Agent)
-
-       #ulauncher
-       windowrulev2 = noborder,class:(ulauncher),title:(Ulauncher - Application Launcher)
-       windowrulev2 = noshadow,class:(ulauncher),title:(Ulauncher - Application Launcher)
-       windowrulev2 = nodim,class:(ulauncher),title:(Ulauncher - Application Launcher)
-       windowrulev2 = noblur,class:(ulauncher),title:(Ulauncher - Application Launcher)
-       windowrulev2 = dimaround,class:(ulauncher),title:(Ulauncher - Application Launcher)
 
        #RSIBREAK
        windowrulev2 = pin,class:(rsibreak),title:(RSIBreak)
@@ -76,7 +69,7 @@
        bind = $mainMod, return, exec, foot
        bind = $mainMod, B, exec, librewolf 
        bind = $mainMod, E, exec, foot emacs
-       bind = $mainMod, A, exec, ulauncher-toggle
+       bind = $mainMod, A, exec, fuzzel
        bind = $mainMod, R, exec, notify-send -t 6000 Rebuilding ; notify-send -t 6000 "NIX REBUILD" "$(sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito --impure 2>&1 1>/dev/null | tac)" 
        bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
        bind = SHIFT,Print, exec, grimblast --notify --cursor copy screen

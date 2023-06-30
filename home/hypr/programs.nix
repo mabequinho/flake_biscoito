@@ -2,8 +2,30 @@
   imports = [ ./sources/programs/waybar.nix ];
   programs = {
     obs-studio = { enable = true; };
-    mpv = { enable = true; };
+    mpv = {
+      enable = true;
+      scripts = with pkgs.mpvScripts; [ mpris webtorrent-mpv-hook thumbfast ];
+    };
     imv = { enable = true; };
+    fuzzel = {
+      enable = true;
+      settings = {
+        main = {
+          terminal = "${pkgs.foot}/bin/foot";
+          layer = "overlay";
+          font = "MesloLGS Nerd Font Mono";
+          icon-theme = "Yaru";
+        };
+        colors = {
+          background = "fbf7f0ff";
+          border = "ddadadff";
+        };
+        border = {
+          width = 2;
+          radius = 6;
+        };
+      };
+    };
     foot = {
       enable = true;
       settings = {
