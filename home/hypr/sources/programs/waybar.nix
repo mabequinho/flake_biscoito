@@ -11,19 +11,18 @@
         microbar = {
           layer = "top";
           position = "top";
-          width = 800;
-          spacing = 12;
+          width = 600;
+          spacing = 6;
           modules-left = [ "wlr/workspaces" ];
-          modules-center = [ "idle_inhibitor" "clock" ];
-          modules-right = [ "tray" ];
+          modules-center = [  ];
+          modules-right = [ "tray" "idle_inhibitor" "clock" ];
           "wlr/workspaces" = {
             "format" = ''<span size="large">{icon}</span>'';
             "on-click" = "activate";
             "format-icons" = {
-              "1" = "󰎥";
-              "2" = "󰎨";
-              "3" = "󰎫";
-              "4" = "󰎲";
+              "active" = "";
+              "default" = "";
+              "urgent" = "";
             };
             "persistent_workspaces" = {
               "1" = [ ];
@@ -36,14 +35,14 @@
           };
           "clock" = {
             "interval" = 60;
-            "format" = "{:%a, %d %b %H:%M}";
+            "format" = "{:%a, %d %b %H:%M  }";
             "max-length" = 25;
           };
           "idle_inhibitor" = {
             "format" = "{icon}";
             "format-icons" = {
-              "activated" = ''<span size="x-large">󰛊 </span>'';
-              "deactivated" = ''<span size="x-large">󰾫 </span>'';
+              "activated" = ''<span size="x-large"> 󰛊 </span>'';
+              "deactivated" = ''<span size="x-large"> 󰾫 </span>'';
             };
             "timeout" = 60;
           };
@@ -51,15 +50,16 @@
         };
       };
       style = ''
+
         * {
           border: none;
-          border-radius: 6;
           font-family: MesloLGS Nerd Font;
           font-size: 12px;
         } 
         window#waybar {
                       background-color: rgba(251, 247, 240, 1);
-                      border: 2px solid rgba(214, 199, 199, 1);
+                      border: 4px solid rgba(214, 199, 199, 1);
+                      border-radius: 6px;
         }
       '';
     };
