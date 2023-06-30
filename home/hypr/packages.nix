@@ -15,11 +15,11 @@
   };
   xdg.configFile = {
     "hypr/hyprpaper.conf".source = ./sources/hyprpaper.conf;
-    "hypr/wall.jpg".source = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/we/wallhaven-we6v6r.jpg";
-      sha256 = "0spnwq2mwfg4xrv288q6l15bbcm4zkd6bldfbmy496kvvc1drqac";
+    "hypr/wall.png".source = pkgs.fetchurl {
+      url = "https://w.wallhaven.cc/full/lm/wallhaven-lmkqqy.png";
+      sha256 = "19bmcl3q1v4sjlaan0mkxrkjxks6nb609n1qpxdg0m87xlz1vg35";
     };
-    "ulauncher/user-themes/libadwaita/" = {
+    "ulauncher/user-themes/libadwaita" = {
       source = pkgs.fetchFromGitHub {
         owner = "leodr";
         repo = "ulauncher-theme-libadwaita";
