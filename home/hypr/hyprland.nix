@@ -25,6 +25,11 @@
        windowrulev2 = noblur,class:(ulauncher),title:(Ulauncher - Application Launcher)
        windowrulev2 = dimaround,class:(ulauncher),title:(Ulauncher - Application Launcher)
 
+       #RSIBREAK
+       windowrulev2 = pin,class:(rsibreak),title:(RSIBreak)
+       windowrulev2 = dimaround,class:(rsibreak),title:(RSIBreak)
+       windowrulev2 = center,class:(rsibreak),title:(RSIBreak)
+
        general {
        border_size = 4 
        gaps_in = 2 

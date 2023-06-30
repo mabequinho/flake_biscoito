@@ -1,6 +1,6 @@
 { config, pkgs, libs, ... }: {
   services = {
-    rsibreak.enable = false;
+    rsibreak.enable = true;
     mako = {
       enable = true;
       anchor = "top-right";
