@@ -12,14 +12,12 @@
           layer = "top";
           position = "top";
           width = 800;
-          spacing = 6;
-          margin-left = 12;
-          margin-right = 36;
+          spacing = 12;
           modules-left = [ "wlr/workspaces" ];
-          modules-center = [ "clock" "idle_inhibitor" ];
+          modules-center = [ "idle_inhibitor" "clock" ];
           modules-right = [ "tray" ];
           "wlr/workspaces" = {
-            "format" = ''<span size="xx-large">{icon}</span>'';
+            "format" = ''<span size="large">{icon}</span>'';
             "on-click" = "activate";
             "format-icons" = {
               "1" = "󰎥";
@@ -33,6 +31,8 @@
               "3" = [ ];
               "4" = [ ];
             };
+            "on-scroll-up" = "hyprctl dispatch workspace e+1";
+            "on-scroll-down" = "hyprctl dispatch workspace e-1";
           };
           "clock" = {
             "interval" = 60;
@@ -42,20 +42,25 @@
           "idle_inhibitor" = {
             "format" = "{icon}";
             "format-icons" = {
-              "activated" = "";
-              "deactivated" = "";
+              "activated" = ''<span size="x-large">󰛊 </span>'';
+              "deactivated" = ''<span size="x-large">󰾫 </span>'';
             };
+            "timeout" = 60;
           };
           "tray" = { "spacing" = 6; };
         };
       };
       style = ''
-               * {
+        * {
           border: none;
-          border-radius: 0;
-          font-family: Mononoki Nerd Font Mono;
-          font-size: 16px;
+          border-radius: 6;
+          font-family: MesloLGS Nerd Font;
+          font-size: 12px;
         } 
+        window#waybar {
+                      background-color: rgba(251, 247, 240, 1);
+                      border: 2px solid rgba(214, 199, 199, 1);
+        }
       '';
     };
   };

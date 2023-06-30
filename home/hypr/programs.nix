@@ -8,7 +8,7 @@
       enable = true;
       settings = {
         main = {
-          font = "Mononoki Nerd Font Mono:size=8";
+          font = "MesloLGS Nerd Font Mono:size=8";
           term = "xterm-256color";
           pad = "6x6";
         };

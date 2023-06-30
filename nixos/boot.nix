@@ -13,7 +13,7 @@
         configurationName = "biscoito";
         splashImage = null;
       };
-      timeout = 6;
+      timeout = 2;
     };
     plymouth = {
       enable = true;

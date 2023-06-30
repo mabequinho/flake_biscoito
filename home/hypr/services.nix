@@ -9,7 +9,7 @@
       textColor = "#000000";
       progressColor = "over #d4823d";
       borderColor = "#ddadad";
-      font = "Mononoki Nerd Font Mono 8";
+      font = "MesloLGS Nerd Font Mono 8";
       icons = false;
       defaultTimeout = 6000;
       borderRadius = 6;
@@ -46,6 +46,10 @@
     gammastep = {
       enable = true;
       provider = "geoclue2";
+      temperature = {
+        day = 6500;
+        night = 3500;
+      };
     };
   };
 }

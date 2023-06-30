@@ -13,7 +13,7 @@
       (setq inhibit-startup-screen t)
       ;;font
       (add-to-list 'default-frame-alist
-             '(font . "Mononoki Nerd Font Mono-8"))
+             '(font . "MesloLGS Nerd Font Mono-8"))
 
 
       ;;modus-themes https://protesilaos.com/emacs/modus-themes
