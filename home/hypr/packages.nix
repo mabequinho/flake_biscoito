@@ -1,7 +1,5 @@
 { config, pkgs, inputs, ... }: {
-  imports = [
-    ./sources/tofi.nix
-  ];
+  imports = [ ./sources/tofi.nix ];
   home = {
     packages = with pkgs;
       [
@@ -13,6 +11,8 @@
         waylock
         portfolio-filemanager
         gnome.file-roller
+        vlc
+        nur.repos.xddxdd.svp
       ] ++ (with libsForQt5; [ polkit-kde-agent qt5.qtwayland ])
       ++ [ inputs.hyprland-contrib.packages.${pkgs.system}.grimblast ];
   };

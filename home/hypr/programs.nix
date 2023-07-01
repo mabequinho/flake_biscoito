@@ -2,10 +2,6 @@
   imports = [ ./sources/programs/waybar.nix ];
   programs = {
     obs-studio = { enable = true; };
-    mpv = {
-      enable = true;
-      scripts = with pkgs.mpvScripts; [ mpris webtorrent-mpv-hook thumbfast ];
-    };
     imv = { enable = true; };
     fuzzel = {
       enable = true;

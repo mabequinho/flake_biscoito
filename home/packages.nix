@@ -22,7 +22,7 @@
     wl-clipboard
     detox
     radeontop
-    nmon
+    bottom
     ffmpeg_5-full
     playerctl
     zip

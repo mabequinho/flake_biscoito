@@ -16,14 +16,14 @@
         ga = "git add -A";
         gp = "sshpass -p $(secret-tool lookup ssh-mabeco ssh-mabeco-pass) -P 'key' git push";
         py = "python3";
-        yt = "yt-dlp";
+        yt = "yt-dlp -f mp4 ";
         tree = "tree --dirsfirst";
         githell = "git add -A ; git commit -a ; sshpass -p $(secret-tool lookup ssh-mabeco ssh-mabeco-pass) -P 'key' git push";
         bwl = "bw login $(secret-tool lookup bitwarden bitwarden-mail) $(secret-tool lookup bitwarden bitwarden-pass)";
         bwp = "secret-tool lookup bitwarden bitwarden-pass | bw --pretty ";
         epkgsearch = "nix-env -f '<nixpkgs>' -qaP -A emacsPackages.";
         op = "handlr open ";
-        vi = "emacs";
+        vi = "emacsclient -c";
       };
       plugins = [{
         name = "hydro";

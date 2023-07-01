@@ -5,6 +5,7 @@
     systemdIntegration = true;
     recommendedEnvironment = true;
     extraConfig = ''
+       monitor=HDMI-A-1,2560x1080@75,0x0,1
        #ENVS
        env = QT_QPA_PLATFORM,wayland
 
@@ -16,6 +17,8 @@
        exec-once= ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
        windowrule = workspace 4 silent,thunderbird
        windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
+       windowrulev2 = float,class:(mpv)
+       windowrulev2 = float,class:(transmission-gtk),title:(Transmission)
        windowrulev2 = float,class:(org.kde.polkit-kde-authentication-agent-1),title:(Authentication Required — PolicyKit1 KDE Agent)
 
        #RSIBREAK
@@ -125,8 +128,8 @@
        bind = $mainMod ALT, 4, movetoworkspace, 4
 
        # Move/resize windows with mainMod + LMB/RMB and dragging
-       bindm = $mainMod, mouse:272, movewindow
-       bindm = $mainMod, mouse:273, resizewindow
+       bindm = ALT, mouse:272, movewindow
+       bindm = ALT, mouse:273, resizewindow
 
     '';
   };

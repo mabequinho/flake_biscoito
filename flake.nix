@@ -26,7 +26,7 @@
   };
 
   outputs = inputs@{ nixpkgs, home-manager, homeage, touhou-cursors, hyprland
-    , hyprland-contrib, ... }: {
+    , hyprland-contrib, nur, ... }: {
       nixosConfigurations = {
         biscoito = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
@@ -43,8 +43,6 @@
                 users.mabeco = import ./home/home.nix;
                 extraSpecialArgs = { inherit inputs; };
               };
-              # Optionally, use home-manager.extraSpecialArgs to pass
-              # arguments to home.nix
             }
           ];
         };
