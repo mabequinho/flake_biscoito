@@ -1,16 +1,7 @@
 { inputs, lib, config, pkgs, ... }: {
-  # You can import other home-manager modules here
+
   imports = [
-    # If you want to use home-manager modules from other flakes (such as nix-colors):
-    # inputs.nix-colors.homeManagerModule
     inputs.homeage.homeManagerModules.homeage
-    inputs.hyprland.homeManagerModules.default
-    ./programs.nix
-    ./files.nix
-    ./packages.nix
-    ./systemd/systemd.nix
-    ./hypr/hyprland.nix
-    ./misc/rnnoise.nix
   ];
 
   nixpkgs = {
@@ -49,9 +40,9 @@
     identityPaths = [ "~/.ssh/id_ed25519" ];
     installationType = "systemd";
     pkg = pkgs.rage;
-    file."mail.nix" = { source = ./programs/mail.nix.age; };
-    file."task.nix" = { source = ./programs/task.nix.age; };
-    file."ssystemd.nix" = { source = ./systemd/ssystemd.nix.age; };
+    file."mail.nix" = { source = ./programs/age/mail.nix.age; };
+    file."task.nix" = { source = ./programs/age/task.nix.age; };
+    file."ssystemd.nix" = { source = ./services/ssystemd.nix.age; };
   };
   # Enable home-manager
   programs.home-manager.enable = true;

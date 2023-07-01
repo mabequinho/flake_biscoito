@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }: {
+{ config, ... }: {
 
   programs = {
     librewolf = {
@@ -9,6 +9,7 @@
       };
     };
   };
+
   home.file = {
     ".librewolf/mabeco/chrome/userChrome.css".text = ''
       #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{

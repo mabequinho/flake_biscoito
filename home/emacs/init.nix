@@ -18,7 +18,7 @@
 
       ;;modus-themes https://protesilaos.com/emacs/modus-themes
       (require 'modus-themes)
-      (load-theme 'modus-operandi-tinted :no-confirm)
+      (load-theme 'modus-vivendi-deuteranopia :no-confirm)
 
       ;;Centaur tabs https://github.com/ema2159/centaur-tabs
       (require 'centaur-tabs)
