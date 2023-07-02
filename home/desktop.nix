@@ -11,6 +11,9 @@
 
     ".detoxrc".source = ./sources/detoxrc;
     ".bashrc".source = ./sources/bashrc;
+    
+    ".local/share/applications/fish.desktop".source = ./sources/hide.desktop;
+    ".local/share/applications/xterm.desktop".source = ./sources/hide.desktop;
 
     ".face" = {
       source = pkgs.fetchurl {
