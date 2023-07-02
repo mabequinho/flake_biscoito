@@ -2,7 +2,7 @@
 
   services = {
     rsibreak = {
-      enable = true;
+      enable = false;
     };
   };
 

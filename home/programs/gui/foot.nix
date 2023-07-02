@@ -9,7 +9,8 @@
           pad = "6x6";
         };
         csd = {
-          preferred = "none";
+          border-width = 4;
+          size = 0;
         };
         # theme: Tempus Classic
         # author: Protesilaos Stavrou (https://protesilaos.com)
