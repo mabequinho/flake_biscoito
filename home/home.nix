@@ -36,6 +36,9 @@
   home = {
     username = "mabeco";
     homeDirectory = "/home/mabeco";
+    sessionVariables = {
+  QT_QPA_PLATFORM = "wayland";
+       };
   };
   homeage = {
     identityPaths = [ "~/.ssh/id_ed25519" ];

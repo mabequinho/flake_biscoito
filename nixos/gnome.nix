@@ -27,7 +27,7 @@
       gnome-keyring.enable = true;
       sushi.enable = true;
     };
-    power-profiles-daemon.enable = lib.mkForce true;
+    power-profiles-daemon.enable = lib.mkForce false ;
   };
   programs = {
     file-roller.enable = true;

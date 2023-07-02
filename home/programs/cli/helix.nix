@@ -6,7 +6,7 @@
     settings = {
       theme = "onedarker";
       editor = {
-        line-numer = "relative";
+        line-number = "relative";
         cursorline = true;
         auto-save = true;
         color-modes = true;
