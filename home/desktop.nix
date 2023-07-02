@@ -2,9 +2,9 @@
 
   imports = [
     ./emacs/emacs.nix
-    ./gnome-dconf.nix
     ./programs/programs.nix
     ./services/services.nix
+    ./gnome-dconf.nix
   ];
 
   home.file = {
@@ -29,6 +29,9 @@
   };
 
   xdg = {
+    mimeApps.defaultApplications = {
+      "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
+    };
     userDirs = {
       publicShare = "${config.home.homeDirectory}/.Public";
       templates = "${config.home.homeDirectory}/.Templates";

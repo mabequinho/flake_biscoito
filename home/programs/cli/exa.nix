@@ -5,7 +5,6 @@
     enableAliases = true;
     extraOptions = [
       "--long"
-      "--grid"
       "--group-directories-first"
     ];
     git = true;
