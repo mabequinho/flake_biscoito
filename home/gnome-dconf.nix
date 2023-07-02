@@ -13,9 +13,11 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       cursor-theme = "Reisen";
-      font-antialiasing = "grayscale";
-      font-hinting = "slight";
-      icon-theme = "Flat-Remix-Grey-Light";
+      icon-theme = "Yaru-magenta-dark";
+      font-name = "MesloLGS Nerd Font 9";
+      document-font-name = "MesloLGS Nerd Font 9";
+      monospace-font-name = "MesloLGS Nerd Font Mono 10";
+      clock-show-weekday = true;
       toolkit-accessibility = false;
     };
 
@@ -130,13 +132,6 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/app-switcher" = { current-workspace-only = true; };
 
-    "org/gnome/shell/extensions/WallpaperSwitcher" = {
-      error-msg = "";
-      frequency = 360;
-      switching-mode = 1;
-      wallpaper-path = "/home/mabeco/Pictures/walls";
-    };
-
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
         "org.telegram.desktop.desktop:4"
@@ -154,7 +149,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/user-theme" = {
-      name = "Flat-Remix-Grey-Darkest-fullPanel";
+      name = "Yaru-magenta-dark";
     };
 
     "org/gnome/shell/keybindings" = {

@@ -45,7 +45,6 @@
       ]) ++ (with pkgs.gnomeExtensions; [
         appindicator
         dashbar
-        just-perfection
         gnome-bedtime
         disable-unredirect-fullscreen-windows
       ]);

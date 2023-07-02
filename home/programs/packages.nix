@@ -28,7 +28,7 @@
 
     #theming
     nerdfonts
-    colloid-icon-theme
+    yaru-theme
 
   ];
 
