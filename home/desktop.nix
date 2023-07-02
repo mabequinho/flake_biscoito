@@ -1,13 +1,16 @@
 { config, pkgs, inputs, ... }: {
 
-  imports =
-    [ ./emacs/emacs.nix ./programs/programs.nix ./services/services.nix ];
+  imports = [
+    ./emacs/emacs.nix
+    ./gnome-dconf.nix
+    ./programs/programs.nix
+    ./services/services.nix
+  ];
 
   home.file = {
 
     ".detoxrc".source = ./sources/detoxrc;
     ".bashrc".source = ./sources/bashrc;
-
 
     ".face" = {
       source = pkgs.fetchurl {
