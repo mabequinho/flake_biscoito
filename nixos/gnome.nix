@@ -1,11 +1,11 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, lib, ... }: {
 
   services = {
     xserver = {
       enable = true;
       displayManager = {
         autoLogin = {
-          enable = false;
+          enable = true;
           user = "mabeco";
         };
         gdm = {
@@ -14,28 +14,41 @@
           autoSuspend = true;
         };
       };
-      desktopManager = { gnome = { enable = true; }; };
+      desktopManager = {
+        gnome = {
+          enable = true;
+          extraGSettingsOverridePackages = with pkgs;
+            [ nautilus-open-any-terminal ];
+        };
+      };
     };
     gnome = {
       core-utilities.enable = false;
       gnome-keyring.enable = true;
       sushi.enable = true;
     };
+    power-profiles-daemon.enable = lib.mkForce true;
   };
   programs = {
-    dconf.enable = true;
     file-roller.enable = true;
     seahorse.enable = true;
   };
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   environment = {
     systemPackages = with pkgs.gnome;
-      [ nautilus
-pkgs.qt6.qtwayland
-pkgs.libsForQt5.qt5.qtwayland
- ] ++ (with pkgs.gnomeExtensions; [ appindicator ]);
+      [ nautilus nautilus-python ] ++ (with pkgs; [
+        dconf2nix
+        nautilus-open-any-terminal
+        qt6.qtwayland
+        libsForQt5.qt5.qtwayland
+      ]) ++ (with pkgs.gnomeExtensions; [
+        appindicator
+        dashbar
+        wallpaper-switcher
+      ]);
     gnome.excludePackages = with pkgs; [ gnome-tour ];
   };
-systemd.services."getty@tty1".enable = false;
-systemd.services."autovt@tty1".enable = false;
+  #Jul - 2023 issue https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
+  systemd.services."getty@tty1".enable = false;
+  systemd.services."autovt@tty1".enable = false;
 }

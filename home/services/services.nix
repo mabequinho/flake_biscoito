@@ -2,7 +2,7 @@
 
   imports = [
     /run/user/1000/secrets/ssystemd.nix
-    ./playerctl.nix
+    ./misc.nix
     ./rnnoise.nix
   ];
 
@@ -12,6 +12,7 @@
 
         rules = [
 
+#Incompatible with gnome
 #          "D /tmp/mabeco-cache 0700 mabeco wheel 1w"
 #          "L+ %h/.cache - - - - /tmp/mabeco-cache"
 

@@ -15,6 +15,7 @@
 
     #media
     nur.repos.xddxdd.svp
+    playerctl
 
     #menss
     telegram-desktop
