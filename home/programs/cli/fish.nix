@@ -23,8 +23,8 @@
         epkgsearch = "nix-env -f '<nixpkgs>' -qaP -A emacsPackages.";
         op = "handlr open ";
         vi = "emacsclient -c";
-        rmdir = "gio tash";
-        rm = "gio tash";
+        rmdir = "gio trash";
+        rm = "gio trash";
       };
       plugins = [{
         name = "hydro";

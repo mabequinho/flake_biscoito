@@ -39,13 +39,15 @@
       [ nautilus nautilus-python ] ++ (with pkgs; [
         dconf2nix
         nautilus-open-any-terminal
+        workrave
         qt6.qtwayland
         libsForQt5.qt5.qtwayland
       ]) ++ (with pkgs.gnomeExtensions; [
         appindicator
         dashbar
-        wallpaper-switcher
+        just-perfection
         gnome-bedtime
+        disable-unredirect-fullscreen-windows
       ]);
     gnome.excludePackages = with pkgs; [ gnome-tour ];
   };

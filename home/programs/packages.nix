@@ -10,7 +10,6 @@
     zbar
     detox
     selectdefaultapplication
-    rsibreak
 
     #trocar pro sops-nix https://github.com/Mic92/sops-nix
     rage
@@ -29,9 +28,7 @@
 
     #theming
     nerdfonts
-    flat-remix-gnome
-    flat-remix-icon-theme
-    yaru-theme
+    colloid-icon-theme
 
   ];
 
