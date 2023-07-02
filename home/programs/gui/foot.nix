@@ -6,7 +6,7 @@
         main = {
           font = "MesloLGS Nerd Font Mono:size=8";
           term = "xterm-256color";
-          pad = "6x6";
+          pad = "12x12";
         };
         csd = {
           border-width = 4;
