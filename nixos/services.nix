@@ -35,7 +35,7 @@
           esc = "`";
           up = "/";
           down = "compose";
-          left = "overload(rightalt)";
+          left = "oneshot(altgr)";
           right = "rightcontrol";
           "/" = "up";
           compose = "down";
