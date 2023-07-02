@@ -11,9 +11,6 @@
 
     ".detoxrc".source = ./sources/detoxrc;
     ".bashrc".source = ./sources/bashrc;
-    
-    ".local/share/applications/fish.desktop".source = ./sources/hide.desktop;
-    ".local/share/applications/xterm.desktop".source = ./sources/hide.desktop;
 
     ".face" = {
       source = pkgs.fetchurl {
@@ -32,6 +29,16 @@
   };
 
   xdg = {
+    desktopEntries = {
+      "fish" = {
+        name = "fish";
+        noDisplay = true;
+      };
+      "xterm" = {
+        name = "xterm";
+        noDisplay = true;
+      };
+    };
     userDirs = {
       publicShare = "${config.home.homeDirectory}/.Public";
       templates = "${config.home.homeDirectory}/.Templates";

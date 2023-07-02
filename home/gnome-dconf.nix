@@ -137,10 +137,6 @@ with lib.hm.gvariant;
       wallpaper-path = "/home/mabeco/Pictures/walls";
     };
 
-    "org/gnome/shell/extensions/appindicator" = {
-      icon-saturation = 0.9999999999999999;
-    };
-
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
         "org.telegram.desktop.desktop:4"
