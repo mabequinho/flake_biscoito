@@ -1,10 +1,10 @@
-{ config, ... }: {
+{ config, pkgs, ... }: {
 
   services = {
     xserver = {
-      enable = false;
+      enable = true;
       displayManager = {
-        autologin = {
+        autoLogin = {
           enable = true;
           user = "mabeco";
         };
@@ -30,7 +30,12 @@
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   environment = {
     systemPackages = with pkgs.gnome;
-      [ nautilus ] ++ (with pkgs.gnomeExtensions; [ appindicator ]);
+      [ nautilus
+pkgs.qt6.qtwayland
+pkgs.libsForQt5.qt5.qtwayland
+ ] ++ (with pkgs.gnomeExtensions; [ appindicator ]);
     gnome.excludePackages = with pkgs.gnome; [ yelp ];
   };
+systemd.services."getty@tty1".enable = false;
+systemd.services."autovt@tty1".enable = false;
 }

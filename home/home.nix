@@ -2,6 +2,7 @@
 
   imports = [
     inputs.homeage.homeManagerModules.homeage
+    ./desktop.nix
   ];
 
   nixpkgs = {

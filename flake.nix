@@ -20,15 +20,13 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, homeage, touhou-cursors, hyprland
-    , hyprland-contrib, nur, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, homeage, touhou-cursors, ... }: {
       nixosConfigurations = {
         biscoito = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           system = "x86_64-linux";
           modules = [
             ./nixos/configuration.nix
-            hyprland.nixosModules.default
             { programs.hyprland.enable = true; }
             home-manager.nixosModules.home-manager
             {

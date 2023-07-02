@@ -6,7 +6,6 @@
         nix-your-shell fish | source
       '';
       shellAliases = {
-        ls = "ls -A --color=auto -cltp --si --group-directories-first";
         nixhell =
           "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito --impure";
         lports = "sudo netstat -tulpn | grep LISTEN";
