@@ -146,6 +146,9 @@ with lib.hm.gvariant;
         "org.telegram.desktop.desktop:4"
         "Fluffychat.desktop:4"
         "thunderbird.desktop:4"
+        "transmission-gtk.desktop:3"
+        "hakuneko-desktop.desktop:3"
+        "userapp-transmission-gtk-Y6A461.desktop:3"
       ];
     };
 
