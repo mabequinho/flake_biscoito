@@ -24,6 +24,10 @@
     transmission-gtk
     hakuneko
 
+    #theming
+    nerdfonts
+    yaru-theme
+
   ];
 
 }

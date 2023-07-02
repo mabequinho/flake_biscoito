@@ -5,12 +5,12 @@
       enable = true;
       displayManager = {
         autoLogin = {
-          enable = true;
+          enable = false;
           user = "mabeco";
         };
         gdm = {
           enable = true;
-          wayland = false;
+          wayland = true;
           autoSuspend = true;
         };
       };
@@ -34,7 +34,7 @@
 pkgs.qt6.qtwayland
 pkgs.libsForQt5.qt5.qtwayland
  ] ++ (with pkgs.gnomeExtensions; [ appindicator ]);
-    gnome.excludePackages = with pkgs.gnome; [ yelp ];
+    gnome.excludePackages = with pkgs; [ gnome-tour ];
   };
 systemd.services."getty@tty1".enable = false;
 systemd.services."autovt@tty1".enable = false;

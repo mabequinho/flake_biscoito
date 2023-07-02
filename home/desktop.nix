@@ -1,29 +1,7 @@
 { config, pkgs, inputs, ... }: {
 
-  imports = [
-    ./emacs/emacs.nix
-    ./programs/programs.nix
-    ./services/services.nix
-  ];
-
-  qt = {
-    enable = true;
-    platformTheme = "gnome";
-    style.name = "adwaita";
-  };
-  gtk = {
-    enable = true;
-    cursorTheme = { name = "Sanae"; };
-    iconTheme = {
-      package = pkgs.yaru-theme;
-      name = "Yaru";
-    };
-    font = {
-      package = pkgs.nerdfonts;
-      name = "MesloLGS Nerd Font";
-      size = 12;
-    };
-  };
+  imports =
+    [ ./emacs/emacs.nix ./programs/programs.nix ./services/services.nix ];
 
   home.file = {
 
