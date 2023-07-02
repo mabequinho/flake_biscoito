@@ -11,7 +11,13 @@ with lib.hm.gvariant;
       xkb-options = [ "terminate:ctrl_alt_bksp" ];
     };
 
-    "org/gnome/desktop/interface" = { toolkit-accessibility = false; };
+    "org/gnome/desktop/interface" = {
+      cursor-theme = "Reisen";
+      font-antialiasing = "grayscale";
+      font-hinting = "slight";
+      icon-theme = "Flat-Remix-Grey-Light";
+      toolkit-accessibility = false;
+    };
 
     "org/gnome/desktop/peripherals/trackball" = {
       scroll-wheel-emulation-button = 8;
@@ -39,6 +45,13 @@ with lib.hm.gvariant;
       switch-to-workspace-2 = [ "<Super>2" ];
       switch-to-workspace-3 = [ "<Super>3" ];
       switch-to-workspace-4 = [ "<Super>4" ];
+    };
+
+    "org/gnome/desktop/wm/preferences" = {
+      action-right-click-titlebar = "none";
+      button-layout = "close:appmenu";
+      focus-mode = "sloppy";
+      resize-with-right-button = true;
     };
 
     "org/gnome/mutter" = { edge-tiling = true; };
@@ -141,7 +154,9 @@ with lib.hm.gvariant;
       color-tone-factor = 80;
     };
 
-    "org/gnome/shell/extensions/user-theme" = { name = "Yaru-magenta-dark"; };
+    "org/gnome/shell/extensions/user-theme" = {
+      name = "Flat-Remix-Grey-Darkest-fullPanel";
+    };
 
     "org/gnome/shell/keybindings" = {
       switch-to-application-1 = [ ];

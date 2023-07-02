@@ -27,6 +27,8 @@
 
     #theming
     nerdfonts
+    flat-remix-gnome
+    flat-remix-icon-theme
     yaru-theme
 
   ];
