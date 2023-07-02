@@ -3,7 +3,11 @@
   programs.exa = {
     enable = true;
     enableAliases = true;
-    extraOptions = [];
+    extraOptions = [
+      "--long"
+      "--grid"
+      "--group-directories-first"
+    ];
     git = true;
     icons = true;
   };

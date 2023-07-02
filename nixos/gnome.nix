@@ -45,6 +45,7 @@
         appindicator
         dashbar
         wallpaper-switcher
+        gnome-bedtime
       ]);
     gnome.excludePackages = with pkgs; [ gnome-tour ];
   };
