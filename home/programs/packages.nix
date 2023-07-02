@@ -9,6 +9,7 @@
     nix-your-shell
     zbar
     detox
+    selectdefaultapplication
 
     #trocar pro sops-nix https://github.com/Mic92/sops-nix
     rage
