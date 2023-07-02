@@ -8,6 +8,9 @@
           term = "xterm-256color";
           pad = "6x6";
         };
+        csd = {
+          preferred = "none";
+        };
         # theme: Tempus Classic
         # author: Protesilaos Stavrou (https://protesilaos.com)
         # description: Dark theme with warm hues (WCAG AA compliant)
