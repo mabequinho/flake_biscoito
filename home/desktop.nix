@@ -1,7 +1,6 @@
 { config, pkgs, inputs, ... }: {
 
   imports = [
-    ./emacs/emacs.nix
     ./programs/programs.nix
     ./services/services.nix
     ./gnome-dconf.nix

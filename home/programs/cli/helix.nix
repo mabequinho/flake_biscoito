@@ -2,15 +2,23 @@
 
   programs.helix = {
     enable = true;
-    defaultEditor = false;
-    settings = { };
+    defaultEditor = true;
+    settings = {
+      theme = "onedarker";
+      editor = {
+        line-numer = "relative";
+        cursorline = true;
+        auto-save = true;
+        color-modes = true;
+      };
+    };
     languages = { };
   };
 
   xdg.desktopEntries."Helix" = {
     name = "Helix";
     genericName = "Text Editor";
-    categories = ["TextEditor"];
+    categories = [ "TextEditor" ];
     comment = "Your Favorit Text Editor";
     exec = "foot hx %F";
     icon = "helix";
