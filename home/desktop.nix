@@ -4,7 +4,7 @@
 
     [
 
-     ./programs/hyprland.nix
+     ./hypr/hyprland.nix
      ./programs/programs.nix
      ./services/services.nix
 #     ./gnome-dconf.nix

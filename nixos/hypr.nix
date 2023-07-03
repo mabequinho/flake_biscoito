@@ -4,8 +4,10 @@
 
     greetd = {
       enable = true;
-      package = pkgs.greetd.tuigreet;
       settings = {
+        default_session = {
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
+        };
         initial_session = {
           command = "Hyprland";
           user = "mabeco";
@@ -17,6 +19,10 @@
     udisks2.enable = true;
 
   };
+
+  environment.systemPackages = [
+      pkgs.greetd.tuigreet
+   ];
 
   programs = {
     ssh = { startAgent = true; };

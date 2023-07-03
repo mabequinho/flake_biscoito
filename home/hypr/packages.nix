@@ -2,7 +2,7 @@
 
   home = {
 
-    packages = with pkgs // libsForQt5; [
+    packages = with pkgs // pkgs.libsForQt5; [
 
       xdg-desktop-portal-hyprland
 
@@ -21,7 +21,7 @@
       nur.repos.xddxdd.svp
 
       inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
-      inputs.hyprland-plugins.packages.${pkgs.system}.border-plus-plus
+      inputs.hyprland-plugins.packages.${pkgs.system}.borders-plus-plus
       inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
 
     ];
@@ -29,7 +29,7 @@
 
   xdg.configFile = {
 
-    "hypr/hyprpaper.conf".source = ''
+    "hypr/hyprpaper.conf".text = ''
    preload = ~/.config/hypr/wall.png
    wallpaper = ,~/.config/hypr/wall.png
        '';

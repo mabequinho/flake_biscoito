@@ -11,7 +11,7 @@
           terminal = "${pkgs.foot}/bin/foot";
           layer = "overlay";
           font = "MesloLGS Nerd Font Mono";
-          icons-enable = no;
+          icons-enabled = "no";
         };
         colors = {
           background = "fbf7f0ff";
