@@ -14,7 +14,7 @@
         gc = "git commit -a";
         ga = "git add -A";
         gp = "git push";
-        gd = "batdiff";
+        gd = "git diff";
         githell = "git add -A ; git commit -a ; git push";
         py = "python3";
         yt = "yt-dlp -f mp4";

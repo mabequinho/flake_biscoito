@@ -45,7 +45,6 @@
       [ nautilus nautilus-python ] ++ (with pkgs; [
         dconf2nix
         nautilus-open-any-terminal
-        workrave
         qt6.qtwayland
         libsForQt5.qt5.qtwayland
       ]) ++ (with pkgs.gnomeExtensions; [
