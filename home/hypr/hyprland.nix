@@ -12,11 +12,9 @@
   wayland.windowManager.hyprland = {
 
     enable = true;
-
     systemdIntegration = true;
-
     recommendedEnvironment = true;
-
+    plugins = [];
     extraConfig = ''
 
        monitor=HDMI-A-1,2560x1080@75,0x0,1
@@ -60,7 +58,7 @@
        }
        decoration {
        rounding = 6 
-       dim_around = 1.0
+       dim_around = 0.8
        }
        input {
        kb_layout = us,us

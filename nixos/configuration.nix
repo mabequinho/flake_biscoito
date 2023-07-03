@@ -7,7 +7,7 @@
     ./virt.nix
     ./nix.nix
     ./pipewire.nix
-    ./gnome.nix
+#    ./gnome.nix
     ./hypr.nix
   ];
 
@@ -55,8 +55,11 @@
       auto-optimise-store = true;
     };
   };
+
   environment.systemPackages = with pkgs; [ git ddcutil virt-manager ];
+
   security = { sudo.wheelNeedsPassword = false; };
+
   users.users = {
     mabeco = {
       initialPassword = "mabequinho";

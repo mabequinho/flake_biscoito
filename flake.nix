@@ -23,14 +23,21 @@
     };
 
     hyprland.url = "github:hyprwm/Hyprland";
+
     hyprland-contrib = {
       url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, homeage, touhou-cursors, hyprland, hyprland-contrib,  ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, homeage, touhou-cursors, hyprland
+    , hyprland-contrib, hyprland-plugins, ... }: {
 
       nixosConfigurations = {
 

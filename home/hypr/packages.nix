@@ -18,7 +18,10 @@
       gnome.file-roller
 
       nur.repos.xddxdd.svp
+
       inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
+      inputs.hyprland-plugins.packages.${pkgs.system}.border-plus-plus
+      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
 
     ];
   };

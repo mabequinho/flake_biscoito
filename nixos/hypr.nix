@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }: {
+{ config, pkgs, ... }: {
 
   services = {
 
@@ -28,4 +28,5 @@
   security.pam.services.waylock.text = ''
     auth include login 
   '';
+
 }
