@@ -1,7 +1,15 @@
 { config, pkgs, inputs, ... }: {
 
   imports =
-    [ ./programs/programs.nix ./services/services.nix ./gnome-dconf.nix ];
+
+    [
+
+     ./programs/hyprland.nix
+     ./programs/programs.nix
+     ./services/services.nix
+#     ./gnome-dconf.nix
+
+     ];
 
   home.file = {
 
@@ -25,21 +33,27 @@
   };
 
   xdg = {
+
     desktopEntries = {
+
       "fish" = {
         name = "fish";
         noDisplay = true;
       };
+
       "xterm" = {
         name = "xterm";
         noDisplay = true;
       };
+
     };
+
     userDirs = {
       publicShare = "${config.home.homeDirectory}/.Public";
       templates = "${config.home.homeDirectory}/.Templates";
       desktop = "${config.home.homeDirectory}/.Desktop";
     };
+
   };
 
 }

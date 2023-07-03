@@ -2,9 +2,6 @@
 
   home.packages = with pkgs; [
 
-    #menss
-    profanity
-
     #utils
     nix-your-shell
     zbar
@@ -22,6 +19,7 @@
     #menss
     telegram-desktop
     fluffychat
+    profanity
 
     #net
     transmission-gtk
@@ -29,6 +27,7 @@
 
     #theming
     nerdfonts
+    yaru-theme
 
   ];
 

@@ -27,7 +27,7 @@
       gnome-keyring.enable = true;
       sushi.enable = true;
     };
-    power-profiles-daemon.enable = lib.mkForce false ;
+    power-profiles-daemon.enable = lib.mkForce false;
   };
   programs = {
     file-roller.enable = true;
@@ -35,23 +35,24 @@
   };
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   environment = {
-  sessionVariables = {
-  NAUTILUS_4_EXTENSION_DIR = "${config.system.path}/lib/nautilus/extensions-4";
-  pathsToLink = [
-        "/share/nautilus-python/extensions"
-      ];
-   };
-    systemPackages = with pkgs.gnome;
-      [ nautilus nautilus-python ] ++ (with pkgs; [
-        dconf2nix
-        nautilus-open-any-terminal
-        qt6.qtwayland
-        libsForQt5.qt5.qtwayland
-      ]) ++ (with pkgs.gnomeExtensions; [
-        dash-to-panel
-        gnome-bedtime
-        disable-unredirect-fullscreen-windows
-      ]);
+    sessionVariables = {
+      NAUTILUS_4_EXTENSION_DIR =
+        "${config.system.path}/lib/nautilus/extensions-4";
+      pathsToLink = [ "/share/nautilus-python/extensions" ];
+    };
+    systemPackages = with pkgs.gnome // pkgs // pkgs.gnomeExtensions; [
+      nautilus
+      nautilus-python
+
+      dconf2nix
+      nautilus-open-any-terminal
+      qt6.qtwayland
+      libsForQt5.qt5.qtwayland
+
+      dash-to-panel
+      gnome-bedtime
+      disable-unredirect-fullscreen-windows
+    ];
     gnome.excludePackages = with pkgs; [ gnome-tour ];
   };
   #Jul - 2023 issue https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229

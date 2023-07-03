@@ -1,6 +1,12 @@
 { inputs, lib, config, pkgs, ... }: {
 
-  imports = [ inputs.homeage.homeManagerModules.homeage ./desktop.nix ];
+  imports = [
+
+   inputs.homeage.homeManagerModules.homeage
+   inputs.hyprland.homeManagerModules.default
+   ./desktop.nix
+
+   ];
 
   nixpkgs = {
     # You can add overlays here
@@ -50,4 +56,5 @@
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "23.05";
+
 }

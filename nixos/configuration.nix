@@ -8,6 +8,7 @@
     ./nix.nix
     ./pipewire.nix
     ./gnome.nix
+    ./hypr.nix
   ];
 
   nixpkgs = {
@@ -54,14 +55,8 @@
       auto-optimise-store = true;
     };
   };
-  environment.systemPackages = with pkgs; [
-    git
-    ddcutil
-    virt-manager
-  ];
-  security = {
-    sudo.wheelNeedsPassword = false;
-  };
+  environment.systemPackages = with pkgs; [ git ddcutil virt-manager ];
+  security = { sudo.wheelNeedsPassword = false; };
   users.users = {
     mabeco = {
       initialPassword = "mabequinho";
