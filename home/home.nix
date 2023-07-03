@@ -1,9 +1,6 @@
 { inputs, lib, config, pkgs, ... }: {
 
-  imports = [
-    inputs.homeage.homeManagerModules.homeage
-    ./desktop.nix
-  ];
+  imports = [ inputs.homeage.homeManagerModules.homeage ./desktop.nix ];
 
   nixpkgs = {
     # You can add overlays here
@@ -36,9 +33,7 @@
   home = {
     username = "mabeco";
     homeDirectory = "/home/mabeco";
-    sessionVariables = {
-  QT_QPA_PLATFORM = "wayland";
-       };
+    sessionVariables = { QT_QPA_PLATFORM = "wayland"; };
   };
   homeage = {
     identityPaths = [ "~/.ssh/id_ed25519" ];

@@ -13,10 +13,9 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       cursor-theme = "Reisen";
-      icon-theme = "Yaru-magenta-dark";
       font-name = "MesloLGS Nerd Font 9";
       document-font-name = "MesloLGS Nerd Font 9";
-      monospace-font-name = "MesloLGS Nerd Font Mono 10";
+      monospace-font-name = "MesloLGS Nerd Font Mono 9";
       clock-show-weekday = true;
       toolkit-accessibility = false;
     };
@@ -117,13 +116,10 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       enabled-extensions = [
-        "appindicatorsupport@rgcjonas.gmail.com"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "gnomebedtime@ionutbortis.gmail.com"
-        "dashbar@fthx"
-        "places-menu@gnome-shell-extensions.gcampax.github.com"
-        "user-theme@gnome-shell-extensions.gcampax.github.com"
-        "WallpaperSwitcher@Rishu"
+        "unredirect@vaina.lt"
+        "dash-to-panel@jderose9.github.com"
       ];
       favorite-apps =
         [ "org.gnome.Nautilus.desktop" "org.codeberg.dnkl.foot.desktop" ];
@@ -148,8 +144,9 @@ with lib.hm.gvariant;
       color-tone-factor = 80;
     };
 
-    "org/gnome/shell/extensions/user-theme" = {
-      name = "Yaru-magenta-dark";
+    "org/gnome/shell/extensions/dash-to-panel" = {
+      available-monitors = [ 0 ];
+      primary-monitor = 0;
     };
 
     "org/gnome/shell/keybindings" = {
@@ -167,6 +164,10 @@ with lib.hm.gvariant;
     };
 
     "org/gtk/gtk4/settings/file-chooser" = { sort-directories-first = true; };
+
+    "com/github/stunkymonkey/nautilus-open-any-terminal" = {
+      terminal = "foot";
+    };
 
   };
 }

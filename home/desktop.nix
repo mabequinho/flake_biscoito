@@ -1,10 +1,7 @@
 { config, pkgs, inputs, ... }: {
 
-  imports = [
-    ./programs/programs.nix
-    ./services/services.nix
-    ./gnome-dconf.nix
-  ];
+  imports =
+    [ ./programs/programs.nix ./services/services.nix ./gnome-dconf.nix ];
 
   home.file = {
 

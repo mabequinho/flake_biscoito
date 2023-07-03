@@ -29,7 +29,6 @@
 
     #theming
     nerdfonts
-    yaru-theme
 
   ];
 
