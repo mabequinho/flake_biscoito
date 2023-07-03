@@ -35,6 +35,12 @@
   };
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   environment = {
+  sessionVariables = {
+  NAUTILUS_4_EXTENSION_DIR = "${config.system.path}/lib/nautilus/extensions-4";
+  pathsToLink = [
+        "/share/nautilus-python/extensions"
+      ];
+   };
     systemPackages = with pkgs.gnome;
       [ nautilus nautilus-python ] ++ (with pkgs; [
         dconf2nix
@@ -43,8 +49,7 @@
         qt6.qtwayland
         libsForQt5.qt5.qtwayland
       ]) ++ (with pkgs.gnomeExtensions; [
-        appindicator
-        dashbar
+        dash-to-panel
         gnome-bedtime
         disable-unredirect-fullscreen-windows
       ]);
