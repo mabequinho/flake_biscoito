@@ -12,6 +12,7 @@
 
       hyprpaper
       hyprpicker
+      cliphist
       waylock
 
       portfolio-filemanager
