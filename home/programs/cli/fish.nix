@@ -13,18 +13,15 @@
         g = "git";
         gc = "git commit -a";
         ga = "git add -A";
-        gp = "sshpass -p $(secret-tool lookup ssh-mabeco ssh-mabeco-pass) -P 'key' git push";
-        py = "python3";
-        yt = "yt-dlp -f mp4 ";
-        tree = "tree --dirsfirst";
+        gp = "git push";
+        gd = "batdiff";
         githell = "git add -A ; git commit -a ; git push";
-        bwl = "bw login $(secret-tool lookup bitwarden bitwarden-mail) $(secret-tool lookup bitwarden bitwarden-pass)";
-        bwp = "secret-tool lookup bitwarden bitwarden-pass | bw --pretty ";
-        epkgsearch = "nix-env -f '<nixpkgs>' -qaP -A emacsPackages.";
-        op = "handlr open ";
-        vi = "emacsclient -c";
+        py = "python3";
+        yt = "yt-dlp -f mp4";
         rmdir = "gio trash";
         rm = "gio trash";
+        cat = "bat"; 
+        vi = "hx";
       };
       plugins = [{
         name = "hydro";

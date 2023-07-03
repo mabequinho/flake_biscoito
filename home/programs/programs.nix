@@ -12,6 +12,7 @@
     ./cli/hyfetch.nix
     ./cli/yt-dlp.nix
     ./cli/helix.nix
+    ./cli/bat.nix
     ./gui/foot.nix
     ./gui/fuzzel.nix
     ./gui/imv.nix
