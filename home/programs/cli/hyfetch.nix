@@ -2,7 +2,7 @@
 
   programs.hyfetch = {
     enable = true;
-    settings = {};
+    settings = { };
   };
 
 }

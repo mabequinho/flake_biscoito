@@ -18,7 +18,7 @@
         githell = "git add -A ; git commit -a ; git push";
         py = "python3";
         yt = "yt-dlp -f mp4";
-        cat = "bat"; 
+        cat = "bat";
         vi = "hx";
       };
       plugins = [{
