@@ -9,7 +9,7 @@
       textColor = "#000000";
       progressColor = "over #d4823d";
       borderColor = "#ddadad";
-      font = "MesloLGS Nerd Font Mono 8";
+      font = "SF Pro Display 12";
       icons = false;
       defaultTimeout = 6000;
       borderRadius = 6;

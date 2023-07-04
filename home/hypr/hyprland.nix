@@ -172,7 +172,7 @@
     font = {
       package = pkgs.nerdfonts;
       name = "SF Pro Display";
-      size = 8;
+      size = 12;
     };
 
   };

@@ -18,8 +18,6 @@
         githell = "git add -A ; git commit -a ; git push";
         py = "python3";
         yt = "yt-dlp -f mp4";
-        rmdir = "gio trash";
-        rm = "gio trash";
         cat = "bat"; 
         vi = "hx";
       };

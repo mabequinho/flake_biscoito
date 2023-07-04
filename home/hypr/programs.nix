@@ -10,7 +10,7 @@
         main = {
           terminal = "${pkgs.foot}/bin/foot";
           layer = "overlay";
-          font = "MesloLGS Nerd Font Mono";
+          font = "SF Pro Display:size=12";
           icons-enabled = "no";
         };
         colors = {

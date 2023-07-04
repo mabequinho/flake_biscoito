@@ -53,7 +53,7 @@
 
         * {
           border: none;
-          font-family: MesloLGS Nerd Font;
+          font-family: SF Pro Display;
           font-size: 12px;
         } 
         window#waybar {
