@@ -10,8 +10,8 @@
       settings = {
         microbar = {
           layer = "top";
-          position = "top";
-          width = 600;
+          position = "left";
+#          width = 600;
           spacing = 6;
           modules-left = [ "wlr/workspaces" ];
           modules-center = [ ];
@@ -35,8 +35,9 @@
           };
           "clock" = {
             "interval" = 60;
-            "format" = "{:%a, %d %b %H:%M  }";
+            "format" = ''<span allow_breaks="true">{: %a %d %b %H:%M}</span>'';
             "max-length" = 25;
+            "rotate" = 90;
           };
           "idle_inhibitor" = {
             "format" = "{icon}";
@@ -60,6 +61,9 @@
                       background-color: rgba(251, 247, 240, 1);
                       border: 4px solid rgba(214, 199, 199, 1);
                       border-radius: 6px;
+        }
+        #clock {
+          padding-bottom: 6px;
         }
       '';
     };
