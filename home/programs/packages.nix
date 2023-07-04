@@ -25,6 +25,7 @@
     #net
     transmission-gtk
     hakuneko
+    stremio
 
     #theming
     nerdfonts
