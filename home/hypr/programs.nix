@@ -11,7 +11,8 @@
           terminal = "${pkgs.foot}/bin/foot";
           layer = "overlay";
           font = "SF Pro Display:size=12";
-          icons-enabled = "no";
+          icons-enabled = "yes";
+          icon-theme = "Yaru";
         };
         colors = {
           background = "fbf7f0ff";
