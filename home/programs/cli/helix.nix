@@ -13,30 +13,48 @@
       };
     };
     languages = {
-    
-    
-  language = [{
-    name = "nix";
-    auto-format = true;
-    scope = "source.nix";
-    injection-regex = "nix";
-    file-types = [ "nix"];
-    diagnostic-severity = "Hint";
-    comment-token = "#";
-    formatter = {
-      command = "nixfmt";
-      args = [];
-    };
-    language-server = {
-      command = "nil";
-      args = [];
 
-      
-    };
+      language = [
 
-  }];    
-    
-     };
+        {
+          name = "nix";
+          auto-format = true;
+          scope = "source.nix";
+          injection-regex = "nix";
+          file-types = [ "nix" ];
+          diagnostic-severity = "Hint";
+          comment-token = "#";
+          formatter = {
+            command = "nixfmt";
+            args = [ ];
+          };
+          language-server = {
+            command = "nil";
+            args = [ ];
+          };
+        }
+
+        {
+          name = "python";
+          auto-format = true;
+          scope = "source.py";
+          injection-regex = "py";
+          file-types = [ "py" "ipynb" ];
+          diagnostic-severity = "Hint";
+          comment-token = "#";
+          formatter = {
+            command = "yapf";
+            args = [ "-p" "--style google" ];
+          };
+          language-server = {
+            command = "pylsp";
+            args = [ ];
+          };
+        }
+
+      ];
+
+    };
     themes = {
       ##https://github.com/tinted-theming/base16-helix/blob/main/themes/base16-grayscale-dark.toml
       grayscale_dark = {
