@@ -4,12 +4,12 @@
 
     [
 
-     ./hypr/hyprland.nix
-     ./programs/programs.nix
-     ./services/services.nix
-#     ./gnome-dconf.nix
+      ./hypr/hyprland.nix
+      ./programs/programs.nix
+      ./services/services.nix
+      #     ./gnome-dconf.nix
 
-     ];
+    ];
 
   home.file = {
 
@@ -29,7 +29,17 @@
       source = inputs.touhou-cursors;
       target = ".local/share/icons";
     };
-
+    /* SF-Mono-Nerd-Font = {
+          source = pkgs.fetchFromGitHub {
+            owner = "epk";
+            repo = "SF-Mono-Nerd-Font";
+            rev = "a95ddff08857fd156d14d15b986a80ce3dd0f075";
+            sha256 = "0i2wzyywbi7pjb49gjbrpi3av3hplkwd7brahi61flw26aykz43z";
+          };
+          target = ".local/share/fonts/otf/SF-Mono-Nerd-Font";
+          recursive = true;
+        };
+    */
   };
 
   xdg = {

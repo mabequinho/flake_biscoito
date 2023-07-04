@@ -7,7 +7,7 @@
     ./virt.nix
     ./nix.nix
     ./pipewire.nix
-#    ./gnome.nix
+    #    ./gnome.nix
     ./hypr.nix
   ];
 

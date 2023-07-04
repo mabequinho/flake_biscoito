@@ -2,11 +2,11 @@
 
   imports = [
 
-   inputs.homeage.homeManagerModules.homeage
-   inputs.hyprland.homeManagerModules.default
-   ./desktop.nix
+    inputs.homeage.homeManagerModules.homeage
+    inputs.hyprland.homeManagerModules.default
+    ./desktop.nix
 
-   ];
+  ];
 
   nixpkgs = {
     # You can add overlays here

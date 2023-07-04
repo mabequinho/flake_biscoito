@@ -14,6 +14,8 @@
       hyprpicker
       cliphist
       waylock
+      wl-clipboard
+      brightnessctl
 
       portfolio-filemanager
       gnome.file-roller
