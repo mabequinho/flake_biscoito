@@ -14,6 +14,9 @@
         microbar = {
           layer = "top";
           position = "bottom";
+          margin-bottom = 2;
+          margin-right = 2;
+          margin-left = 2;
           #          width = 600;
           spacing = 6;
           modules-left = [ "wlr/workspaces" "wireplumber" ];

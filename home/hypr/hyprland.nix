@@ -41,8 +41,9 @@
 
       general {
       border_size = 4 
-      gaps_in = 2 
+      gaps_in = 1 
       gaps_out = 2 
+      resize_on_border = true
       layout = master
       col.active_border = $act
       col.inactive_border = $ina
