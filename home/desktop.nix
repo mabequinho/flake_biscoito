@@ -29,17 +29,30 @@
       source = inputs.touhou-cursors;
       target = ".local/share/icons";
     };
-    /* SF-Mono-Nerd-Font = {
+
+
+     SFMono-Nerd-Font-Ligaturized = {
           source = pkgs.fetchFromGitHub {
-            owner = "epk";
-            repo = "SF-Mono-Nerd-Font";
-            rev = "a95ddff08857fd156d14d15b986a80ce3dd0f075";
-            sha256 = "0i2wzyywbi7pjb49gjbrpi3av3hplkwd7brahi61flw26aykz43z";
+            owner = "shaunsingh";
+            repo = "SFMono-Nerd-Font-Ligaturized";
+            rev = "dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea";
+            sha256 = "0v0zsmlvfd8w1473c51426swjrjy62z8z0nybibc4jn8aanwm201";
           };
-          target = ".local/share/fonts/otf/SF-Mono-Nerd-Font";
+          target = ".local/share/fonts/otf/SFMono-Nerd-Font-Ligaturized";
           recursive = true;
         };
-    */
+
+      San-Francisco-Pro-Fonts = {
+          source = pkgs.fetchFromGitHub {
+            owner = "sahibjotsaggu";
+            repo = "San-Francisco-Pro-Fonts";
+            rev = "8bfea09aa6f1139479f80358b2e1e5c6dc991a58";
+            sha256 = "0zm9112y5x6z36mhcqlga4lmiqjhp1n7qiszmd3h3wi77z3c81cq";
+          };
+          target = ".local/share/fonts/otf/San-Francisco-Pro-Fonts";
+          recursive = true;
+        };
+    
   };
 
   xdg = {

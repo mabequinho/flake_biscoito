@@ -4,7 +4,7 @@
       enable = true;
       settings = {
         main = {
-          font = "MesloLGS Nerd Font Mono:size=8";
+          font = "Liga SFMono Nerd Font:size=8";
           term = "xterm-256color";
           pad = "12x12";
         };

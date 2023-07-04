@@ -87,8 +87,9 @@
        bind = $mainMod, E, exec, foot emacs
        bind = $mainMod, A, exec, fuzzel
        bind = $mainMod, R, exec, notify-send -t 6000 Rebuilding ; notify-send -t 6000 "NIX REBUILD" "$(sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito --impure 2>&1 1>/dev/null | tac)" 
-       bind = ,Print, exec, grimblast --notify --cursor save screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
-       bind = SHIFT,Print, exec, grimblast --notify --cursor copy screen
+       ## Print
+       bind = ,Print, exec, grimblast --notify --cursor --freeze copysave area ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
+       bind = SHIFT,Print, exec, grimblast --notify --cursor --freeze copysave screen ~/Pictures/Screenshots/$(date +"%F-%H-%M-%S").png
 
        #CTL
        ##VOL
@@ -170,8 +171,8 @@
 
     font = {
       package = pkgs.nerdfonts;
-      name = "MesloLGS Nerd Font";
-      size = 9;
+      name = "SF Pro Display";
+      size = 8;
     };
 
   };

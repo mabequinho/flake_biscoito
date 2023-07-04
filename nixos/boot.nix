@@ -28,9 +28,7 @@
 
     initrd.verbose = false;
     consoleLogLevel = 0;
-    kernelPackages = pkgs.linuxKernel.packages.linux_libre;
-    extraModulePackages = with config.boot.kernelPackages; [ rtl88x2bu ];
-    kernelModules = [ "rtl88x2bu" ];
+    kernelPackages = pkgs.linuxKernel.packages.linux_zen;
 
     kernelParams = [
       "amd_iommu=on"

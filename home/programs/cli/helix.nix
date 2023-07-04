@@ -4,7 +4,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "rasmus";
+      theme = "dracula_at_night";
       editor = {
         line-number = "relative";
         cursorline = true;
