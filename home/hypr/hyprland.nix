@@ -25,8 +25,8 @@
       env = GTK_CSD, 0
 
       #https://www.color-hex.com/color-palette/13735
-      $act = rgb(ddadad)
-      $ina = rgb(d6c7c7)
+      $act = rgb(ffffff)
+      $ina = rgb(4c4c4c)
 
       exec-once = hyprctl setcursor Sanae 10 & hyprpaper & SVPManager
       exec-once = ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1

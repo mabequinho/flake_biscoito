@@ -73,17 +73,17 @@
           border: none;
           font-family: SF Pro Display;
           font-size: 12px;
+          color: rgba(255, 255, 255, 1);
         } 
         window#waybar {
-                      background-color: rgba(251, 247, 240, 1);
-                      border: 2px solid rgba(214, 199, 199, 1);
+                      background-color: rgba(0, 0, 0, 1);
                      /*border-radius: 6px;*/
         }
         #clock {
           padding-right: 6px;
         }
         #taskbar button.active {
-          background-color: rgba(214, 199, 199, 1);
+          background-color: rgba(255, 255, 255, 1);
         }
       '';
     };
