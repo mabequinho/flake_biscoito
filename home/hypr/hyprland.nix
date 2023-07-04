@@ -22,7 +22,7 @@
 
       #ENVS
       env = QT_QPA_PLATFORM,wayland
-      env = GTK_CDS, 0
+      env = GTK_CSD, 0
 
       #https://www.color-hex.com/color-palette/13735
       $act = rgb(ddadad)
@@ -42,9 +42,9 @@
       windowrulev2 = center,class:(rsibreak),title:(RSIBreak)
 
       general {
-      border_size = 4 
-      gaps_in = 1 
-      gaps_out = 2 
+      border_size = 2 
+      gaps_in = 0 
+      gaps_out = 0 
       resize_on_border = true
       layout = master
       col.active_border = $act
@@ -62,7 +62,7 @@
       }
 
       decoration {
-      rounding = 6 
+      #rounding = 6 
       dim_around = 0.8
       screen_shader = ~/.config/hypr/grayscale.frag
       }

@@ -14,10 +14,10 @@
         microbar = {
           layer = "top";
           position = "bottom";
-          margin-bottom = 2;
-          margin-right = 2;
-          margin-left = 2;
-          #          width = 600;
+          #margin-bottom = 2;
+          #margin-right = 2;
+          #margin-left = 2;
+          #width = 600;
           spacing = 6;
           modules-left = [ "wlr/workspaces" "wireplumber" ];
           modules-center = [ "wlr/taskbar" ];
@@ -76,8 +76,8 @@
         } 
         window#waybar {
                       background-color: rgba(251, 247, 240, 1);
-                      border: 4px solid rgba(214, 199, 199, 1);
-                      border-radius: 6px;
+                      border: 2px solid rgba(214, 199, 199, 1);
+                     /*border-radius: 6px;*/
         }
         #clock {
           padding-right: 6px;
