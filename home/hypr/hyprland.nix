@@ -64,7 +64,7 @@
       decoration {
       #rounding = 6 
       dim_around = 0.8
-      #screen_shader = ~/.config/hypr/grayscale.frag
+      screen_shader = ~/.config/hypr/grayscale.frag
       }
 
       input {
