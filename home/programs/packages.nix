@@ -21,7 +21,6 @@
     telegram-desktop
     fluffychat
     profanity
-    fractal
 
     #net
     transmission-gtk
