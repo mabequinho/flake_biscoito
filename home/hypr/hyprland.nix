@@ -6,6 +6,7 @@
     ./programs.nix
     ./packages.nix
     ./waybar.nix
+    ./grayscale.nix
 
   ];
 
@@ -21,6 +22,7 @@
 
       #ENVS
       env = QT_QPA_PLATFORM,wayland
+      env = GTK_CDS, 0
 
       #https://www.color-hex.com/color-palette/13735
       $act = rgb(ddadad)
@@ -52,15 +54,19 @@
       col.group_border_locked_active = $act
       col.group_border_locked = $ina
       }
+
       master {
       new_is_master = false
       no_gaps_when_only = false
       orientation = right
       }
+
       decoration {
       rounding = 6 
       dim_around = 0.8
+      screen_shader = ~/.config/hypr/grayscale.frag
       }
+
       input {
       kb_layout = us,us
       kb_variant = ,intl
@@ -70,6 +76,7 @@
       scroll_method = on_button_down
       scroll_button = 8
       }
+
       misc {
       disable_hyprland_logo = true
       disable_splash_rendering = true
