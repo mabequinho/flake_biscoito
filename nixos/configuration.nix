@@ -56,7 +56,10 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ git ddcutil virt-manager ];
+  environment = {
+    systemPackages = with pkgs; [ git ddcutil virt-manager ];
+    pathsToLink = [ "/share/bash-completion" ];
+  };
 
   security = { sudo.wheelNeedsPassword = false; };
 
