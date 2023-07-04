@@ -10,7 +10,7 @@
       settings = {
         microbar = {
           layer = "top";
-          position = "left";
+          position = "bottom";
 #          width = 600;
           spacing = 6;
           modules-left = [ "wlr/workspaces" ];
@@ -35,9 +35,9 @@
           };
           "clock" = {
             "interval" = 60;
-            "format" = ''<span allow_breaks="true">{: %a %d %b %H:%M}</span>'';
+            "format" =  "{:%a, %d %b %H:%M}";
             "max-length" = 25;
-            "rotate" = 90;
+            "rotate" = 0;
           };
           "idle_inhibitor" = {
             "format" = "{icon}";
@@ -63,7 +63,7 @@
                       border-radius: 6px;
         }
         #clock {
-          padding-bottom: 6px;
+          padding-right: 6px;
         }
       '';
     };

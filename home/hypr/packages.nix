@@ -14,6 +14,7 @@
       hyprpicker
       waylock
       wl-clipboard
+      notify-send
 
       portfolio-filemanager
       gnome.file-roller
