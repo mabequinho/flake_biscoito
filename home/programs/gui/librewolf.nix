@@ -12,10 +12,12 @@
 
   home.file = {
     ".librewolf/mabeco/chrome/userChrome.css".text = ''
+
       #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
                   width: 0px !important;
                   padding: 0px !important;
                   }
+
       :root {
           /* delay before expanding tabs, set to '0' for no delay */
           --delay: 0.5s;
