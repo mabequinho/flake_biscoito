@@ -40,6 +40,7 @@
       windowrulev2 = pin,class:(rsibreak),title:(RSIBreak)
       windowrulev2 = dimaround,class:(rsibreak),title:(RSIBreak)
       windowrulev2 = center,class:(rsibreak),title:(RSIBreak)
+      #not available on 26.0 as of 5/07 windowrulev2 = stayfocused,class:(rsibreak),title:(RSIBreak)
 
       general {
       border_size = 2 
