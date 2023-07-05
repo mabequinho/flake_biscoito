@@ -20,7 +20,11 @@
         yt = "yt-dlp -f mp4";
         cat = "bat";
         vi = "hx";
-        rm = "trash";
+      };
+      functions = {
+
+        rm = "trash $argv";
+
       };
       plugins = [{
         name = "hydro";
