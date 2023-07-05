@@ -11,6 +11,8 @@
           mccabe
           pycodestyle
           yapf
+
+          jupyter
         ]))
     ];
 

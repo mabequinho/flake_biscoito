@@ -5,6 +5,7 @@
     packages = with pkgs // pkgs.libsForQt5; [
 
       xdg-desktop-portal-hyprland
+      xdg-utils
 
       polkit-kde-agent
       qt6.qtwayland

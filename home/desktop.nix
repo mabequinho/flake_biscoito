@@ -30,29 +30,28 @@
       target = ".local/share/icons";
     };
 
+    SFMono-Nerd-Font-Ligaturized = {
+      source = pkgs.fetchFromGitHub {
+        owner = "shaunsingh";
+        repo = "SFMono-Nerd-Font-Ligaturized";
+        rev = "dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea";
+        sha256 = "0v0zsmlvfd8w1473c51426swjrjy62z8z0nybibc4jn8aanwm201";
+      };
+      target = ".local/share/fonts/otf/SFMono-Nerd-Font-Ligaturized";
+      recursive = true;
+    };
 
-     SFMono-Nerd-Font-Ligaturized = {
-          source = pkgs.fetchFromGitHub {
-            owner = "shaunsingh";
-            repo = "SFMono-Nerd-Font-Ligaturized";
-            rev = "dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea";
-            sha256 = "0v0zsmlvfd8w1473c51426swjrjy62z8z0nybibc4jn8aanwm201";
-          };
-          target = ".local/share/fonts/otf/SFMono-Nerd-Font-Ligaturized";
-          recursive = true;
-        };
+    San-Francisco-Pro-Fonts = {
+      source = pkgs.fetchFromGitHub {
+        owner = "sahibjotsaggu";
+        repo = "San-Francisco-Pro-Fonts";
+        rev = "8bfea09aa6f1139479f80358b2e1e5c6dc991a58";
+        sha256 = "0zm9112y5x6z36mhcqlga4lmiqjhp1n7qiszmd3h3wi77z3c81cq";
+      };
+      target = ".local/share/fonts/otf/San-Francisco-Pro-Fonts";
+      recursive = true;
+    };
 
-      San-Francisco-Pro-Fonts = {
-          source = pkgs.fetchFromGitHub {
-            owner = "sahibjotsaggu";
-            repo = "San-Francisco-Pro-Fonts";
-            rev = "8bfea09aa6f1139479f80358b2e1e5c6dc991a58";
-            sha256 = "0zm9112y5x6z36mhcqlga4lmiqjhp1n7qiszmd3h3wi77z3c81cq";
-          };
-          target = ".local/share/fonts/otf/San-Francisco-Pro-Fonts";
-          recursive = true;
-        };
-    
   };
 
   xdg = {
@@ -69,6 +68,11 @@
         noDisplay = true;
       };
 
+      "jupyter-nbclassic" = {
+        name = "jupyter-nbclassic";
+        noDisplay = true;
+      };
+
     };
 
     userDirs = {
@@ -77,6 +81,12 @@
       desktop = "${config.home.homeDirectory}/.Desktop";
     };
 
+    mimeApps = {
+      defaultApplications = {
+        "text/html" = [ "librewolf.desktop" ];
+        "inode/directory=" = [ "tchx84.Portfolio.desktop" ];
+      };
+    };
   };
 
 }

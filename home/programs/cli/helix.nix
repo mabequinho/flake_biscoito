@@ -39,7 +39,7 @@
           auto-format = true;
           scope = "source.py";
           injection-regex = "py";
-          file-types = [ "py" "ipynb" ];
+          file-types = [ "py" ];
           diagnostic-severity = "Hint";
           comment-token = "#";
           formatter = {
