@@ -5,6 +5,7 @@
     /run/user/1000/secrets/ssystemd.nix
     ./misc.nix
     ./rnnoise.nix
+    ./mangald.nix
 
   ];
 
