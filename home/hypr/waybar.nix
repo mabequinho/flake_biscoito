@@ -80,7 +80,7 @@
                      /*border-radius: 6px;*/
         }
         #clock {
-          padding-right: 6px;
+          padding-right: 12px;
         }
         #taskbar button.active {
           background-color: rgba(255, 255, 255, 1);

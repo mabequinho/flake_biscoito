@@ -3,7 +3,7 @@
 
     mako = {
       enable = true;
-      anchor = "top-right";
+      anchor = "bottom-right";
       height = 1000;
       backgroundColor = "#000000";
       textColor = "#ffffff";
@@ -12,8 +12,9 @@
       font = "SF Pro Display 12";
       icons = false;
       defaultTimeout = 6000;
-      borderRadius = 6;
+      borderRadius = 0;
       borderSize = 2;
+      format = "<big>%s\\n</big>\\n%b";
     };
 
     udiskie = {
