@@ -53,7 +53,7 @@
       col.group_border = $ina
       col.group_border_locked_active = $act
       col.group_border_locked = $ina
-      no_cursor_warps = true
+      no_cursor_warps = false
       no_focus_fallback = true
       }
 
@@ -72,7 +72,7 @@
       input {
       kb_layout = us,us
       kb_variant = ,intl
-      kb_options = grp:win_space_toggle,grp_led:caps
+      kb_options = grp:rctrl_toggle,grp_led:caps
       follow_mouse = 1
       accel_profile = adaptive
       scroll_method = on_button_down

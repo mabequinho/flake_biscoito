@@ -22,8 +22,6 @@
       nur.repos.xddxdd.svp
 
       inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
-      inputs.hyprland-plugins.packages.${pkgs.system}.borders-plus-plus
-      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
 
     ];
   };

@@ -24,12 +24,11 @@
       url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland-plugins.url = "github:hyprwm/hyprland-plugins";
 
   };
 
   outputs = inputs@{ nixpkgs, home-manager, homeage, touhou-cursors, hyprland
-    , hyprland-contrib, hyprland-plugins, ... }: {
+    , hyprland-contrib, ... }: {
       nixosConfigurations = {
         biscoito = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
