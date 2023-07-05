@@ -44,7 +44,7 @@
           comment-token = "#";
           formatter = {
             command = "yapf";
-            args = [ "-p" "--style google" ];
+            args = [ "-p" ];
           };
           language-server = {
             command = "pylsp";

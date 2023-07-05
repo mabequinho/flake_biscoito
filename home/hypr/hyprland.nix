@@ -152,8 +152,8 @@
       bind = $mainMod ALT, 4, movetoworkspace, 4
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
-      bindm = ALT, mouse:272, movewindow
-      bindm = ALT, mouse:273, resizewindow
+      bindm = $mainMod, mouse:272, movewindow
+      bindm = $mainMod, mouse:273, resizewindow
 
     '';
 
