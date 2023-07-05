@@ -111,8 +111,8 @@
       ##MPRIS
       bind = $mainMod, backslash, exec, playerctl play-pause
       ##BRIGHTNESS
-      bind = $mainMod ALT, equal, exec, ddcutil setvcp 10 + 20 
-      bind = $mainMod ALT, minus, exec, ddcutil setvcp 10 - 20
+      bind = $mainMod ALT, equal, exec, ddcutil setvcp 10 + 10 
+      bind = $mainMod ALT, minus, exec, ddcutil setvcp 10 - 10
 
       #W ACTIONS
       bind = $mainMod, Q, killactive,
