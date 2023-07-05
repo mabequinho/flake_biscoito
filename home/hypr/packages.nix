@@ -6,6 +6,7 @@
 
       xdg-desktop-portal-hyprland
       xdg-utils
+      trashy
 
       polkit-kde-agent
       qt6.qtwayland
