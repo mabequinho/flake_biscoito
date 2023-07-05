@@ -53,6 +53,8 @@
       col.group_border = $ina
       col.group_border_locked_active = $act
       col.group_border_locked = $ina
+      no_cursor_warps = true
+      no_focus_fallback = true
       }
 
       master {
