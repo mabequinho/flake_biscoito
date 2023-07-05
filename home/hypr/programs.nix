@@ -15,12 +15,15 @@
           icon-theme = "Yaru";
         };
         colors = {
-          background = "fbf7f0ff";
-          border = "ddadadff";
+          background = "000000ff";
+          border = "ffffffff";
+          text = "ffffffff";
+          selection = "ffffffff";
+          selection-text = "000000ff";
         };
         border = {
           width = 2;
-          radius = 6;
+          radius = 0;
         };
       };
     };

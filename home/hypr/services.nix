@@ -5,10 +5,10 @@
       enable = true;
       anchor = "top-right";
       height = 1000;
-      backgroundColor = "#FBF7F0";
-      textColor = "#000000";
-      progressColor = "over #d4823d";
-      borderColor = "#ddadad";
+      backgroundColor = "#000000";
+      textColor = "#ffffff";
+      progressColor = "over #ffffff";
+      borderColor = "#ffffff";
       font = "SF Pro Display 12";
       icons = false;
       defaultTimeout = 6000;
