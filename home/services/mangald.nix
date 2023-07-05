@@ -27,14 +27,8 @@
           Unit = {
             Description = "Trigger multiple manga downloads";
             Documentation = [ "https://github.com/metafates/mangal" ];
-            Wants = ''
-              bocchi_the_rock.service
-              jachi_chan_dropkick.service
-              overlord  .service
-              watamote .service
-              witch_hat_atelier .service
-              record_of_ragnarok .service
-            '';
+            Wants =
+              "bocchi_the_rock.service jachi_chan_dropkick.service overlord.service watamote.service witch_hat_atelier.service record_of_ragnarok.service";
           };
         };
 
