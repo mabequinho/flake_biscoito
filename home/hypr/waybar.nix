@@ -86,10 +86,8 @@
           background-color: rgba(255, 255, 255, 1);
         }
         #tray menu {
-          color: rgba(255, 255, 255, 1);
-          background-color: rgba(0, 0, 0, 1);
-          border-width: 2px;
-          border-color: rgba(255, 255, 255, 1);
+          color: rgba(0, 0, 0, 1);
+          background-color: rgba(255, 255, 255, 1);
         }
       '';
     };
