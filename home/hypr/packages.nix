@@ -19,6 +19,7 @@
       libnotify
 
       portfolio-filemanager
+      mangal
       gnome.file-roller
 
       nur.repos.xddxdd.svp

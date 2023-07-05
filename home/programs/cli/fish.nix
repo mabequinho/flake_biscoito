@@ -24,6 +24,8 @@
       functions = {
 
         rm = "trash $argv";
+        mangald =
+          "mangal inline -S Mangadex -F pdf -m first -c all -d -q $argv";
 
       };
       plugins = [{
