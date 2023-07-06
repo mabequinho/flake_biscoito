@@ -30,6 +30,11 @@
       target = ".local/share/icons";
     };
 
+    ".config/fontconfig/fonts.conf".source = pkgs.fetchurl {
+      url = "https://itvision.altervista.org/files/fonts.conf";
+      sha256 = "1sbj65d57ipryncsq80h7zssyvqznr6nm4nnhs72rw0r7nfivvdn";
+    };
+
     SFMono-Nerd-Font-Ligaturized = {
       source = pkgs.fetchFromGitHub {
         owner = "shaunsingh";

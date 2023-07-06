@@ -31,10 +31,13 @@
       exec-once = hyprctl setcursor Sanae 10 & hyprpaper & SVPManager
       exec-once = ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
       windowrule = workspace 4 silent,thunderbird
+
+      #floating
       windowrulev2 = float,class:(.dev.tchx84.Portfolio-wrapped),title:(Portfolio)
       windowrulev2 = float,class:(mpv)
       windowrulev2 = float,class:(transmission-gtk),title:(Transmission)
       windowrulev2 = float,class:(org.kde.polkit-kde-authentication-agent-1),title:(Authentication Required — PolicyKit1 KDE Agent)
+      windowrulev2 = float,class:(system-config-printer),title:(Print Settings - localhost)
 
       #RSIBREAK
       windowrulev2 = pin,class:(rsibreak),title:(RSIBreak)
