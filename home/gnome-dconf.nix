@@ -13,9 +13,9 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       cursor-theme = "Reisen";
-      font-name = "MesloLGS Nerd Font 9";
-      document-font-name = "MesloLGS Nerd Font 9";
-      monospace-font-name = "MesloLGS Nerd Font Mono 9";
+      font-name = "SF Pro 9";
+      document-font-name = "SF Pro Text 9";
+      monospace-font-name = "Liga SFMono Nerd Font Light 9";
       clock-show-weekday = true;
       toolkit-accessibility = false;
     };

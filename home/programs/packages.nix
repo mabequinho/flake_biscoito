@@ -13,7 +13,6 @@
     pika-backup
 
     #misc
-    calibre
 
     #trocar pro sops-nix https://github.com/Mic92/sops-nix
     rage
@@ -29,7 +28,7 @@
 
     #net
     transmission-gtk
-    hakuneko
+    #hakuneko
     stremio
 
     #theming
