@@ -9,7 +9,8 @@
     selectdefaultapplication
     wgetpaste
     radeontop
-    system-config-printer
+    #system-config-printer
+    pika-backup
 
     #misc
     calibre

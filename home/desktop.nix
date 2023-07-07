@@ -4,10 +4,10 @@
 
     [
 
-      ./hypr/hyprland.nix
+      #./hypr/hyprland.nix
       ./programs/programs.nix
       ./services/services.nix
-      #     ./gnome-dconf.nix
+      ./gnome-dconf.nix
 
     ];
 
@@ -85,13 +85,13 @@
       templates = "${config.home.homeDirectory}/.Templates";
       desktop = "${config.home.homeDirectory}/.Desktop";
     };
-
-    mimeApps = {
-      defaultApplications = {
-        "text/html" = [ "librewolf.desktop" ];
-        "inode/directory=" = [ "tchx84.Portfolio.desktop" ];
-      };
-    };
+    /* mimeApps = {
+          defaultApplications = {
+            "text/html" = [ "librewolf.desktop" ];
+            "inode/directory=" = [ "tchx84.Portfolio.desktop" ];
+          };
+        };
+    */
   };
 
 }
