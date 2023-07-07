@@ -189,4 +189,13 @@
 
   };
 
+  xdg = {
+    mimeApps = {
+      defaultApplications = {
+        "text/html" = [ "librewolf.desktop" ];
+        "inode/directory=" = [ "tchx84.Portfolio.desktop" ];
+      };
+    };
+  };
+
 }

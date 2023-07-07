@@ -14,9 +14,9 @@ with lib.hm.gvariant;
     "org/gnome/desktop/interface" = {
       cursor-theme = "Reisen";
       icon-theme = "Yaru-bark";
-      font-name = "SF Pro 9";
-      document-font-name = "SF Pro Text 9";
-      monospace-font-name = "Liga SFMono Nerd Font Light 9";
+      font-name = "SF Pro 10";
+      document-font-name = "SF Pro Text 10";
+      monospace-font-name = "Liga SFMono Nerd Font Light 10";
       clock-show-weekday = true;
       toolkit-accessibility = false;
     };
@@ -120,8 +120,9 @@ with lib.hm.gvariant;
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "gnomebedtime@ionutbortis.gmail.com"
         "unredirect@vaina.lt"
-        "dash-to-panel@jderose9.github.com"
         "appindicatorsupport@rgcjonas.gmail.com"
+        "pomodoro@arun.codito.in"
+        "dash-to-panel@jderose9.github.com"
       ];
       favorite-apps =
         [ "org.gnome.Nautilus.desktop" "org.codeberg.dnkl.foot.desktop" ];
@@ -139,9 +140,10 @@ with lib.hm.gvariant;
       application-list = [
         "org.telegram.desktop.desktop:4"
         "Fluffychat.desktop:4"
-        "thunderbird.desktop:4"
+        "com.github.eneshecan.WhatsAppForLinux.desktop:4"
+        "thunderbird.desktop:3"
+        "org.gnome.Pomodoro.desktop:3"
         "transmission-gtk.desktop:3"
-        "hakuneko-desktop.desktop:3"
         "userapp-transmission-gtk-Y6A461.desktop:3"
       ];
     };
@@ -150,11 +152,6 @@ with lib.hm.gvariant;
       bedtime-mode-active = true;
       color-tone-factor = 80;
       ondemand-button-location = "menu";
-    };
-
-    "org/gnome/shell/extensions/dash-to-panel" = {
-      available-monitors = [ 0 ];
-      primary-monitor = 0;
     };
 
     "org/gnome/shell/keybindings" = {

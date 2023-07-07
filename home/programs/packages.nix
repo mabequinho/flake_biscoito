@@ -11,8 +11,10 @@
     radeontop
     #system-config-printer
     pika-backup
+    trashy
 
     #misc
+    neovim # for vscode nvim only
 
     #trocar pro sops-nix https://github.com/Mic92/sops-nix
     rage

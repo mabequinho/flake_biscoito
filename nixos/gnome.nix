@@ -38,18 +38,19 @@
     systemPackages = with pkgs.gnome // pkgs // pkgs.gnomeExtensions; [
       nautilus-python
       gnome-tweaks
-      pomodoro
+      gnome.pomodoro
 
       dconf2nix
       nautilus-open-any-terminal
       qt6.qtwayland
       libsForQt5.qt5.qtwayland
       wl-clipboard
+      libnotify
 
       appindicator
-      dash-to-panel
       gnome-bedtime
       disable-unredirect-fullscreen-windows
+      dash-to-panel
     ];
     gnome.excludePackages = with pkgs // pkgs.gnome; [
 
