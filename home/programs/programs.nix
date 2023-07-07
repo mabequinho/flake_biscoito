@@ -14,6 +14,7 @@
     ./cli/helix.nix
     ./cli/bat.nix
     ./gui/foot.nix
+    ./gui/vscode.nix
     #    ./gui/imv.nix
     ./gui/librewolf.nix
     #    ./gui/zathura.nix

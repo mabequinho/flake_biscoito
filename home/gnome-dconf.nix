@@ -121,6 +121,7 @@ with lib.hm.gvariant;
         "gnomebedtime@ionutbortis.gmail.com"
         "unredirect@vaina.lt"
         "dash-to-panel@jderose9.github.com"
+        "appindicatorsupport@rgcjonas.gmail.com"
       ];
       favorite-apps =
         [ "org.gnome.Nautilus.desktop" "org.codeberg.dnkl.foot.desktop" ];
@@ -128,6 +129,11 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/app-switcher" = { current-workspace-only = true; };
+
+    "org/gnome/shell/extensions/appindicator" = {
+      legacy-tray-enabled = true;
+      tray-pos = "center";
+    };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [

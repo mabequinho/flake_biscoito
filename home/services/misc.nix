@@ -2,7 +2,7 @@
 
   services = {
     rsibreak.enable = false;
-    safeeyes.enable = true;
+    safeeyes.enable = false;
   };
 
 }
