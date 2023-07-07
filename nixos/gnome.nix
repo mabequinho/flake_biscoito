@@ -38,6 +38,7 @@
     systemPackages = with pkgs.gnome // pkgs // pkgs.gnomeExtensions; [
       nautilus-python
       gnome-tweaks
+      pomodoro
 
       dconf2nix
       nautilus-open-any-terminal
