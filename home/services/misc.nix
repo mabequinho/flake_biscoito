@@ -1,9 +1,8 @@
 { config, ... }: {
 
   services = {
-    rsibreak = {
-      enable = true;
-    };
+    rsibreak.enable = false;
+    safeeyes.enable = true;
   };
 
 }

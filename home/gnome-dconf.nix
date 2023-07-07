@@ -13,6 +13,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       cursor-theme = "Reisen";
+      icon-theme = "Yaru-bark";
       font-name = "SF Pro 9";
       document-font-name = "SF Pro Text 9";
       monospace-font-name = "Liga SFMono Nerd Font Light 9";

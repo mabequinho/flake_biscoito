@@ -24,6 +24,7 @@
     #menss
     telegram-desktop
     fluffychat
+    whatsapp-for-linux
     profanity
 
     #net
