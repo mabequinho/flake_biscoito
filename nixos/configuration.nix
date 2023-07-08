@@ -8,6 +8,7 @@
     ./nix.nix
     ./pipewire.nix
     ./gnome.nix
+    ./programs.nix
     #./hypr.nix
   ];
 
