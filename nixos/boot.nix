@@ -28,7 +28,7 @@
 
     initrd.verbose = false;
     consoleLogLevel = 0;
-    kernelPackages = pkgs.linuxKernel.packages.linux_zen;
+    kernelPackages = pkgs.linuxKernel.packages.linux_latest;
 
     kernelParams = [
       "amd_iommu=on"
