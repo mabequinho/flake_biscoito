@@ -2,7 +2,7 @@
 
   imports = [
 
-    /run/user/1000/secrets/ssystemd.nix
+    #/run/user/1000/secrets/ssystemd.nix
     ./misc.nix
     ./rnnoise.nix
     ./mangald.nix
