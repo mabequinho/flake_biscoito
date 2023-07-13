@@ -3,7 +3,6 @@
   imports = [
 
     inputs.homeage.homeManagerModules.homeage
-    inputs.hyprland.homeManagerModules.default
     ./desktop.nix
 
   ];
@@ -39,15 +38,14 @@
   home = {
     username = "mabeco";
     homeDirectory = "/home/mabeco";
-    sessionVariables = { QT_QPA_PLATFORM = "wayland"; };
   };
   homeage = {
     identityPaths = [ "~/.ssh/id_ed25519" ];
     installationType = "systemd";
     pkg = pkgs.rage;
-    file."mail.nix" = { source = ./programs/age/mail.nix.age; };
-    file."task.nix" = { source = ./programs/age/task.nix.age; };
-    file."ssystemd.nix" = { source = ./services/ssystemd.nix.age; };
+    #file."mail.nix" = { source = ./programs/age/mail.nix.age; };
+    #file."task.nix" = { source = ./programs/age/task.nix.age; };
+    #file."ssystemd.nix" = { source = ./services/ssystemd.nix.age; };
   };
   # Enable home-manager
   programs.home-manager.enable = true;
