@@ -33,6 +33,7 @@
     transmission-gtk
     #hakuneko
     stremio
+    brave
 
     #theming
     nerdfonts

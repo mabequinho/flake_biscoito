@@ -16,41 +16,39 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.initrd.secrets = {
-    "keyfile_biscoito.bin" = "/etc/secrets/initrd/keyfile_biscoito.bin";
+    "keyfile_biscoito.bin" = "/etc/secrets/initrd/keyfile0.bin";
   };
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
-    fsType = "btrfs";
+    device = "/dev/disk/by-uuid/40fd5e9a-6346-46b9-8dda-6543ec75da0e";
+    fsType = "ext4";
     options = [
-      "subvol=@root"
-      #most arguments on the first volume goes to every other volume on the same filesystem.
-      "compress=lzo"
       "noatime"
     ];
   };
 
-  boot.initrd.luks.devices."biscoito" = {
-    device = "/dev/disk/by-uuid/5ddb4137-251c-4e53-a117-9512f8f08d03";
+  boot.initrd.luks.devices."root" = {
+    device = "/dev/disk/by-uuid/69e4527c-b51c-453b-acd4-563282e6dde9";
     preLVM = false;
     keyFile = "/keyfile_biscoito.bin";
     allowDiscards = true;
   };
 
-  fileSystems."/nix" = {
-    device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
-    fsType = "btrfs";
-    options = [ "subvol=@nix" "noatime" ];
+  fileSystems."/home" = {
+    device = "/dev/disk/by-uuid/a9c1fead-79f7-4fc1-a914-1d9f68a1414d";
+    fsType = "ext4";
+    options = [ "noatime" ];
   };
 
-  fileSystems."/home" = {
-    device = "/dev/disk/by-uuid/ecddbcf5-3261-4621-a0b3-76baa4e2c69e";
-    fsType = "btrfs";
-    options = [ "subvol=@home" "noatime" ];
+  boot.initrd.luks.devices."home" = {
+    device = "/dev/disk/by-uuid/e04c322b-3ef0-4d49-8222-4b3d15c15993";
+    preLVM = false;
+    keyFile = "/keyfile_biscoito.bin";
+    allowDiscards = true;
   };
 
   fileSystems."/boot/efi" = {
-    device = "/dev/disk/by-uuid/5FD6-BBF1";
+    device = "/dev/disk/by-uuid/3821-1075";
     fsType = "vfat";
   };
 

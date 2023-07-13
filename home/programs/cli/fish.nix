@@ -7,7 +7,7 @@
       '';
       shellAliases = {
         nixhell =
-          "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito --impure";
+          "sudo nixos-rebuild switch -j 8 --flake $HOME/Documents/git/flake_biscoito ; home-manager switch -j 8 --impure --flake $HOME/Documents/git/flake_biscoito";
         lports = "sudo netstat -tulpn | grep LISTEN";
         wp = "wgetpaste";
         g = "git";

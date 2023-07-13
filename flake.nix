@@ -20,7 +20,7 @@
     };
   };
 
-outputs = { nixpkgs, home-manager, touhou-cursors, homeage ... }@inputs: {
+outputs = { nixpkgs, home-manager, touhou-cursors, homeage, ... }@inputs: {
 
     nixosConfigurations = {
       biscoito = nixpkgs.lib.nixosSystem {
@@ -30,10 +30,10 @@ outputs = { nixpkgs, home-manager, touhou-cursors, homeage ... }@inputs: {
     };
 
     homeConfigurations = {
-      "mabeco@Biscoito" = home-manager.lib.homeManagerConfiguration {
+      "mabeco@biscoito" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
-           modules = [ ./home-manager/home.nix ];
+           modules = [ ./home/home.nix ];
       };
     };
 

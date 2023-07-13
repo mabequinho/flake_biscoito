@@ -17,6 +17,13 @@
           enable = true;
         };
       };
+      libinput = {
+	mouse = {
+	scrollMethod = "button";
+	scrollButton = 8;
+	middleEmulation = true;
+	};
+      };
     };
   };
 
