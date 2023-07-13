@@ -10,7 +10,6 @@
     wgetpaste
     radeontop
     #system-config-printer
-    pika-backup
     trashy
 
     #misc
@@ -25,9 +24,7 @@
 
     #menss
     telegram-desktop
-    fluffychat
-    whatsapp-for-linux
-    profanity
+    discord
 
     #net
     transmission-gtk

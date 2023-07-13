@@ -20,7 +20,7 @@
                             {
                                 type   = ladspa
                                 name   = "DeepFilter Mono"
-                                plugin = ~/.local/libdeep_filter_ladspa.so
+                                plugin = /home/mabeco/.local/libdeep_filter_ladspa.so
                                 label  = deep_filter_mono
                                 control = {
                                     "Attenuation Limit (dB)" 100
