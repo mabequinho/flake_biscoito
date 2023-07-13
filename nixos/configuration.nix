@@ -9,8 +9,7 @@
     ./pipewire.nix
     ./gnome.nix
     ./programs.nix
-    #./hypr.nix
-  ];
+];
 
   nixpkgs = {
     # You can add overlays here
