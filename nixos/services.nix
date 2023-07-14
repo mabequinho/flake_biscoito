@@ -31,7 +31,7 @@
       enable = true;
       settings = {
         main = {
-          capslock = "overload(meta_xf, esc)";
+          capslock = "overload(meta, esc)";
           esc = "`";
           up = "/";
           down = "compose";
@@ -42,7 +42,7 @@
           rightalt = "left";
           rightcontrol = "right";
         };
-        meta_xf = {
+        meta = {
           minus = "volumedown";
           equal = "volumeup";
           backspace = "mute";
