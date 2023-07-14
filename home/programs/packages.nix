@@ -26,14 +26,13 @@
     discord
 
     #net
-    transmission-gtk
+    qbittorrent
     #hakuneko
     stremio
     brave
 
     #theming
     nerdfonts
-    yaru-theme
 
   ];
 

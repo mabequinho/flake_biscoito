@@ -67,6 +67,11 @@
         name = "jupyter-nbclassic";
         noDisplay = true;
       };
+      "ssh-add.desktop" = {
+        name = "ssh-add";
+        exec = "ssh-add -q .ssh/mabeco_ed25519";
+        categories = [ "Application" ];
+      };
     };
 
     userDirs = {
