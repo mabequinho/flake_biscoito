@@ -2,7 +2,7 @@
 
   programs.neovim = {
     enable = true;
-    defaultEditor = true;
+    defaultEditor = false;
     extraLuaConfig = ''
 
       vim.opt.clipboard = 'unnamedplus'   -- use system clipboard 

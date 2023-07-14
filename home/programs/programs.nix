@@ -11,7 +11,8 @@
     ./cli/git.nix
     ./cli/hyfetch.nix
     ./cli/yt-dlp.nix
-    ./cli/nvim.nix
+    #./cli/nvim.nix
+    ./cli/hx.nix
     ./cli/bat.nix
     ./gui/vscode.nix
     ./gui/zathura.nix
