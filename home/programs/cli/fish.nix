@@ -19,7 +19,7 @@
         py = "python3";
         yt = "yt-dlp -f mp4";
         cat = "bat";
-        vi = "nvim";
+        vi = "hx";
       };
       functions = {
 
