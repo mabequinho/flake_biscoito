@@ -12,6 +12,8 @@
     trashy
 
     #misc
+    vorta
+    mangal
 
     #trocar pro sops-nix https://github.com/Mic92/sops-nix
     rage
