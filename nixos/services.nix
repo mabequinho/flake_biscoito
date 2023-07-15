@@ -42,12 +42,13 @@
           rightalt = "left";
           rightcontrol = "right";
         };
-        meta = {
-          minus = "volumedown";
-          equal = "volumeup";
-          backspace = "mute";
-          "\\" = "playpause";
-        };
+        /* meta = {
+                  minus = "volumedown";
+                  equal = "volumeup";
+                  backspace = "mute";
+                  "\\" = "playpause";
+                };
+        */
       };
     };
   };
