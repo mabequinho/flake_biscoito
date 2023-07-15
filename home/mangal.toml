@@ -10,7 +10,7 @@ colored = true
 
 [downloader]
 async = true
-chapter_name_template = '{manga}_c{chapter}_v{volume}'
+chapter_name_template = '{manga}_{chapter}_{volume}'
 create_manga_dir = true
 create_volume_dir = true
 default_sources = []
