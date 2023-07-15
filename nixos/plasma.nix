@@ -26,6 +26,10 @@
 
   environment = {
     plasma5.excludePackages = with pkgs // pkgs.Plasma5Packages; [ ];
+    systemPackages = with pkgs // pkgs.qt6Packages // pkgs.libsForQt5; [
+      kde-gtk-config
+      latte-dock
+    ];
   };
 
 }
