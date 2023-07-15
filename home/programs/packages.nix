@@ -6,7 +6,6 @@
     nix-your-shell
     zbar
     detox
-    selectdefaultapplication
     wgetpaste
     radeontop
     #system-config-printer

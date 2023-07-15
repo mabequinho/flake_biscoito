@@ -59,10 +59,6 @@
         name = "fish";
         noDisplay = true;
       };
-      "xterm" = {
-        name = "xterm";
-        noDisplay = true;
-      };
       "jupyter-nbclassic" = {
         name = "jupyter-nbclassic";
         noDisplay = true;
@@ -71,6 +67,7 @@
         name = "ssh-add";
         exec = "ssh-add -q .ssh/mabeco_ed25519";
         categories = [ "Application" ];
+        noDisplay = true;
       };
     };
 

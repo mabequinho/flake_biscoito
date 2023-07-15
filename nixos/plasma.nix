@@ -8,29 +8,22 @@
           enable = true;
           user = "mabeco";
         };
-        sddm = {
-          enable = true;
-        };
+        sddm = { enable = true; };
       };
-      desktopManager = {
-        plasma5 = {
-          enable = true;
-        };
-      };
+      desktopManager = { plasma5 = { enable = true; }; };
       libinput = {
-	mouse = {
-	scrollMethod = "button";
-	scrollButton = 8;
-	middleEmulation = true;
-	};
+        mouse = {
+          scrollMethod = "button";
+          scrollButton = 8;
+          middleEmulation = true;
+        };
       };
+      excludePackages = [ pkgs.xterm ];
     };
   };
 
-  programs = {
-    dconf.enable = true;
-  };
-  
+  programs = { dconf.enable = true; };
+
   environment = {
     plasma5.excludePackages = with pkgs // pkgs.Plasma5Packages; [ ];
   };
