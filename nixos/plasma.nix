@@ -29,6 +29,7 @@
     systemPackages = with pkgs // pkgs.qt6Packages // pkgs.libsForQt5; [
       kde-gtk-config
       latte-dock
+      workrave
     ];
   };
 

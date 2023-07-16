@@ -1,5 +1,5 @@
 { config, ... }: {
 
-  services = { rsibreak.enable = true; };
+  services = { rsibreak.enable = false; };
 
 }
