@@ -14,6 +14,7 @@
     #misc
     vorta
     mangal
+    disfetch
 
     #trocar pro sops-nix https://github.com/Mic92/sops-nix
     rage
