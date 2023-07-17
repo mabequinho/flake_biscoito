@@ -31,7 +31,6 @@
 
     #net
     transmission-gtk
-    libsForQt5.audiotube
 
     #theming
     nerdfonts
