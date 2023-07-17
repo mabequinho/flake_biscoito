@@ -19,14 +19,11 @@
         py = "python3";
         yt = "yt-dlp -f mp4";
         cat = "bat";
-        vi = "hx";
       };
       functions = {
-
         rm = "trash $argv";
         mangald =
           "mangal inline -S Mangadex -F pdf -m first -c all -d -q $argv";
-
       };
       plugins = [{
         name = "hydro";

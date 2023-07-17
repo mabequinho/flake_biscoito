@@ -11,7 +11,7 @@
     ./cli/git.nix
     ./cli/hyfetch.nix
     ./cli/yt-dlp.nix
-    ./cli/hx.nix
+    ./cli/nvim.nix
     ./cli/bat.nix
     ./gui/firefox.nix
   ];
