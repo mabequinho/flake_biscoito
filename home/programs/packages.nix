@@ -24,7 +24,7 @@
     #media
     nur.repos.xddxdd.svp
     playerctl
-    headset
+    nuclear
     #menss
     telegram-desktop
     discord
