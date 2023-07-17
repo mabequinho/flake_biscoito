@@ -66,6 +66,8 @@
     };
 
     userDirs = {
+      enable = true;
+      createDirectories = true;
       publicShare = "${config.home.homeDirectory}/.Public";
       templates = "${config.home.homeDirectory}/.Templates";
       desktop = "${config.home.homeDirectory}/.Desktop";
