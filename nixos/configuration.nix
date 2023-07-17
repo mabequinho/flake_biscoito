@@ -7,9 +7,9 @@
     ./virt.nix
     ./nix.nix
     ./pipewire.nix
-    ./plasma.nix
+    ./gnome.nix
     ./programs.nix
-];
+  ];
 
   nixpkgs = {
     # You can add overlays here

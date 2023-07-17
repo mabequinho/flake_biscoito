@@ -29,26 +29,30 @@
     };
     keyd = {
       enable = true;
-      settings = {
-        main = {
-          capslock = "overload(meta, esc)";
-          esc = "`";
-          up = "/";
-          down = "compose";
-          left = "oneshot(altgr)";
-          right = "rightcontrol";
-          "/" = "up";
-          compose = "down";
-          rightalt = "left";
-          rightcontrol = "right";
+      keyboards = {
+        default = {
+          settings = {
+            main = {
+              capslock = "overload(meta, esc)";
+              esc = "`";
+              up = "/";
+              down = "compose";
+              left = "oneshot(altgr)";
+              right = "rightcontrol";
+              "/" = "up";
+              compose = "down";
+              rightalt = "left";
+              rightcontrol = "right";
+            };
+            /* meta = {
+                      minus = "volumedown";
+                      equal = "volumeup";
+                      backspace = "mute";
+                      "\\" = "playpause";
+                    };
+            */
+          };
         };
-        /* meta = {
-                  minus = "volumedown";
-                  equal = "volumeup";
-                  backspace = "mute";
-                  "\\" = "playpause";
-                };
-        */
       };
     };
   };

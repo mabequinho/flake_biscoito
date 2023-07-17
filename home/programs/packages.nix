@@ -2,6 +2,8 @@
 
   home.packages = with pkgs; [
 
+    vscode-fhs
+
     #utils
     nix-your-shell
     zbar
@@ -12,7 +14,7 @@
     trashy
 
     #misc
-    vorta
+    pika-backup
     mangal
     disfetch
 
@@ -22,16 +24,14 @@
     #media
     nur.repos.xddxdd.svp
     playerctl
-
+    headset
     #menss
     telegram-desktop
     discord
 
     #net
-    qbittorrent
-    #hakuneko
+    transmission-gtk
     stremio
-    brave
 
     #theming
     nerdfonts

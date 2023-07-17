@@ -5,10 +5,9 @@
   programs = {
     adb = { enable = true; };
     ssh = {
-      startAgent = true;
+      startAgent = false;
       forwardX11 = true;
       enableAskPassword = true;
-      askPassword = "${pkgs.libsForQt5.ksshaskpass}/bin/ksshaskpass";
     };
   };
 }

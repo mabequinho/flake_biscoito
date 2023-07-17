@@ -21,6 +21,7 @@
             [ nautilus-open-any-terminal ];
         };
       };
+      excludePackages = with pkgs; [ xterm ];
     };
     gnome = {
       core-utilities.enable = true;
@@ -31,14 +32,20 @@
   };
   programs = {
     file-roller.enable = true;
-    seahorse.enable = true;
+    #    seahorse.enable = true;
   };
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   environment = {
     systemPackages = with pkgs.gnome // pkgs // pkgs.gnomeExtensions; [
+      gnome-terminal
       nautilus-python
       gnome-tweaks
       gnome.pomodoro
+
+      gradience
+      adw-gtk3
+      tela-circle-icon-theme
+      flat-remix-gnome
 
       dconf2nix
       nautilus-open-any-terminal
@@ -47,10 +54,9 @@
       wl-clipboard
       libnotify
 
-      appindicator
       gnome-bedtime
       disable-unredirect-fullscreen-windows
-      dash-to-panel
+      dock-from-dash
     ];
     gnome.excludePackages = with pkgs // pkgs.gnome; [
 
@@ -58,6 +64,7 @@
       epiphany
       pkgs.gnome-text-editor
       gnome-calculator
+      gnome-calendar
       gnome-characters
       gnome-clocks
       pkgs.gnome-console

@@ -13,6 +13,7 @@
     ./cli/yt-dlp.nix
     ./cli/hx.nix
     ./cli/bat.nix
+    ./gui/firefox.nix
   ];
 
 }
