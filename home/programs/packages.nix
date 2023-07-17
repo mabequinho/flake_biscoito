@@ -23,6 +23,7 @@
 
     #media
     nur.repos.xddxdd.svp
+    amberol
     playerctl
     #menss
     telegram-desktop
@@ -30,7 +31,7 @@
 
     #net
     transmission-gtk
-    stremio
+    libsForQt5.audiotube
 
     #theming
     nerdfonts
