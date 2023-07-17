@@ -14,12 +14,20 @@
         settings = {
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
           "browser.compactmode.show" = true;
-          #"extensions.unifiedExtensions.enabled" = true;
+          "extensions.unifiedExtensions.enabled" = false;
+          "media.ffmpeg.vaapi.enabled"=true;  
+
         };
         #user.js
         extraConfig = "";
         userChrome = ''
 
+          #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
+	  width: 0px !important;
+	  padding: 0px !important;
+	  }
+
+          /*:root{--WindowDraggingFromNewtabButton: no-drag}  /*  For windows  *//* */
           :root{--WindowDraggingFromNewtabButton: drag !important}  /* For linux */
 
           /*  #reload-button, #stop-button{display:none !important}  /*  Removes the reload/stop button  */

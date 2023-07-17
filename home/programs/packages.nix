@@ -24,7 +24,6 @@
     #media
     nur.repos.xddxdd.svp
     playerctl
-    nuclear
     #menss
     telegram-desktop
     discord

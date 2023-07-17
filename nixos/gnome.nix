@@ -72,7 +72,6 @@
       gnome-font-viewer
       gnome-logs
       gnome-maps
-      gnome-music
       pkgs.gnome-photos
       gnome-weather
       pkgs.gnome-connections
