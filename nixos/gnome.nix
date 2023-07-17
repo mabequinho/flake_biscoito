@@ -50,6 +50,8 @@
       dconf2nix
       nautilus-open-any-terminal
       qt6.qtwayland
+      qgnomeplatform-qt6
+      adwaita-qt6
       libsForQt5.qt5.qtwayland
       wl-clipboard
       libnotify
@@ -82,6 +84,11 @@
       geary
 
     ];
+  };
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita";
   };
   #Jul - 2023 issue https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
   systemd.services."getty@tty1".enable = false;
