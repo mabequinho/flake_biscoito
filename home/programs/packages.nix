@@ -25,12 +25,10 @@
     nur.repos.xddxdd.svp
     amberol
     playerctl
-    #menss
-    telegram-desktop
-    discord
 
     #net
     transmission-gtk
+    tangram
 
     #theming
     nerdfonts

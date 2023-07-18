@@ -130,10 +130,10 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
-        "discord.desktop:4"
-        "org.telegram.desktop.desktop:4"
-        "thunderbird.desktop:3"
-        "transmission-gtk.desktop:3"
+        "thunderbird.desktop:4"
+        "re.sonny.Tangram.desktop:4"
+        "transmission-gtk.desktop:1"
+        "org.gnome.Pomodoro.desktop:4"
       ];
     };
 

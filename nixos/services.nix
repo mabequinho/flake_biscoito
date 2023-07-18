@@ -18,7 +18,7 @@
     };
     ananicy = {
       enable = true;
-      package = pkgs.ananicy;
+      package = pkgs.ananicy-cpp;
     };
     irqbalance.enable = true;
     udev.extraRules =
