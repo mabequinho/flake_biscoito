@@ -68,7 +68,7 @@
       gnome-calculator
       gnome-calendar
       gnome-characters
-      gnome-clocks
+      #gnome-clocks
       gnome-music
       pkgs.gnome-console
       gnome-contacts
