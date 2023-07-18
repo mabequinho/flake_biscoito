@@ -5,7 +5,7 @@
   programs = {
     adb = { enable = true; };
     ssh = {
-      startAgent = false;
+      startAgent = false; #disable in favor of gnome-keyring
       forwardX11 = true;
       enableAskPassword = true;
     };
