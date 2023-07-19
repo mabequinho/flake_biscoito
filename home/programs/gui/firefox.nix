@@ -2,12 +2,7 @@
 
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox.override {
-      cfg = {
-        enablePlasmaBrowserIntegration = true;
-        enableTridactylNative = true;
-      };
-    };
+    package = pkgs.firefox;
     profiles = {
       mabeco = {
         name = "mabeco";
@@ -16,12 +11,10 @@
           "browser.compactmode.show" = true;
           "extensions.unifiedExtensions.enabled" = false;
           "media.ffmpeg.vaapi.enabled" = true;
-
         };
         #user.js
         extraConfig = "";
         userChrome = ''
-	  /*remove jigsaw buttom */
           #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
           width: 0px !important;
           padding: 0px !important;
