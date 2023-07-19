@@ -26,8 +26,8 @@
               /* delay before expanding tabs, set to '0' for no delay */
               --delay: 0.5s;
               --transition-time: 0.2s;
-              --positionX1: 48px; /* '48px' for left, '0px' for right sidebar */
-              --positionX2: absolute; /* 'absolute' for left, 'none' for right sidebar */
+              --positionX1: 0px; /* '48px' for left, '0px' for right sidebar */
+              --positionX2: none; /* 'absolute' for left, 'none' for right sidebar */
               /* width of the collapsed sidebar in fullscreen mode ('1px' or '48px') */
               --fullscreen-sidebar-width: 1px;
           }
