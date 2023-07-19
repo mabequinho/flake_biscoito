@@ -21,6 +21,11 @@
         #user.js
         extraConfig = "";
         userChrome = ''
+	  /*remove jigsaw buttom */
+          #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
+          width: 0px !important;
+          padding: 0px !important;
+          }
 
           :root {
               /* delay before expanding tabs, set to '0' for no delay */
