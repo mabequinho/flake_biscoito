@@ -120,6 +120,7 @@ with lib.hm.gvariant;
         "unredirect@vaina.lt"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
+	"hidetopbar@mathieu.bidon.ca"
       ];
       favorite-apps =
         [ "org.gnome.Nautilus.desktop" "org.gnome.Terminal.desktop" ];
@@ -141,6 +142,11 @@ with lib.hm.gvariant;
       bedtime-mode-active = true;
       color-tone-factor = 90;
       ondemand-button-location = "menu";
+    };
+
+    "org/gnome/shell/extensions/hidetopbar" = {
+      enable-active-window = true;
+      mouse-sensitive = true;
     };
 
     "org/gnome/shell/extensions/user-theme" = {
