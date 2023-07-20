@@ -25,6 +25,7 @@
     nur.repos.xddxdd.svp
     amberol
     playerctl
+    vlc
 
     #net
     transmission-gtk
