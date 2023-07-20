@@ -59,6 +59,7 @@
       gnome-bedtime
       disable-unredirect-fullscreen-windows
       dock-from-dash
+      hide-top-bar
     ];
     gnome.excludePackages = with pkgs // pkgs.gnome; [
 
